@@ -9,10 +9,10 @@ import Styles from '../styles/Home.module.css'
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const handleIsOpen = useCallback(() => setIsOpen((open) => !open), [isOpen])
+  const handleIsOpen = useCallback(() => setIsOpen((open) => !open), [])
   const handleDarkMode = useCallback(
     () => setDarkMode((dark) => !dark),
-    [darkMode]
+    []
   )
 
   return (
@@ -36,7 +36,7 @@ export default function Home() {
             <div
               className={`${
                 isOpen ? 'flex absolute top-[100%] left-0' : 'hidden'
-              } md:static md:flex flex-col md:flex-row pb-5 md:pb-0 px-5 md:px-0 gap-x-1 gap-y-8 md:gap-x-8 items-end justify-evenly md:items-center w-full bg-white dark:bg-[#023047] md:bg-transparent`}
+              } md:static md:flex flex-col md:flex-row pb-5 md:pb-0 px-5 md:px-0 gap-x-1 gap-y-8 md:gap-x-8 items-start justify-evenly md:items-center w-full bg-white dark:bg-[#023047] md:bg-transparent`}
             >
               <a
                 href='#Home'
