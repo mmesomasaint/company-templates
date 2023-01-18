@@ -42,23 +42,25 @@ export default function Home() {
                 <span>|</span>
               </div>
             </div>
-            <div className="py-4 flex justify-between items-center gap-6">
+            <div className="flex justify-between items-center gap-6">
               <div>
                 <span>Home+</span>
-                <span>Shop</span>
-                <span>Company</span>
-                <span>IT Solutions</span>
-                <span>Blog</span>
-                <span>Contact Us</span>
+                <span>Shop+</span>
+                <span>Company+</span>
+                <span>IT Solutions+</span>
+                <span>Blog+</span>
+                <span>Contact Us+</span>
               </div>
               <div>
                 <span>+23498239800</span>
-                <span>Get a Quote</span>
+                <span className="py-4">Get A Quote</span>
               </div>
             </div>
           </div>
         </div>
       </header>
+      <main></main>
+      <footer></footer>
     </div>
   )
 }

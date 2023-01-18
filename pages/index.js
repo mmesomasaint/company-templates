@@ -101,7 +101,7 @@ export default function Home() {
                 height={200}
                 alt='template 1'
               />
-              <p className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>Local Laundry Template</p>
+              <a href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>Local Laundry Template</a>
             </div>
             <div>
               <Image
@@ -110,7 +110,7 @@ export default function Home() {
                 height={200}
                 alt='template 2'
               />
-              <p className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>IT Template</p>
+              <a href='/templates/it-template' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>IT Template</a>
             </div>
             <div>
               <Image
@@ -119,7 +119,7 @@ export default function Home() {
                 height={200}
                 alt='template 3'
               />
-              <p className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>Foreign Laundry Template</p>
+              <a href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>Foreign Laundry Template</a>
             </div>
           </div>
         </div>
