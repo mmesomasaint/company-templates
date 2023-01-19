@@ -447,12 +447,12 @@ export default function Home() {
                     tortor eget pellentesque
                   </p>
                   <p className='text-lg font-semibold text-white mb-3 capitalize'>
-                    <div className='flex justify-center gap-2 items-center'>
+                    <span className='flex justify-center gap-2 items-center'>
                       <span>+234</span>
                       <span>900</span>
                       <span>834</span>
                       <span>8343</span>
-                    </div>
+                    </span>
                   </p>
                 </div>
               </div>
