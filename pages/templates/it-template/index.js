@@ -4,6 +4,7 @@ import Styles from '../../../styles/it.module.css'
 import {
   AiFillCloud,
   AiFillStar,
+  AiOutlineBell,
   AiOutlineClose,
   AiOutlineDatabase,
   AiOutlineFileSearch,
@@ -21,8 +22,14 @@ import {
   BsAwardFill,
   BsShieldCheck,
   BsCodeSlash,
+  BsArrowRightCircle,
+  BsDot,
 } from 'react-icons/bs'
-import { MdDeveloperMode, MdOutlineAccessTime } from 'react-icons/md'
+import {
+  MdDeveloperMode,
+  MdOutlineAccessTime,
+  MdOutlineLocationOn,
+} from 'react-icons/md'
 import { ImHappy2 } from 'react-icons/im'
 
 export default function Home() {
@@ -205,7 +212,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[70%] mx-auto my-24'>
+          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[70%] mx-auto my-32'>
             <div className='col-span-3'>
               <div>
                 <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
@@ -285,7 +292,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-24'>
+          <div className='w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 WHY CHOOSE US
@@ -341,7 +348,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-24'>
+          <div className='w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 OUR SERVICES
@@ -458,7 +465,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-24'>
+          <div className='w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 PROMO PLAN
@@ -642,7 +649,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[70%] mx-auto my-24'>
+          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[70%] mx-auto my-32'>
             <div className='col-span-3'>
               <div className='mb-10'>
                 <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
@@ -725,7 +732,7 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-24'>
+          <div className='w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 TESTIMONIALS
@@ -739,7 +746,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-24'>
+          <div className='w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 TEAM MEMBERS
@@ -755,34 +762,61 @@ export default function Home() {
             <div className='grid grid-cols-3 gap-7 place-items-stretch'>
               <div className=''>
                 <div className=''>
-                  <Image src='/imgs/team-lead.jpg' width={400} height={300} alt='team member' />
+                  <Image
+                    src='/imgs/team-lead.jpg'
+                    width={400}
+                    height={300}
+                    alt='team member'
+                  />
                 </div>
                 <div className='text-center p-3 bg-[rgba(7,77,217,0.15)]'>
-                  <h5 className='text-xl font-semibold leading-none text-[#074DD9] capitalize'>Sofia Ade</h5>
-                  <p className='text-base font-medium leading-tight'>Team Lead</p>
+                  <h5 className='text-xl font-semibold leading-none text-[#074DD9] capitalize'>
+                    Sofia Ade
+                  </h5>
+                  <p className='text-base font-medium leading-tight'>
+                    Team Lead
+                  </p>
                 </div>
               </div>
               <div className=''>
                 <div className=''>
-                  <Image src='/imgs/project-manager.jpg' width={400} height={300} alt='team member' />
+                  <Image
+                    src='/imgs/project-manager.jpg'
+                    width={400}
+                    height={300}
+                    alt='team member'
+                  />
                 </div>
                 <div className='text-center p-3 bg-[rgba(7,77,217,0.15)]'>
-                  <h5 className='text-xl font-semibold leading-none text-[#074DD9] capitalize'>Catherin Brown</h5>
-                  <p className='text-base font-medium leading-tight'>Project Manager</p>
+                  <h5 className='text-xl font-semibold leading-none text-[#074DD9] capitalize'>
+                    Catherin Brown
+                  </h5>
+                  <p className='text-base font-medium leading-tight'>
+                    Project Manager
+                  </p>
                 </div>
               </div>
               <div className=''>
                 <div className=''>
-                  <Image src='/imgs/software-engr.jpg' width={400} height={300} alt='team member' />
+                  <Image
+                    src='/imgs/software-engr.jpg'
+                    width={400}
+                    height={300}
+                    alt='team member'
+                  />
                 </div>
                 <div className='text-center p-3 bg-[rgba(7,77,217,0.15)]'>
-                  <h5 className='text-xl font-semibold leading-none text-[#074DD9]'>Georgia Miller</h5>
-                  <p className='text-base font-medium leading-tight'>Software Engineer</p>
+                  <h5 className='text-xl font-semibold leading-none text-[#074DD9]'>
+                    Georgia Miller
+                  </h5>
+                  <p className='text-base font-medium leading-tight'>
+                    Software Engineer
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-24'>
+          <div className='w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 LATEST BLOG
@@ -795,11 +829,291 @@ export default function Home() {
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
               </div>
             </div>
-            
+            <div className='grid grid-cols-3 gap-8 place-items-stretch'>
+              <div className='relative'>
+                <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
+                  <p className='text-base font-bold leading-none text-white py-1 px-3'>
+                    TECH MEETING
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src='/imgs/business-meeting.jpg'
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+                <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
+                  <div className='flex gap-6 flex-start items-center'>
+                    <div className='flex gap-2 flex-start items-center'>
+                      <AiOutlineBell className='text-[#074DD9] text-sm' />
+                      <p className='text-xs font-normal text-black'>
+                        2 days ago
+                      </p>
+                    </div>
+                    <div className='flex gap-2 flex-start items-center'>
+                      <BsPersonCircle className='text-[#074DD9] text-sm' />
+                      <p className='text-xs font-normal text-black'>
+                        Dennis Akpan
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className='text-xl font-extrabold leading-none text-black'>
+                      How to build a website
+                    </h4>
+                  </div>
+                  <div>
+                    <p className='text-xs font-normal text-black'>
+                      Fusce quis venenatis mauris. Donec auctor laoreet diam,
+                      vel euismod arcu blandit viverra
+                    </p>
+                  </div>
+                  <div className='flex justify-start items-center gap-3'>
+                    <p className='text-base font-medium text-[#074DD9]'>
+                      READ MORE
+                    </p>
+                    <BsArrowRightCircle className='text-[#074DD9] text-lg' />
+                  </div>
+                </div>
+              </div>
+              <div className='relative'>
+                <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
+                  <p className='text-base font-bold leading-none text-white py-1 px-3'>
+                    TECH MEETING
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src='/imgs/two-meeting.jpg'
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+                <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
+                  <div className='flex gap-6 flex-start items-center'>
+                    <div className='flex gap-2 flex-start items-center'>
+                      <AiOutlineBell className='text-[#074DD9] text-sm' />
+                      <p className='text-xs font-normal text-black'>
+                        4 days ago
+                      </p>
+                    </div>
+                    <div className='flex gap-2 flex-start items-center'>
+                      <BsPersonCircle className='text-[#074DD9] text-sm' />
+                      <p className='text-xs font-normal text-black'>
+                        Dennis Akpan
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className='text-xl font-extrabold leading-none text-black'>
+                      How to build a server
+                    </h4>
+                  </div>
+                  <div>
+                    <p className='text-xs font-normal text-black'>
+                      Euismod arcu blandit viverra. Donec auctor laoreet diam,
+                      vel fusce quis venenatis mauris.
+                    </p>
+                  </div>
+                  <div className='flex justify-start items-center gap-3'>
+                    <p className='text-base font-medium text-[#074DD9]'>
+                      READ MORE
+                    </p>
+                    <BsArrowRightCircle className='text-[#074DD9] text-lg' />
+                  </div>
+                </div>
+              </div>
+              <div className='relative'>
+                <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
+                  <p className='text-base font-bold leading-none text-white py-1 px-3'>
+                    IT TRAINING
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src='/imgs/mini-meeting.jpg'
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+                <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
+                  <div className='flex gap-6 flex-start items-center'>
+                    <div className='flex gap-2 flex-start items-center'>
+                      <AiOutlineBell className='text-[#074DD9] text-sm' />
+                      <p className='text-xs font-normal text-black'>
+                        7 days ago
+                      </p>
+                    </div>
+                    <div className='flex gap-2 flex-start items-center'>
+                      <BsPersonCircle className='text-[#074DD9] text-sm' />
+                      <p className='text-xs font-normal text-black'>
+                        Peter Ade
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className='text-xl font-extrabold leading-none text-black'>
+                      How to deploy a website
+                    </h4>
+                  </div>
+                  <div>
+                    <p className='text-xs font-normal text-black'>
+                      Donec auctor laoreet diam. Fusce quis venenatis mauris vel
+                      euismod arcu blandit
+                    </p>
+                  </div>
+                  <div className='flex justify-start items-center gap-3'>
+                    <p className='text-base font-medium text-[#074DD9]'>
+                      READ MORE
+                    </p>
+                    <BsArrowRightCircle className='text-[#074DD9] text-lg' />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer className='relative bg-[#021842] h-fit'>
+        <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
+          <div className='col-span-4 bg-[#074DD9] flex flex-col gap-5 px-5 pt-16 pb-14 w-fit h-full'>
+            <div className='text-4xl font-normal leading-none w-fit'>
+              <span className='bg-gradient-to-br from-[#021842] to-white text-transparent inline-block bg-clip-text'>
+                .IT
+              </span>
+              <span className='text-white'>solve</span>
+            </div>
+            <div>
+              <p className='text-white text-center text-xs font-normal'>
+                Vivamus porttitor vitae est eu volutpat. Proin id diam ac justo
+                tempus iaculis at vel enim. In id placerat ante. Aenean quis
+                odio enim. Sed pretium elit non nunc egestasnec interdum ipsum
+                convallis. Nam lacinia arcu non justo volutpat, at rhoncus
+              </p>
+            </div>
+            <div className='w-full flex justify-start items-center gap-0'>
+              <input
+                type='email'
+                placeholder='Email'
+                className='w-[70%] flex-grow p-2 text-base font-normal leading-none focus:outline-none'
+              />
+              <button className='px-5 py-2 text-white text-base font-medium leading-none bg-[#021842]'>
+                Sign up
+              </button>
+            </div>
+          </div>
+          <div className='col-span-8 w-full grid grid-cols-3 gap-10 py-10'>
+            <div>
+              <div>
+                <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
+                  Get in Touch
+                </h3>
+                <div className='flex gap-3 justify-start items-center'>
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                </div>
+              </div>
+              <div className='flex flex-col gap-3 my-3'>
+                <div className='flex gap-2 items-start justify-start'>
+                  <MdOutlineLocationOn className='text-[#074DD9] text-xs' />
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    23 Ajaniva olu avenue, Enugu
+                  </p>
+                </div>
+                <div className='flex gap-2 items-start justify-start'>
+                  <AiOutlineMail className='text-[#074DD9] text-xs' />
+                  <p className='text-xs font-normal text-gray-400'>
+                    themail27@gmail.com
+                  </p>
+                </div>
+                <div className='flex gap-2 items-start justify-start'>
+                  <BsTelephone className='text-[#074DD9] text-xs' />
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    +23490443490
+                  </p>
+                </div>
+              </div>
+              <div className='flex gap-5'>
+                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                  <BsFacebook className='text-white text-sm' />
+                </div>
+                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                  <BsInstagram className='text-white text-sm' />
+                </div>
+                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                  <BsTwitter className='text-white text-sm' />
+                </div>
+                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                  <BsLinkedin className='text-white text-sm' />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
+                  Quick Links
+                </h3>
+                <div className='flex gap-3 justify-start items-center'>
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                </div>
+              </div>
+              <div className='flex flex-col gap-3 my-3'>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  SEO Rules
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  IT Standard
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Career
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Frontend learn
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Ethical Hacking
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Server Security
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
+                  Popular Links
+                </h3>
+                <div className='flex gap-3 justify-start items-center'>
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                </div>
+              </div>
+              <div className='flex flex-col gap-3 my-3'>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  SEO Rules
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  IT Standard
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Career
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Frontend learn
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Ethical Hacking
+                </p>
+                <p className='capitalize text-xs font-normal text-gray-400'>
+                  Server Security
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
