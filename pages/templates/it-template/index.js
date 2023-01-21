@@ -104,7 +104,7 @@ export default function Home() {
                 </span>
               </div>
               <div className='flex gap-6 items-center justify-evenly'>
-                <div className='flex gap-2 items-center justify-evenly'>
+                <div className='hidden md:flex gap-2 items-center justify-evenly'>
                   <BsTelephone className='text-red-500 text-sm' />
                   <span className='text-xs lg:text-sm font-medium leading-none text-white'>
                     +23498239800
@@ -122,20 +122,20 @@ export default function Home() {
         <div className='max-w-[90rem] mx-auto'>
           <div className="h-[37rem] w-full bg-[url('/imgs/it-server.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-[rgba(13,16,38,0.75)] w-full h-full'>
-              <div className='w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-start'>
+              <div className='w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
                 <div>
                   <p className='capitalize text-white text-lg text-semibold'>
                     Total solution here
                   </p>
                 </div>
                 <div>
-                  <h1 className='capitalize text-5xl font-[900] w-[70%] mb-4 mt-1 text-white leading-none'>
+                  <h1 className='capitalize text-5xl font-[900] w-[80%] md:w-[70%] mx-auto md:mx-0 mb-4 mt-1 text-center md:text-left text-white leading-none'>
                     Best <span className='text-red-500'>IT Solution</span>{' '}
                     Company
                   </h1>
                 </div>
                 <div>
-                  <p className='text-white text-sm font-light w-[70%]'>
+                  <p className='text-center md:text-left text-white text-sm font-light w-[80%] md:w-[70%] mx-auto md:mx-0'>
                     We have the tendency to believe that smart looking websites
                     is the best impression, businesses including many in the
                     world's
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
           </div>
           <div className='z-10 relative -top-12 w-[80%] xl:w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
-            <div className='bg-[#074DD9] px-5 lg:px-10 py-4 flex justify-center items-center'>
+            <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
               <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
                 <div className='w-9 h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
                   <ImHappy2 className='text-[#074DD9]' />
@@ -172,7 +172,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='bg-white px-5 lg:px-10 py-4 flex justify-center items-center'>
+            <div className='bg-white px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
               <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
                 <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
                   <BsCheckLg className='text-white' />
@@ -191,7 +191,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='bg-[#074DD9] px-5 lg:px-10 py-4 flex justify-center items-center'>
+            <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
               <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
                 <div className='w-9 h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
                   <BsAwardFill className='text-[#074DD9]' />
@@ -304,7 +304,7 @@ export default function Home() {
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
               </div>
             </div>
-            <div className='grid grid-cols-3 place-items-stretch gap-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 place-items-stretch gap-10'>
               <div>
                 <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
                   <AiFillCloud className='text-white text-sm lg:text-lg' />
@@ -321,7 +321,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className='order-first md:order-none'>
                 <Image
                   src='/imgs/meeting.jpg'
                   width={900}
