@@ -296,7 +296,7 @@ export default function Home() {
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 WHY CHOOSE US
               </p>
-              <h3 className='w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
                 We Are Here to Grow Your Business Exponentially
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -352,9 +352,8 @@ export default function Home() {
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 OUR SERVICES
               </p>
-              <h3 className='w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
-                We Pride of Our Efficiency and Effectiveness When Working With
-                Clients
+              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
+                We Take Pride In Efficient Client Satisfaction
               </h3>
               <div className='flex gap-3 justify-center items-center'>
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
@@ -469,7 +468,7 @@ export default function Home() {
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 PROMO PLAN
               </p>
-              <h3 className='w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
                 We Are Offering Competitive Prices For Our Clients
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -736,7 +735,7 @@ export default function Home() {
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 TESTIMONIALS
               </p>
-              <h3 className='w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
                 What Our Clients Say About Our Digital Services
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -750,7 +749,7 @@ export default function Home() {
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 TEAM MEMBERS
               </p>
-              <h3 className='w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
                 Professional Staffs Ready to Help Your Business
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -820,7 +819,7 @@ export default function Home() {
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 LATEST BLOG
               </p>
-              <h3 className='w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-4xl font-bold leading-none mb-2 capitalize'>
                 Read The Latest Articles from Our Blog Post
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -1002,7 +1001,7 @@ export default function Home() {
                   placeholder='Email'
                   className='w-[70%] flex-grow p-2 text-sm xl:text-base font-normal leading-none focus:outline-none'
                 />
-                <button className='px-2 py-2 text-white text-xl font-medium leading-none bg-[#021842]'>
+                <button className='px-2 py-2 text-white text-base xl:text-xl font-medium leading-none bg-[#021842]'>
                   Sign up
                 </button>
               </div>
