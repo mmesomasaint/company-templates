@@ -23,7 +23,6 @@ import {
   BsShieldCheck,
   BsCodeSlash,
   BsArrowRightCircle,
-  BsDot,
 } from 'react-icons/bs'
 import {
   MdDeveloperMode,
@@ -43,8 +42,8 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <header>
-        <div className='absolute top-0 left-0 flex gap-0 w-full'>
+      <header className='w-full relative'>
+        <div className='max-w-[90rem] absolute top-0 left-0 right-0 mx-auto flex gap-0'>
           <div className='bg-white p-3 flex justify-center items-center gap-0'>
             <div className='text-4xl font-normal leading-none w-fit'>
               <span className='bg-gradient-to-br from-[#074DD9] to-[#021842] text-transparent inline-block bg-clip-text'>
@@ -979,149 +978,159 @@ export default function Home() {
         </div>
       </main>
       <footer className='relative z-[10] bg-[#021842] h-fit'>
-        <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
-          <div className='z-[30] col-span-4 bg-[#074DD9] flex flex-col gap-5 px-5 pt-16 pb-14 w-fit h-full'>
-            <div className='text-4xl font-normal leading-none w-fit'>
-              <span className='bg-gradient-to-br from-[#021842] to-white text-transparent inline-block bg-clip-text'>
-                .IT
-              </span>
-              <span className='text-white'>solve</span>
-            </div>
-            <div>
-              <p className='text-white text-center text-xs font-normal'>
-                Vivamus porttitor vitae est eu volutpat. Proin id diam ac justo
-                tempus iaculis at vel enim. In id placerat ante. Aenean quis
-                odio enim. Sed pretium elit non nunc egestasnec interdum ipsum
-                convallis. Nam lacinia arcu non justo volutpat, at rhoncus
-              </p>
-            </div>
-            <div className='w-full flex justify-start items-center gap-0'>
-              <input
-                type='email'
-                placeholder='Email'
-                className='w-[70%] flex-grow p-2 text-base font-normal leading-none focus:outline-none'
-              />
-              <button className='px-5 py-2 text-white text-base font-medium leading-none bg-[#021842]'>
-                Sign up
-              </button>
-            </div>
-          </div>
-          <div className='col-span-8 w-full grid grid-cols-3 gap-10 py-10'>
-            <div>
+        <div className='max-w-[90rem] mx-auto'>
+          <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
+            <div className='z-[30] col-span-4 bg-[#074DD9] flex flex-col gap-5 px-5 pt-16 pb-14 w-fit h-full'>
+              <div className='text-4xl font-normal leading-none w-fit'>
+                <span className='bg-gradient-to-br from-[#021842] to-white text-transparent inline-block bg-clip-text'>
+                  .IT
+                </span>
+                <span className='text-white'>solve</span>
+              </div>
               <div>
-                <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
-                  Get in Touch
-                </h3>
-                <div className='flex gap-3 justify-start items-center'>
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                <p className='text-white text-center text-xs font-normal'>
+                  Vivamus porttitor vitae est eu volutpat. Proin id diam ac
+                  justo tempus iaculis at vel enim. In id placerat ante. Aenean
+                  quis odio enim. Sed pretium elit non nunc egestasnec interdum
+                  ipsum convallis. Nam lacinia arcu non justo volutpat, at
+                  rhoncus
+                </p>
+              </div>
+              <div className='w-full flex justify-start items-center gap-0'>
+                <input
+                  type='email'
+                  placeholder='Email'
+                  className='w-[70%] flex-grow p-2 text-base font-normal leading-none focus:outline-none'
+                />
+                <button className='px-2 py-2 text-white text-xl font-medium leading-none bg-[#021842]'>
+                  Sign up
+                </button>
+              </div>
+            </div>
+            <div className='col-span-8 w-full grid grid-cols-3 gap-10 py-10'>
+              <div>
+                <div>
+                  <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
+                    Get in Touch
+                  </h3>
+                  <div className='flex gap-3 justify-start items-center'>
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  </div>
+                </div>
+                <div className='flex flex-col gap-3 my-3'>
+                  <div className='flex gap-2 items-start justify-start'>
+                    <MdOutlineLocationOn className='text-[#074DD9] text-xs' />
+                    <p className='capitalize text-xs font-normal text-gray-400'>
+                      23 Ajaniva olu avenue, Enugu
+                    </p>
+                  </div>
+                  <div className='flex gap-2 items-start justify-start'>
+                    <AiOutlineMail className='text-[#074DD9] text-xs' />
+                    <p className='text-xs font-normal text-gray-400'>
+                      themail27@gmail.com
+                    </p>
+                  </div>
+                  <div className='flex gap-2 items-start justify-start'>
+                    <BsTelephone className='text-[#074DD9] text-xs' />
+                    <p className='capitalize text-xs font-normal text-gray-400'>
+                      +23490443490
+                    </p>
+                  </div>
+                </div>
+                <div className='flex gap-5'>
+                  <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                    <BsFacebook className='text-white text-sm' />
+                  </div>
+                  <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                    <BsInstagram className='text-white text-sm' />
+                  </div>
+                  <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                    <BsTwitter className='text-white text-sm' />
+                  </div>
+                  <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
+                    <BsLinkedin className='text-white text-sm' />
+                  </div>
                 </div>
               </div>
-              <div className='flex flex-col gap-3 my-3'>
-                <div className='flex gap-2 items-start justify-start'>
-                  <MdOutlineLocationOn className='text-[#074DD9] text-xs' />
+              <div>
+                <div>
+                  <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
+                    Quick Links
+                  </h3>
+                  <div className='flex gap-3 justify-start items-center'>
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  </div>
+                </div>
+                <div className='flex flex-col gap-3 my-3'>
                   <p className='capitalize text-xs font-normal text-gray-400'>
-                    23 Ajaniva olu avenue, Enugu
+                    SEO Rules
                   </p>
-                </div>
-                <div className='flex gap-2 items-start justify-start'>
-                  <AiOutlineMail className='text-[#074DD9] text-xs' />
-                  <p className='text-xs font-normal text-gray-400'>
-                    themail27@gmail.com
-                  </p>
-                </div>
-                <div className='flex gap-2 items-start justify-start'>
-                  <BsTelephone className='text-[#074DD9] text-xs' />
                   <p className='capitalize text-xs font-normal text-gray-400'>
-                    +23490443490
+                    IT Standard
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Career
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Frontend learn
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Ethical Hacking
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Server Security
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5'>
-                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
-                  <BsFacebook className='text-white text-sm' />
-                </div>
-                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
-                  <BsInstagram className='text-white text-sm' />
-                </div>
-                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
-                  <BsTwitter className='text-white text-sm' />
-                </div>
-                <div className='flex justify-center items-center bg-[#074DD9] w-7 h-7'>
-                  <BsLinkedin className='text-white text-sm' />
-                </div>
-              </div>
-            </div>
-            <div>
               <div>
-                <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
-                  Quick Links
-                </h3>
-                <div className='flex gap-3 justify-start items-center'>
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                <div>
+                  <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
+                    Popular Links
+                  </h3>
+                  <div className='flex gap-3 justify-start items-center'>
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  </div>
                 </div>
-              </div>
-              <div className='flex flex-col gap-3 my-3'>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  SEO Rules
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  IT Standard
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Career
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Frontend learn
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Ethical Hacking
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Server Security
-                </p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
-                  Popular Links
-                </h3>
-                <div className='flex gap-3 justify-start items-center'>
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                <div className='flex flex-col gap-3 my-3'>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    SEO Rules
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    IT Standard
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Career
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Frontend learn
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Ethical Hacking
+                  </p>
+                  <p className='capitalize text-xs font-normal text-gray-400'>
+                    Server Security
+                  </p>
                 </div>
-              </div>
-              <div className='flex flex-col gap-3 my-3'>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  SEO Rules
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  IT Standard
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Career
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Frontend learn
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Ethical Hacking
-                </p>
-                <p className='capitalize text-xs font-normal text-gray-400'>
-                  Server Security
-                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div className='absolute bottom-0 left-0 z-[20] w-full bg-[#0D1026]'>
-        <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
-          <div className='col-start-5 col-span-8'>
-            <span className='w-full text-center block py-4'><p className='text-sm font-medium text-gray-400'>&copy;2023 ITsolve services <span className='mx-4 text-WHITE'>&middot;</span> All Rights Reserved <span className='mx-4 text-WHITE'>&middot;</span> Designed by mmesoma saint</p></span>
+          <div className='absolute bottom-0 left-0 z-[20] w-full bg-[#0D1026]'>
+            <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
+              <div className='col-start-5 col-span-8'>
+                <span className='w-full text-center block py-4'>
+                  <p className='text-sm font-medium text-gray-400'>
+                    &copy;2023 ITsolve services{' '}
+                    <span className='mx-4 text-WHITE'>&middot;</span> All Rights
+                    Reserved <span className='mx-4 text-WHITE'>&middot;</span>{' '}
+                    Designed by mmesoma saint
+                  </p>
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </footer>
     </div>
