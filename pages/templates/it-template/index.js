@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Styles from '../../../styles/it.module.css'
@@ -10,6 +11,7 @@ import {
   AiOutlineFileSearch,
   AiOutlineHome,
   AiOutlineMail,
+  AiOutlineMenu
 } from 'react-icons/ai'
 import {
   BsTelephone,
@@ -32,6 +34,9 @@ import {
 import { ImHappy2 } from 'react-icons/im'
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleOpen = useCallback(() => setIsOpen(open => !open), [])
+
   return (
     <div className={Styles.bodyFont}>
       <Head>
@@ -52,8 +57,13 @@ export default function Home() {
               <span className='text-[#021842]'>solve</span>
             </div>
           </div>
-          <div className='flex flex-col gap-0 flex-grow'>
-            <div className='flex justify-between items-center gap-3 lg:gap-6 bg-[#021842] pl-3'>
+          <div className='flex flex-col items-end sm:items-stretch gap-0 flex-grow'>
+            <div className='w-full backdrop-blur-md flex sm:hidden justify-end items-center'>
+            <div className='flex justify-center items-center w-12 h-12 bg-[#074DD9]' onClick={toggleOpen}>
+              <AiOutlineMenu className='text-white text-2xl' />
+            </div>
+            </div>
+            <div className='hidden sm:flex justify-between items-center gap-3 lg:gap-6 bg-[#021842] pl-3'>
               <div className='flex justify-evenly items-center gap-2 lg:gap-5'>
                 <div className='flex gap-2 items-center justify-evenly'>
                   <AiOutlineHome className='text-red-500 text-sm' />
@@ -82,31 +92,31 @@ export default function Home() {
                 <span>|</span>
               </div>
             </div>
-            <div className='flex justify-between items-center gap-3 lg:gap-6 backdrop-blur-md'>
-              <div className='flex gap-3 lg:gap-6 items-center justify-evenly px-3'>
-                <span className='text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
+            <div className={`${isOpen ? 'flex' : 'hidden'} absolute sm:static top-[100%] left-0 right-0 sm:flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-3 lg:gap-6 p-4 sm:p-0 backdrop-blur-md`}>
+              <div className='flex flex-col sm:flex-row gap-3 lg:gap-6 items-start sm:items-center justify-evenly px-0 sm:px-3 w-full sm:w-auto'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   Home+
                 </span>
-                <span className='text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   Shop+
                 </span>
-                <span className='text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   Company+
                 </span>
-                <span className='text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   IT Solutions+
                 </span>
-                <span className='text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   Blog+
                 </span>
-                <span className='text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   Contact Us+
                 </span>
               </div>
-              <div className='flex gap-6 items-center justify-evenly'>
-                <div className='hidden md:flex gap-2 items-center justify-evenly'>
+              <div className='flex gap-3 sm:gap-6 items-center justify-evenly w-full sm:w-auto'>
+                <div className='flex sm:hidden md:flex gap-2 items-center justify-evenly'>
                   <BsTelephone className='text-red-500 text-sm' />
-                  <span className='text-xs lg:text-sm font-medium leading-none text-white'>
+                  <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white'>
                     +23498239800
                   </span>
                 </div>
