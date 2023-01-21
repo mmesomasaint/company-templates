@@ -841,6 +841,7 @@ export default function Home() {
                     src='/imgs/business-meeting.jpg'
                     width={1000}
                     height={1000}
+                    alt='blog thumbnail'
                   />
                 </div>
                 <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
@@ -888,6 +889,7 @@ export default function Home() {
                     src='/imgs/two-meeting.jpg'
                     width={1000}
                     height={1000}
+                    alt='blog thumbnail'
                   />
                 </div>
                 <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
@@ -935,6 +937,7 @@ export default function Home() {
                     src='/imgs/mini-meeting.jpg'
                     width={1000}
                     height={1000}
+                    alt='blog thumbnail'
                   />
                 </div>
                 <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
