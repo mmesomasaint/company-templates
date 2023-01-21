@@ -975,9 +975,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className='relative bg-[#021842] h-fit'>
+      <footer className='relative z-[10] bg-[#021842] h-fit'>
         <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
-          <div className='col-span-4 bg-[#074DD9] flex flex-col gap-5 px-5 pt-16 pb-14 w-fit h-full'>
+          <div className='z-[30] col-span-4 bg-[#074DD9] flex flex-col gap-5 px-5 pt-16 pb-14 w-fit h-full'>
             <div className='text-4xl font-normal leading-none w-fit'>
               <span className='bg-gradient-to-br from-[#021842] to-white text-transparent inline-block bg-clip-text'>
                 .IT
@@ -1112,6 +1112,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className='absolute bottom-0 left-0 z-[20] w-full bg-[#0D1026]'>
+        <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
+          <div className='col-start-5 col-span-8'>
+            <span className='w-full text-center block py-4'><p className='text-sm font-medium text-gray-400'>&copy;2023 ITsolve services <span className='mx-4 text-WHITE'>&middot;</span> All Rights Reserved <span className='mx-4 text-WHITE'>&middot;</span> Designed by mmesoma saint</p></span>
+          </div>
+        </div>
         </div>
       </footer>
     </div>
