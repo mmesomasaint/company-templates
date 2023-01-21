@@ -152,7 +152,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='z-10 relative -top-12 w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
+          <div className='z-10 relative -top-12 w-[80%] xl:w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
             <div className='bg-[#074DD9] px-10 py-4'>
               <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
                 <div className='w-12 h-12 bg-white flex justify-center items-center'>
@@ -211,7 +211,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[70%] mx-auto my-32'>
+          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='col-span-3'>
               <div>
                 <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
@@ -291,7 +291,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-32'>
+          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 WHY CHOOSE US
@@ -347,7 +347,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-32'>
+          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 OUR SERVICES
@@ -464,7 +464,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-32'>
+          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 PROMO PLAN
@@ -648,7 +648,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[70%] mx-auto my-32'>
+          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='col-span-3'>
               <div className='mb-10'>
                 <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
@@ -731,7 +731,7 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-32'>
+          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 TESTIMONIALS
@@ -745,7 +745,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-32'>
+          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 TEAM MEMBERS
@@ -815,7 +815,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[70%] mx-auto my-32'>
+          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-base font-semibold leading-none mb-1 uppercase'>
                 LATEST BLOG
@@ -829,7 +829,7 @@ export default function Home() {
               </div>
             </div>
             <div className='grid grid-cols-3 gap-8 place-items-stretch'>
-              <div className='relative'>
+              <div className='relative flex flex-col'>
                 <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
                   <p className='text-base font-bold leading-none text-white py-1 px-3'>
                     TECH MEETING
@@ -843,7 +843,7 @@ export default function Home() {
                     alt='blog thumbnail'
                   />
                 </div>
-                <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
+                <div className='flex flex-grow flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
                   <div className='flex gap-6 flex-start items-center'>
                     <div className='flex gap-2 flex-start items-center'>
                       <AiOutlineBell className='text-[#074DD9] text-sm' />
@@ -877,7 +877,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='relative'>
+              <div className='relative flex flex-col'>
                 <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
                   <p className='text-base font-bold leading-none text-white py-1 px-3'>
                     TECH MEETING
@@ -891,7 +891,7 @@ export default function Home() {
                     alt='blog thumbnail'
                   />
                 </div>
-                <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
+                <div className='flex flex-grow flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
                   <div className='flex gap-6 flex-start items-center'>
                     <div className='flex gap-2 flex-start items-center'>
                       <AiOutlineBell className='text-[#074DD9] text-sm' />
@@ -925,7 +925,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='relative'>
+              <div className='relative flex flex-col'>
                 <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
                   <p className='text-base font-bold leading-none text-white py-1 px-3'>
                     IT TRAINING
@@ -939,7 +939,7 @@ export default function Home() {
                     alt='blog thumbnail'
                   />
                 </div>
-                <div className='flex flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
+                <div className='flex flex-grow flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
                   <div className='flex gap-6 flex-start items-center'>
                     <div className='flex gap-2 flex-start items-center'>
                       <AiOutlineBell className='text-[#074DD9] text-sm' />
@@ -979,8 +979,8 @@ export default function Home() {
       </main>
       <footer className='relative z-[10] bg-[#021842] h-fit'>
         <div className='max-w-[90rem] mx-auto'>
-          <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
-            <div className='z-[30] col-span-4 bg-[#074DD9] flex flex-col gap-5 px-5 pt-16 pb-14 w-fit h-full'>
+          <div className='grid grid-cols-12 gap-5 place-items-stretch w-[80%] xl:w-[70%] mx-auto h-full'>
+            <div className='z-[30] col-span-4 bg-[#074DD9] flex flex-col gap-5 px-2 xl:px-5 pt-16 pb-14 w-fit h-full'>
               <div className='text-4xl font-normal leading-none w-fit'>
                 <span className='bg-gradient-to-br from-[#021842] to-white text-transparent inline-block bg-clip-text'>
                   .IT
@@ -1000,7 +1000,7 @@ export default function Home() {
                 <input
                   type='email'
                   placeholder='Email'
-                  className='w-[70%] flex-grow p-2 text-base font-normal leading-none focus:outline-none'
+                  className='w-[70%] flex-grow p-2 text-sm xl:text-base font-normal leading-none focus:outline-none'
                 />
                 <button className='px-2 py-2 text-white text-xl font-medium leading-none bg-[#021842]'>
                   Sign up
@@ -1118,7 +1118,7 @@ export default function Home() {
             </div>
           </div>
           <div className='absolute bottom-0 left-0 z-[20] w-full bg-[#0D1026]'>
-            <div className='grid grid-cols-12 gap-5 place-items-stretch w-[70%] mx-auto h-full'>
+            <div className='grid grid-cols-12 gap-5 place-items-stretch w-[80%] xl:w-[70%] mx-auto h-full'>
               <div className='col-start-5 col-span-8'>
                 <span className='w-full text-center block py-4'>
                   <p className='text-sm font-medium text-gray-400'>
