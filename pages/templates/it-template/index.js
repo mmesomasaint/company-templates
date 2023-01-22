@@ -155,7 +155,7 @@ export default function Home() {
                   <p className='text-center md:text-left text-white text-sm font-light w-[90%] sm:w-[80%] md:w-[70%] mx-auto md:mx-0'>
                     We have the tendency to believe that smart looking websites
                     is the best impression, businesses including many in the
-                    world's
+                    world&apos;s
                   </p>
                 </div>
                 <div className='flex gap-3 justify-start items-center my-5'>

@@ -5,6 +5,7 @@ import { BsTwitter, BsLinkedin, BsWhatsapp, BsGithub } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import Styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -101,7 +102,7 @@ export default function Home() {
                 height={200}
                 alt='template 1'
               />
-              <a href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>Local Laundry Template</a>
+              <Link href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Local Laundry Template</Link>
             </div>
             <div>
               <Image
@@ -110,7 +111,7 @@ export default function Home() {
                 height={200}
                 alt='template 2'
               />
-              <a href='/templates/it-template' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>IT Template</a>
+              <Link href='/templates/it-template' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>IT Template</Link>
             </div>
             <div>
               <Image
@@ -119,7 +120,7 @@ export default function Home() {
                 height={200}
                 alt='template 3'
               />
-              <a href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1'>Foreign Laundry Template</a>
+              <Link href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Foreign Laundry Template</Link>
             </div>
           </div>
         </div>
