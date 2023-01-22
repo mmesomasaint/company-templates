@@ -60,10 +60,13 @@ export default function Home() {
           <div className='flex flex-col items-end sm:items-stretch gap-0 flex-grow'>
             <div className='w-full backdrop-blur-md flex sm:hidden justify-end items-center'>
               <div
-                className='flex justify-center items-center w-12 h-12 bg-[#074DD9]'
+                className={`${isOpen ? 'bg-red-500' : 'bg-[#074DD9]'} flex justify-center items-center w-12 h-12`}
                 onClick={toggleOpen}
               >
+                {isOpen ?
+                <AiOutlineClose className='text-white text-2xl' /> :
                 <AiOutlineMenu className='text-white text-2xl' />
+                }
               </div>
             </div>
             <div className='hidden sm:flex justify-between items-center gap-3 lg:gap-6 bg-[#021842] pl-3'>
