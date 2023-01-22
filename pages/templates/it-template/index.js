@@ -11,7 +11,7 @@ import {
   AiOutlineFileSearch,
   AiOutlineHome,
   AiOutlineMail,
-  AiOutlineMenu
+  AiOutlineMenu,
 } from 'react-icons/ai'
 import {
   BsTelephone,
@@ -35,7 +35,7 @@ import { ImHappy2 } from 'react-icons/im'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
-  const toggleOpen = useCallback(() => setIsOpen(open => !open), [])
+  const toggleOpen = useCallback(() => setIsOpen((open) => !open), [])
 
   return (
     <div className={Styles.bodyFont}>
@@ -59,9 +59,12 @@ export default function Home() {
           </div>
           <div className='flex flex-col items-end sm:items-stretch gap-0 flex-grow'>
             <div className='w-full backdrop-blur-md flex sm:hidden justify-end items-center'>
-            <div className='flex justify-center items-center w-12 h-12 bg-[#074DD9]' onClick={toggleOpen}>
-              <AiOutlineMenu className='text-white text-2xl' />
-            </div>
+              <div
+                className='flex justify-center items-center w-12 h-12 bg-[#074DD9]'
+                onClick={toggleOpen}
+              >
+                <AiOutlineMenu className='text-white text-2xl' />
+              </div>
             </div>
             <div className='hidden sm:flex justify-between items-center gap-3 lg:gap-6 bg-[#021842] pl-3'>
               <div className='flex justify-evenly items-center gap-2 lg:gap-5'>
@@ -92,7 +95,11 @@ export default function Home() {
                 <span>|</span>
               </div>
             </div>
-            <div className={`${isOpen ? 'flex' : 'hidden'} absolute sm:static top-[100%] left-0 right-0 sm:flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-3 lg:gap-6 p-4 sm:p-0 backdrop-blur-md`}>
+            <div
+              className={`${
+                isOpen ? 'flex' : 'hidden'
+              } absolute sm:static top-[100%] left-0 right-0 sm:flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-3 lg:gap-6 p-4 sm:p-0 backdrop-blur-md`}
+            >
               <div className='flex flex-col sm:flex-row gap-3 lg:gap-6 items-start sm:items-center justify-evenly px-0 sm:px-3 w-full sm:w-auto'>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 cursor-pointer'>
                   Home+
@@ -132,50 +139,50 @@ export default function Home() {
         <div className='max-w-[90rem] mx-auto'>
           <div className="h-[37rem] w-full bg-[url('/imgs/it-server.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-[rgba(13,16,38,0.75)] w-full h-full'>
-              <div className='w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
+              <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
                 <div>
                   <p className='capitalize text-white text-lg text-semibold'>
                     Total solution here
                   </p>
                 </div>
                 <div>
-                  <h1 className='capitalize text-5xl font-[900] w-[80%] md:w-[70%] mx-auto md:mx-0 mb-4 mt-1 text-center md:text-left text-white leading-none'>
+                  <h1 className='capitalize text-5xl font-[900] w-[90%] sm:w-[80%] md:w-[70%] mx-auto md:mx-0 mb-4 mt-1 text-center md:text-left text-white leading-none'>
                     Best <span className='text-red-500'>IT Solution</span>{' '}
                     Company
                   </h1>
                 </div>
                 <div>
-                  <p className='text-center md:text-left text-white text-sm font-light w-[80%] md:w-[70%] mx-auto md:mx-0'>
+                  <p className='text-center md:text-left text-white text-sm font-light w-[90%] sm:w-[80%] md:w-[70%] mx-auto md:mx-0'>
                     We have the tendency to believe that smart looking websites
                     is the best impression, businesses including many in the
                     world's
                   </p>
                 </div>
                 <div className='flex gap-3 justify-start items-center my-5'>
-                  <button className='text-sm font-medium px-5 py-3 text-white bg-[#074DD9] hover:scale-105'>
+                  <button className='text-sm font-medium px-2 py-2 sm:px-5 sm:py-3 text-white bg-[#074DD9] hover:scale-105'>
                     Discus your project
                   </button>
-                  <button className='text-sm font-medium px-5 py-3 bg-white text-[#074DD9] hover:scale-105'>
+                  <button className='text-sm font-medium px-2 py-2 sm:px-5 sm:py-3 bg-white text-[#074DD9] hover:scale-105'>
                     Our services
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className='z-10 relative -top-12 w-[80%] xl:w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
+          <div className='z-10 relative -top-12 w-[90%] sm:w-[80%] xl:w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
             <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
+              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
+                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
                   <ImHappy2 className='text-[#074DD9]' />
                 </div>
                 <div className='col-span-2'>
-                  <div>
-                    <p className='text-sm lg:text-base font-normal text-white capitalize'>
+                  <div className='text-center sm:text-left'>
+                    <p className='text-xs sm:text-sm lg:text-base font-normal text-white capitalize'>
                       Happy Clients
                     </p>
                   </div>
-                  <div>
-                    <p className='text-3xl lg:text-4xl font-bold text-white tracking-widest'>
+                  <div className='text-center sm:text-left'>
+                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-wider sm:tracking-widest leading-none'>
                       12345
                     </p>
                   </div>
@@ -183,18 +190,18 @@ export default function Home() {
               </div>
             </div>
             <div className='bg-white px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
+              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
+                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
                   <BsCheckLg className='text-white' />
                 </div>
                 <div className='col-span-2'>
-                  <div>
-                    <p className='text-sm lg:text-base font-normal text-[#074DD9] capitalize'>
+                  <div className='text-center sm:text-left'>
+                    <p className='text-xs sm:text-sm lg:text-base font-normal text-[#074DD9] capitalize'>
                       Properly Done
                     </p>
                   </div>
-                  <div>
-                    <p className='text-3xl lg:text-4xl font-bold text-black tracking-widest'>
+                  <div className='text-center sm:text-left'>
+                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-black tracking-wider sm:tracking-widest leading-none'>
                       12345
                     </p>
                   </div>
@@ -202,18 +209,18 @@ export default function Home() {
               </div>
             </div>
             <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
+              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
+                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
                   <BsAwardFill className='text-[#074DD9]' />
                 </div>
                 <div className='col-span-2'>
-                  <div>
-                    <p className='text-sm lg:text-base font-normal text-white capitalize'>
+                  <div className='text-center sm:text-left'>
+                    <p className='text-xs sm:text-sm lg:text-base font-normal text-white capitalize'>
                       Win Awards
                     </p>
                   </div>
-                  <div>
-                    <p className='text-3xl lg:text-4xl font-bold text-white tracking-widest'>
+                  <div className='text-center sm:text-left'>
+                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-wider sm:tracking-widest leading-none'>
                       12345
                     </p>
                   </div>
@@ -221,7 +228,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='col-span-3'>
               <div>
                 <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
@@ -235,9 +242,17 @@ export default function Home() {
                   <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
                 </div>
               </div>
+            <div className='block my-10 sm:hidden'>
+              <Image
+                src='/imgs/board.jpg'
+                width={800}
+                height={800}
+                alt='Board'
+              />
+            </div>
               <div>
-                <div className='mt-4 mb-3 lg:mt-8 lg:mb-5'>
-                  <p className='text-[0.7rem] lg:text-sm font-medium leading-tight'>
+                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Fusce vehicula magna sit amet dictum dapibus. Curabitur eget
                     quam sapien. In non lobortis urna. Aenean ultrices viverra
@@ -246,7 +261,7 @@ export default function Home() {
                     accumsan tellus
                   </p>
                 </div>
-                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-4 lg:mb-8'>
+                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
                   <div className='flex gap-2 lg:gap-4 justify-start items-center'>
                     <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
                     <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
@@ -272,7 +287,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className='flex gap-2 justify-start items-center mb-3 lg:mb-7'>
+                <div className='flex gap-2 justify-start items-center mb-7 sm:mb-3 lg:mb-7'>
                   <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
                     <BsTelephone className='text-white text-sm lg:text-lg' />
                   </div>
@@ -292,7 +307,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='col-span-2'>
+            <div className='hidden sm:block col-span-2'>
               <Image
                 src='/imgs/board.jpg'
                 width={800}
@@ -301,12 +316,12 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 WHY CHOOSE US
               </p>
-              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
                 We Are Here to Grow Your Business Exponentially
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -357,12 +372,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 OUR SERVICES
               </p>
-              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
                 We Take Pride In Efficient Client Satisfaction
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -370,7 +385,7 @@ export default function Home() {
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
               </div>
             </div>
-            <div className='grid grid-cols-2 lg:grid-cols-3 place-items-stretch gap-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-10'>
               <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
                 <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
                   <BsShieldCheck className='text-white text-lg' />
@@ -473,12 +488,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 PROMO PLAN
               </p>
-              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
                 We Are Offering Competitive Prices For Our Clients
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -657,9 +672,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='bg-white grid grid-cols-5 gap-10 place-items-stretch w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='col-span-3'>
-              <div className='mb-5 lg:mb-10'>
+              <div className='mb-10 sm:mb-5 lg:mb-10'>
                 <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                   REQUEST A QUOTE
                 </p>
@@ -685,9 +700,37 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            <div className='block sm:hidden my-6'>
+              <form className='bg-[#074DD9] p-3 lg:p-10 flex flex-col gap-2 lg:gap-4 justify-evenly'>
+                <input
+                  type='text'
+                  placeholder='First Name'
+                  className='w-full text-sm lg:text-base font-medium p-2'
+                />
+                <input
+                  type='text'
+                  placeholder='Last Name'
+                  className='w-full text-sm lg:text-base font-medium p-2'
+                />
+                <input
+                  type='text'
+                  placeholder='Email Address'
+                  className='w-full text-sm lg:text-base font-medium p-2'
+                />
+                <textarea
+                  type='text'
+                  placeholder='Message'
+                  rows={3}
+                  className='w-full text-sm lg:text-base font-medium p-2'
+                />
+                <button className='bg-[#021842] text-sm lg:text-base font-medium w-full py-2 text-white'>
+                  Request a Quote
+                </button>
+              </form>
+            </div>
               <div>
-                <div className='mb-3 lg:mt-8 lg:mb-5'>
-                  <p className='text-[0.7rem] lg:text-sm font-medium leading-tight'>
+                <div className='mt-8 mb-5 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Fusce vehicula magna sit amet dictum dapibus. Curabitur eget
                     quam sapien. In non lobortis urna. Aenean ultrices viverra
@@ -711,7 +754,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='col-span-2'>
+            <div className='hidden sm:block col-span-2'>
               <form className='bg-[#074DD9] p-3 lg:p-10 flex flex-col gap-2 lg:gap-4 justify-evenly'>
                 <input
                   type='text'
@@ -740,12 +783,12 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 TESTIMONIALS
               </p>
-              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
                 What Our Clients Say About Our Digital Services
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -754,12 +797,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 TEAM MEMBERS
               </p>
-              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
                 Professional Staffs Ready to Help Your Business
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -767,21 +810,21 @@ export default function Home() {
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
               </div>
             </div>
-            <div className='grid grid-cols-3 gap-7 place-items-stretch'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 gap-7 place-items-stretch'>
               <div className=''>
                 <div className=''>
                   <Image
                     src='/imgs/team-lead.jpg'
-                    width={400}
-                    height={300}
+                    width={1000}
+                    height={1000}
                     alt='team member'
                   />
                 </div>
                 <div className='text-center p-3 bg-[rgba(7,77,217,0.15)]'>
-                  <h5 className='text-base lg:text-xl font-semibold leading-none text-[#074DD9] capitalize'>
+                  <h5 className='text-2xl sm:text-base lg:text-xl font-semibold leading-none text-[#074DD9] capitalize'>
                     Sofia Ade
                   </h5>
-                  <p className='text-xs lg:text-base font-medium leading-tight'>
+                  <p className='text-base sm:text-xs lg:text-base font-medium leading-tight'>
                     Team Lead
                   </p>
                 </div>
@@ -790,16 +833,16 @@ export default function Home() {
                 <div className=''>
                   <Image
                     src='/imgs/project-manager.jpg'
-                    width={400}
-                    height={300}
+                    width={1000}
+                    height={1000}
                     alt='team member'
                   />
                 </div>
                 <div className='text-center p-3 bg-[rgba(7,77,217,0.15)]'>
-                  <h5 className='text-base lg:text-xl font-semibold leading-none text-[#074DD9] capitalize'>
+                  <h5 className='text-2xl sm:text-base lg:text-xl font-semibold leading-none text-[#074DD9] capitalize'>
                     Catherin Brown
                   </h5>
-                  <p className='text-xs lg:text-base font-medium leading-tight'>
+                  <p className='text-base sm:text-xs lg:text-base font-medium leading-tight'>
                     Project Manager
                   </p>
                 </div>
@@ -808,28 +851,28 @@ export default function Home() {
                 <div className=''>
                   <Image
                     src='/imgs/software-engr.jpg'
-                    width={400}
-                    height={300}
+                    width={1000}
+                    height={1000}
                     alt='team member'
                   />
                 </div>
                 <div className='text-center p-3 bg-[rgba(7,77,217,0.15)]'>
-                  <h5 className='text-base lg:text-xl font-semibold leading-none text-[#074DD9] capitalize'>
+                  <h5 className='text-2xl sm:text-base lg:text-xl font-semibold leading-none text-[#074DD9] capitalize'>
                     Georgia Miller
                   </h5>
-                  <p className='text-xs lg:text-base font-medium leading-tight'>
+                  <p className='text-base sm:text-xs lg:text-base font-medium leading-tight'>
                     Software Engineer
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='w-[80%] xl:w-[70%] mx-auto my-32'>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 LATEST BLOG
               </p>
-              <h3 className='w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
                 Read The Latest Articles from Our Blog Post
               </h3>
               <div className='flex gap-3 justify-center items-center'>
@@ -837,7 +880,7 @@ export default function Home() {
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
               </div>
             </div>
-            <div className='grid grid-cols-2 lg:grid-cols-3 gap-8 place-items-stretch'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-stretch'>
               <div className='relative flex flex-col'>
                 <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
                   <p className='text-base font-bold leading-none text-white py-1 px-3'>
@@ -988,7 +1031,7 @@ export default function Home() {
       </main>
       <footer className='relative z-[10] bg-[#021842] h-fit'>
         <div className='max-w-[90rem] mx-auto'>
-          <div className='grid grid-cols-1 lg:grid-cols-12 gap-x-0 gap-y-5 lg:gap-5 place-items-stretch w-[80%] xl:w-[70%] mx-auto pb-10 lg:pb-0 h-full'>
+          <div className='grid grid-cols-1 lg:grid-cols-12 gap-x-0 gap-y-5 lg:gap-5 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto pb-10 lg:pb-0 h-full'>
             <div className='z-[30] col-span-4 bg-[#074DD9] flex flex-col gap-5 px-10 lg:px-2 xl:px-5 pt-16 pb-14 w-fit h-full'>
               <div className='text-4xl font-normal leading-none w-fit mx-auto lg:ml-0'>
                 <span className='bg-gradient-to-br from-[#021842] to-white text-transparent inline-block bg-clip-text'>
@@ -1016,7 +1059,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className='col-span-8 w-full grid grid-cols-3 gap-10 py-10'>
+            <div className='col-span-8 w-full grid grid-cols-1 sm:grid-cols-3 gap-10 py-10'>
               <div>
                 <div>
                   <h3 className='text-white text-xl font-extrabold leading-none mb-2 capitalize'>
@@ -1127,13 +1170,13 @@ export default function Home() {
             </div>
           </div>
           <div className='absolute bottom-0 left-0 z-[20] w-full bg-[#0D1026]'>
-            <div className='grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-5 place-items-stretch w-[80%] xl:w-[70%] mx-auto h-full'>
+            <div className='grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-5 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto h-full'>
               <div className='lg:col-start-5 lg:col-span-8'>
                 <span className='w-full text-center block py-4'>
-                  <p className='text-sm font-medium text-gray-400'>
+                  <p className='text-xs sm:text-sm font-medium text-gray-400'>
                     &copy;2023 ITsolve services{' '}
-                    <span className='mx-4 text-WHITE'>&middot;</span> All Rights
-                    Reserved <span className='mx-4 text-WHITE'>&middot;</span>{' '}
+                    <span className='mx-1 sm:mx-4 text-WHITE'>&middot;</span> All Rights
+                    Reserved <span className='mx-1 sm:mx-4 text-WHITE'>&middot;</span>{' '}
                     Designed by mmesoma saint
                   </p>
                 </span>
