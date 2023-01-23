@@ -108,7 +108,7 @@ export default function Home() {
               } absolute sm:static top-[100%] left-0 right-0 sm:flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-3 lg:gap-6 p-4 sm:p-0 backdrop-blur-md`}
             >
               <div className='flex flex-col sm:flex-row gap-3 lg:gap-6 items-start sm:items-center justify-evenly px-0 sm:px-3 w-full sm:w-auto'>
-                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-red-500 underline hover:scale-105 hover:text-red-500 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
                   <Link href='/templates/it-template'>Home+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
@@ -122,7 +122,7 @@ export default function Home() {
                     IT Solutions+
                   </Link>
                 </span>
-                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-red-500 underline hover:scale-105 hover:text-red-500 cursor-pointer'>
                   <Link href='/templates/it-template/blog'>Blog+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>

@@ -123,10 +123,10 @@ export default function Home() {
                   </Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/template/it-template/blog'>Blog+</Link>
+                  <Link href='/templates/it-template/blog'>Blog+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/template/it-template/contact-us'>
+                  <Link href='/templates/it-template/contact-us'>
                     Contact Us+
                   </Link>
                 </span>
