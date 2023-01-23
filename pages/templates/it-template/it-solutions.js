@@ -491,7 +491,7 @@ export default function Home() {
               <div>
                 <div className='flex justify-start items-center gap-3 w-fit'>
                   <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                    <BsShieldCheck className='text-white text-lg' />
+                    <AiOutlineFileSearch className='text-white text-lg' />
                   </div>
                   <div>
                     <h3 className='text-black text-2xl lg:text-3xl font-bold leading-none mb-3 capitalize'>
