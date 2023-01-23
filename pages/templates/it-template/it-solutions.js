@@ -108,7 +108,7 @@ export default function Home() {
               } absolute sm:static top-[100%] left-0 right-0 sm:flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-3 lg:gap-6 p-4 sm:p-0 backdrop-blur-md`}
             >
               <div className='flex flex-col sm:flex-row gap-3 lg:gap-6 items-start sm:items-center justify-evenly px-0 sm:px-3 w-full sm:w-auto'>
-                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-red-500 underline hover:scale-105 hover:text-red-500 cursor-pointer'>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
                   <Link href='/templates/it-template'>Home+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
@@ -117,14 +117,18 @@ export default function Home() {
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
                   <Link href='/templates/it-template/company'>Company+</Link>
                 </span>
-                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/templates/it-template/it-solutions'>IT Solutions+</Link>
+                <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-red-500 underline hover:scale-105 hover:text-red-500 cursor-pointer'>
+                  <Link href='/templates/it-template/it-solutions'>
+                    IT Solutions+
+                  </Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
                   <Link href='/template/it-template/blog'>Blog+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/template/it-template/contact-us'>Contact Us+</Link>
+                  <Link href='/template/it-template/contact-us'>
+                    Contact Us+
+                  </Link>
                 </span>
               </div>
               <div className='flex gap-3 sm:gap-6 items-center justify-evenly w-full sm:w-auto'>
@@ -144,18 +148,19 @@ export default function Home() {
       </header>
       <main>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-[37rem] w-full bg-[url('/imgs/it-server.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
+          <div className="h-[37rem] w-full bg-[url('/imgs/server-engineer.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-[rgba(13,16,38,0.75)] w-full h-full'>
               <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
                 <div>
                   <p className='capitalize text-white text-lg text-semibold'>
-                    Total solution here
+                    Our Services
                   </p>
                 </div>
                 <div>
                   <h1 className='capitalize text-5xl font-[900] w-[90%] sm:w-[80%] md:w-[70%] mx-auto md:mx-0 mb-4 mt-1 text-center md:text-left text-white leading-none'>
-                    Best <span className='text-red-500'>IT Solution</span>{' '}
-                    Company
+                    We Take Pride In{' '}
+                    <span className='text-red-500'>Efficient</span> Client
+                    Satisfaction
                   </h1>
                 </div>
                 <div>
@@ -169,103 +174,43 @@ export default function Home() {
                   <button className='text-sm font-medium px-2 py-2 sm:px-5 sm:py-3 text-white bg-[#074DD9] hover:scale-105'>
                     Discus your project
                   </button>
-                  <button className='text-sm font-medium px-2 py-2 sm:px-5 sm:py-3 bg-white text-[#074DD9] hover:scale-105'>
-                    Our services
-                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className='z-10 relative -top-12 w-[90%] sm:w-[80%] xl:w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
-            <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
-                  <ImHappy2 className='text-[#074DD9]' />
-                </div>
-                <div className='col-span-2'>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-xs sm:text-sm lg:text-base font-normal text-white capitalize'>
-                      Happy Clients
-                    </p>
-                  </div>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-wider sm:tracking-widest leading-none'>
-                      12345
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='bg-white px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
-                  <BsCheckLg className='text-white' />
-                </div>
-                <div className='col-span-2'>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-xs sm:text-sm lg:text-base font-normal text-[#074DD9] capitalize'>
-                      Properly Done
-                    </p>
-                  </div>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-black tracking-wider sm:tracking-widest leading-none'>
-                      12345
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
-                  <BsAwardFill className='text-[#074DD9]' />
-                </div>
-                <div className='col-span-2'>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-xs sm:text-sm lg:text-base font-normal text-white capitalize'>
-                      Win Awards
-                    </p>
-                  </div>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-wider sm:tracking-widest leading-none'>
-                      12345
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-16 sm:my-24'>
             <div className='col-span-3'>
               <div>
-                <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                  ABOUT US
-                </p>
-                <h3 className='text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                  The Best IT Solution With 10 Years of Experience
-                </h3>
-                <div className='flex gap-3 justify-start items-center'>
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                <div className='flex justify-start items-center gap-3 w-fit'>
+                  <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                    <BsShieldCheck className='text-white text-lg' />
+                  </div>
+                  <div>
+                    <h3 className='text-black text-2xl lg:text-3xl font-bold leading-none mb-3 capitalize'>
+                      Cyber Security
+                    </h3>
+                    <div className='flex gap-3 justify-start items-center'>
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className='block my-10 sm:hidden'>
+              <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/board.jpg'
+                  src='/imgs/cyber-security.jpg'
                   width={800}
                   height={800}
-                  alt='Board'
+                  alt='Cyber Security'
                 />
               </div>
               <div>
                 <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
                   <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce vehicula magna sit amet dictum dapibus. Curabitur eget
-                    quam sapien. In non lobortis urna. Aenean ultrices viverra
-                    erat vel posuere. Donec congue viverra tortor eget
-                    pellentesque. Duis vel mi quis massa posuere rhoncus eget
-                    accumsan tellus
+                    Curabitur eget quam sapien. In non lobortis urna. Aenean
+                    ultrices viverra erat vel posuere. Donec congue viverra
+                    tortor eget pellentesque. Duis vel mi quis massa posuere
+                    rhoncus eget accumsan tellus
                   </p>
                 </div>
                 <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
@@ -294,205 +239,328 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className='flex gap-2 justify-start items-center mb-7 sm:mb-3 lg:mb-7'>
-                  <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
-                    <BsTelephone className='text-white text-sm lg:text-lg' />
-                  </div>
-                  <div>
-                    <span className='block text-sm lg:text-base font-semibold leading-none lowercase mb-2'>
-                      Call to ask any question
-                    </span>
-                    <span className='block text-[#074DD9] text-base lg:text-lg font-bold leading-none lower tracking-wide'>
-                      +234884245245
-                    </span>
-                  </div>
-                </div>
                 <div>
                   <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
-                    Present an Idea
+                    Need this service
                   </button>
                 </div>
               </div>
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/board.jpg'
+                src='/imgs/cyber-security.jpg'
                 width={800}
                 height={800}
-                alt='Board'
+                alt='Cyber Security'
               />
             </div>
           </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                WHY CHOOSE US
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                We Are Here to Grow Your Business Exponentially
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-              </div>
-            </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 place-items-stretch gap-10'>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-16 sm:my-24'>
+            <div className='col-span-3'>
               <div>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
-                  <AiFillCloud className='text-white text-sm lg:text-lg' />
-                </div>
-                <div>
-                  <p className='text-lg font-semibold text-black mb-3'>
-                    Best in Industry
-                  </p>
-                  <p className='text-sm lg:text-base font-medium leading-tight'>
-                    Curabitur eget quam sapien. In non lobortis urna. Aenean
-                    ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
-                  </p>
+                <div className='flex justify-start items-center gap-3 w-fit'>
+                  <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                    <AiOutlineDatabase className='text-white text-lg' />
+                  </div>
+                  <div>
+                    <h3 className='text-black text-2xl lg:text-3xl font-bold leading-none mb-3 capitalize'>
+                      Data Analysis
+                    </h3>
+                    <div className='flex gap-3 justify-start items-center'>
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className='order-first md:order-none'>
+              <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/meeting.jpg'
-                  width={900}
-                  height={900}
-                  alt='meeting'
+                  src='/imgs/data-analysis.jpg'
+                  width={800}
+                  height={800}
+                  alt='Data Analysis'
                 />
               </div>
               <div>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
-                  <AiFillStar className='text-white text-sm lg:text-lg' />
-                </div>
-                <div>
-                  <p className='text-lg font-semibold text-black mb-3'>
-                    Professional Staff
-                  </p>
-                  <p className='text-sm lg:text-base font-medium leading-tight'>
-                    Curabitur eget quam sapien. In non lobortis urna. Aenean
-                    ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                OUR SERVICES
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                We Take Pride In Efficient Client Satisfaction
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-              </div>
-            </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-10'>
-              <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <BsShieldCheck className='text-white text-lg' />
-                </div>
-                <div>
-                  <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    Cyber Security
-                  </p>
-                  <p className='text-sm font-medium text-black'>
-                    Curabitur eget quam sapien. In non lobortis urna. Aenean
-                    ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
-                  </p>
-                </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <AiOutlineDatabase className='text-white text-lg' />
-                </div>
-                <div>
-                  <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    Data Analysis
-                  </p>
-                  <p className='text-sm font-medium text-black'>
+                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
                     Pellentesque viverra erat vel posueren non lobortis urna.
                     Aenean ultrices eget quam sapien. Iviverra erat vel posuere.
                     Donec congue viverra tortor eget pellentesque. Duis vel mi
                     quis massa posuere rhoncus eget accumsan tellus
                   </p>
                 </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <BsCodeSlash className='text-white text-lg' />
+                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Award Winning
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      24/7 Support
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Professional Staff
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Fair Prices
+                    </p>
+                  </div>
                 </div>
                 <div>
-                  <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    Web Development
-                  </p>
-                  <p className='text-sm font-medium text-black'>
+                  <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
+                    Need this service
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='hidden sm:block col-span-2'>
+              <Image
+                src='/imgs/data-analysis.jpg'
+                width={800}
+                height={800}
+                alt='Data Analysis'
+              />
+            </div>
+          </div>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-16 sm:my-24'>
+            <div className='col-span-3'>
+              <div>
+                <div className='flex justify-start items-center gap-3 w-fit'>
+                  <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                    <BsCodeSlash className='text-white text-lg' />
+                  </div>
+                  <div>
+                    <h3 className='text-black text-2xl lg:text-3xl font-bold leading-none mb-3 capitalize'>
+                      Web Development
+                    </h3>
+                    <div className='flex gap-3 justify-start items-center'>
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='block mt-5 mb-0 sm:hidden'>
+                <Image
+                  src='/imgs/web-dev.jpg'
+                  width={800}
+                  height={800}
+                  alt='Web Development'
+                />
+              </div>
+              <div>
+                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
                     Rhoncus in non lobortis curabitur eget quam sapien urna.
                     Aenean ultrices viverra erat vel posuere. Donec congue
                     viverra tortor eget pellentesque. Duis vel mi quis massa
                     posuere eget accumsan tellus
                   </p>
                 </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <MdDeveloperMode className='text-white text-lg' />
+                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Award Winning
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      24/7 Support
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Professional Staff
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Fair Prices
+                    </p>
+                  </div>
                 </div>
                 <div>
-                  <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    App Development
-                  </p>
-                  <p className='text-sm font-medium text-black'>
+                  <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
+                    Need this service
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='hidden sm:block col-span-2'>
+              <Image
+                src='/imgs/web-dev.jpg'
+                width={800}
+                height={800}
+                alt='Web Development'
+              />
+            </div>
+          </div>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-16 sm:my-24'>
+            <div className='col-span-3'>
+              <div>
+                <div className='flex justify-start items-center gap-3 w-fit'>
+                  <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                    <MdDeveloperMode className='text-white text-lg' />
+                  </div>
+                  <div>
+                    <h3 className='text-black text-2xl lg:text-3xl font-bold leading-none mb-3 capitalize'>
+                      App Development
+                    </h3>
+                    <div className='flex gap-3 justify-start items-center'>
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='block mt-5 mb-0 sm:hidden'>
+                <Image
+                  src='/imgs/app-dev.jpg'
+                  width={800}
+                  height={800}
+                  alt='App Development'
+                />
+              </div>
+              <div>
+                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
                     Quam sapien in non lobortis urna. Aenean ultrices viverra
                     erat vel posuere. Donec congue viverra tortor Curabitur eget
                     eget pellentesque. Duis vel mi quis massa posuere rhoncus
                     eget accumsan tellus
                   </p>
                 </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <AiOutlineFileSearch className='text-white text-lg' />
+                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Award Winning
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      24/7 Support
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Professional Staff
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Fair Prices
+                    </p>
+                  </div>
                 </div>
                 <div>
-                  <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    SEO Optimization
-                  </p>
-                  <p className='text-sm font-medium text-black'>
+                  <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
+                    Need this service
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='hidden sm:block col-span-2'>
+              <Image
+                src='/imgs/app-dev.jpg'
+                width={800}
+                height={800}
+                alt='App Development'
+              />
+            </div>
+          </div>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-16 sm:my-24'>
+            <div className='col-span-3'>
+              <div>
+                <div className='flex justify-start items-center gap-3 w-fit'>
+                  <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                    <BsShieldCheck className='text-white text-lg' />
+                  </div>
+                  <div>
+                    <h3 className='text-black text-2xl lg:text-3xl font-bold leading-none mb-3 capitalize'>
+                      SEO Optimization
+                    </h3>
+                    <div className='flex gap-3 justify-start items-center'>
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                      <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='block mt-5 mb-0 sm:hidden'>
+                <Image
+                  src='/imgs/seo.jpg'
+                  width={800}
+                  height={800}
+                  alt='SEO Optimization'
+                />
+              </div>
+              <div>
+                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
                     Sapien non lobortis urna. Curabitur eget quam Aenean
                     ultrices viverra erat vel posuere. Donec congue viverra
                     tortor eget pellentesque. Duis vel mi quis massa posuere
                     rhoncus eget accumsan tellus
                   </p>
                 </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.85)] p-10'>
+                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Award Winning
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      24/7 Support
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Professional Staff
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Fair Prices
+                    </p>
+                  </div>
+                </div>
                 <div>
-                  <p className='text-lg font-semibold text-white mb-3 capitalize'>
-                    Call Us For Quote
-                  </p>
-                  <p className='text-sm font-light text-white mb-3'>
-                    Donec congue viverra, Curabitur eget quam sapien. In non
-                    lobortis urna. Aenean ultrices viverra erat vel posuere.
-                    tortor eget pellentesque
-                  </p>
-                  <p className='text-lg font-semibold text-white mb-3 capitalize'>
-                    <span className='flex justify-center gap-2 items-center'>
-                      <span>+234</span>
-                      <span>900</span>
-                      <span>834</span>
-                      <span>8343</span>
-                    </span>
-                  </p>
+                  <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
+                    Need this service
+                  </button>
                 </div>
               </div>
+            </div>
+            <div className='hidden sm:block col-span-2'>
+              <Image
+                src='/imgs/seo.jpg'
+                width={800}
+                height={800}
+                alt='SEO Optimization'
+              />
             </div>
           </div>
           <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
@@ -679,6 +747,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
+            <div className='text-center mb-8'>
+              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
+                TESTIMONIALS
+              </p>
+              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+                What Our Clients Say About Our Digital Services
+              </h3>
+              <div className='flex gap-3 justify-center items-center'>
+                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+              </div>
+            </div>
+          </div>
           <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='col-span-3'>
               <div className='mb-10 sm:mb-5 lg:mb-10'>
@@ -790,17 +872,147 @@ export default function Home() {
               </form>
             </div>
           </div>
+          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
+            <div className='col-span-3'>
+              <div>
+                <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
+                  ABOUT US
+                </p>
+                <h3 className='text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
+                  The Best IT Solution With 10 Years of Experience
+                </h3>
+                <div className='flex gap-3 justify-start items-center'>
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                </div>
+              </div>
+              <div className='block my-10 sm:hidden'>
+                <Image
+                  src='/imgs/board.jpg'
+                  width={800}
+                  height={800}
+                  alt='Board'
+                />
+              </div>
+              <div>
+                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
+                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce vehicula magna sit amet dictum dapibus. Curabitur eget
+                    quam sapien. In non lobortis urna. Aenean ultrices viverra
+                    erat vel posuere. Donec congue viverra tortor eget
+                    pellentesque. Duis vel mi quis massa posuere rhoncus eget
+                    accumsan tellus
+                  </p>
+                </div>
+                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Award Winning
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      24/7 Support
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Professional Staff
+                    </p>
+                  </div>
+                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
+                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
+                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
+                      Fair Prices
+                    </p>
+                  </div>
+                </div>
+                <div className='flex gap-2 justify-start items-center mb-7 sm:mb-3 lg:mb-7'>
+                  <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
+                    <BsTelephone className='text-white text-sm lg:text-lg' />
+                  </div>
+                  <div>
+                    <span className='block text-sm lg:text-base font-semibold leading-none lowercase mb-2'>
+                      Call to ask any question
+                    </span>
+                    <span className='block text-[#074DD9] text-base lg:text-lg font-bold leading-none lower tracking-wide'>
+                      +234884245245
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
+                    Present an Idea
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='hidden sm:block col-span-2'>
+              <Image
+                src='/imgs/board.jpg'
+                width={800}
+                height={800}
+                alt='Board'
+              />
+            </div>
+          </div>
           <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                TESTIMONIALS
+                WHY CHOOSE US
               </p>
               <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                What Our Clients Say About Our Digital Services
+                We Are Here to Grow Your Business Exponentially
               </h3>
               <div className='flex gap-3 justify-center items-center'>
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
                 <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+              </div>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-3 place-items-stretch gap-10'>
+              <div>
+                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
+                  <AiFillCloud className='text-white text-sm lg:text-lg' />
+                </div>
+                <div>
+                  <p className='text-lg font-semibold text-black mb-3'>
+                    Best in Industry
+                  </p>
+                  <p className='text-sm lg:text-base font-medium leading-tight'>
+                    Curabitur eget quam sapien. In non lobortis urna. Aenean
+                    ultrices viverra erat vel posuere. Donec congue viverra
+                    tortor eget pellentesque. Duis vel mi quis massa posuere
+                    rhoncus eget accumsan tellus
+                  </p>
+                </div>
+              </div>
+              <div className='order-first md:order-none'>
+                <Image
+                  src='/imgs/meeting.jpg'
+                  width={900}
+                  height={900}
+                  alt='meeting'
+                />
+              </div>
+              <div>
+                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
+                  <AiFillStar className='text-white text-sm lg:text-lg' />
+                </div>
+                <div>
+                  <p className='text-lg font-semibold text-black mb-3'>
+                    Professional Staff
+                  </p>
+                  <p className='text-sm lg:text-base font-medium leading-tight'>
+                    Curabitur eget quam sapien. In non lobortis urna. Aenean
+                    ultrices viverra erat vel posuere. Donec congue viverra
+                    tortor eget pellentesque. Duis vel mi quis massa posuere
+                    rhoncus eget accumsan tellus
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -110,13 +110,13 @@ export default function Home() {
                   <Link href='/templates/it-template/company'>Company+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/it-solutions'>IT Solutions+</Link>
+                  <Link href='/templates/it-template/it-solutions'>IT Solutions+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/blog'>Blog+</Link>
+                  <Link href='/template/it-template/blog'>Blog+</Link>
                 </span>
                 <span className='text-sm sm:text-xs lg:text-sm font-medium leading-none text-white hover:scale-105 hover:text-red-500 cursor-pointer'>
-                  <Link href='/contact-us'>Contact Us+</Link>
+                  <Link href='/template/it-template/contact-us'>Contact Us+</Link>
                 </span>
               </div>
               <div className='flex gap-3 sm:gap-6 items-center justify-evenly w-full sm:w-auto'>
