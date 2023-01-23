@@ -4,8 +4,10 @@ import Image from 'next/image'
 import Styles from '../../../styles/it.module.css'
 import {
   AiFillCloud,
+  AiFillFire,
   AiFillStar,
   AiOutlineBell,
+  AiOutlineBlock,
   AiOutlineClose,
   AiOutlineDatabase,
   AiOutlineFileSearch,
@@ -29,6 +31,7 @@ import {
 import {
   MdDeveloperMode,
   MdOutlineAccessTime,
+  MdOutlineCategory,
   MdOutlineLocationOn,
 } from 'react-icons/md'
 import { ImHappy2 } from 'react-icons/im'
@@ -148,18 +151,19 @@ export default function Home() {
       </header>
       <main>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-[37rem] w-full bg-[url('/imgs/it-server.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
+          <div className="h-[37rem] w-full bg-[url('/imgs/blogger.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-[rgba(13,16,38,0.75)] w-full h-full'>
               <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
                 <div>
                   <p className='capitalize text-white text-lg text-semibold'>
-                    Total solution here
+                    Blog
                   </p>
                 </div>
                 <div>
                   <h1 className='capitalize text-5xl font-[900] w-[90%] sm:w-[80%] md:w-[70%] mx-auto md:mx-0 mb-4 mt-1 text-center md:text-left text-white leading-none'>
-                    Best <span className='text-red-500'>IT Solution</span>{' '}
-                    Company
+                    Read The{' '}
+                    <span className='text-red-500'>Latest Articles</span> from
+                    Our Blog Post
                   </h1>
                 </div>
                 <div>
@@ -180,505 +184,247 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='z-10 relative -top-12 w-[90%] sm:w-[80%] xl:w-[70%] mx-auto grid grid-cols-3 gap-0 place-items-stretch'>
-            <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
-                  <ImHappy2 className='text-[#074DD9]' />
+          <div className='bg-white w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
+            <div>
+              <div className='flex justify-start items-center gap-3 w-fit'>
+                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                  <AiFillFire className='text-white text-lg' />
                 </div>
-                <div className='col-span-2'>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-xs sm:text-sm lg:text-base font-normal text-white capitalize'>
-                      Happy Clients
-                    </p>
-                  </div>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-wider sm:tracking-widest leading-none'>
-                      12345
-                    </p>
+                <div>
+                  <h3 className='text-black text-3xl lg:text-4xl font-bold leading-none mb-1 capitalize'>
+                    Trending
+                  </h3>
+                  <div className='flex gap-3 justify-start items-center'>
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
                   </div>
                 </div>
               </div>
             </div>
-            <div className='bg-white px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
-                  <BsCheckLg className='text-white' />
+            <div className='flex flex-col my-8'>
+              <div className='relative max-h-[400px] overflow-hidden'>
+                <div className='bg-[#074DD9] absolute left-0 top-[80%]'>
+                  <p className='text-3xl font-bold leading-none text-white py-1 px-3'>
+                    TECH MEETING
+                  </p>
                 </div>
-                <div className='col-span-2'>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-xs sm:text-sm lg:text-base font-normal text-[#074DD9] capitalize'>
-                      Properly Done
-                    </p>
-                  </div>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-black tracking-wider sm:tracking-widest leading-none'>
-                      12345
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='bg-[#074DD9] px-2 md:px-5 lg:px-10 py-2 md:py-4 flex justify-center items-center'>
-              <div className='grid grid-cols-1 sm:grid-cols-3 gap-1 place-items-center w-fit mx-auto'>
-                <div className='w-6 h-6 sm:w-9 sm:h-9 lg:w-12 lg:h-12 bg-white flex justify-center items-center'>
-                  <BsAwardFill className='text-[#074DD9]' />
-                </div>
-                <div className='col-span-2'>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-xs sm:text-sm lg:text-base font-normal text-white capitalize'>
-                      Win Awards
-                    </p>
-                  </div>
-                  <div className='text-center sm:text-left'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-wider sm:tracking-widest leading-none'>
-                      12345
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='bg-white grid grid-cols-1 sm:grid-cols-5 gap-10 place-items-stretch w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='col-span-3'>
-              <div>
-                <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                  ABOUT US
-                </p>
-                <h3 className='text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                  The Best IT Solution With 10 Years of Experience
-                </h3>
-                <div className='flex gap-3 justify-start items-center'>
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                  <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                </div>
-              </div>
-              <div className='block my-10 sm:hidden'>
                 <Image
-                  src='/imgs/board.jpg'
-                  width={800}
-                  height={800}
-                  alt='Board'
+                  src='/imgs/business-meeting.jpg'
+                  width={1000}
+                  height={1000}
+                  alt='blog thumbnail'
+                  className=''
                 />
               </div>
-              <div>
-                <div className='mt-8 mb-5 sm:mt-4 sm:mb-3 lg:mt-8 lg:mb-5'>
-                  <p className='text-sm sm:text-[0.7rem] lg:text-sm font-medium leading-tight'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce vehicula magna sit amet dictum dapibus. Curabitur eget
-                    quam sapien. In non lobortis urna. Aenean ultrices viverra
-                    erat vel posuere. Donec congue viverra tortor eget
-                    pellentesque. Duis vel mi quis massa posuere rhoncus eget
-                    accumsan tellus
-                  </p>
-                </div>
-                <div className='grid grid-cols-2 gap-x-1 lg:gap-x-3 lg:gap-y-2 gap-y-4 place-items-start mb-8 sm:mb-4 lg:mb-8'>
-                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
-                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
-                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
-                      Award Winning
+              <div className='flex flex-grow flex-col gap-4 p-9 bg-[rgba(7,77,217,0.15)]'>
+                <div className='flex gap-6 flex-start items-center'>
+                  <div className='flex gap-2 flex-start items-center'>
+                    <AiOutlineBell className='text-[#074DD9] text-lg' />
+                    <p className='text-base font-normal text-black'>
+                      2 days ago
                     </p>
                   </div>
-                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
-                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
-                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
-                      24/7 Support
+                  <div className='flex gap-2 flex-start items-center'>
+                    <BsPersonCircle className='text-[#074DD9] text-lg' />
+                    <p className='text-base font-normal text-black'>
+                      Dennis Akpan
                     </p>
-                  </div>
-                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
-                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
-                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
-                      Professional Staff
-                    </p>
-                  </div>
-                  <div className='flex gap-2 lg:gap-4 justify-start items-center'>
-                    <BsCheckLg className='text-[#074DD9] text-sm lg:text-base' />
-                    <p className='text-sm lg:text-lg font-semibold leading-none capitalize'>
-                      Fair Prices
-                    </p>
-                  </div>
-                </div>
-                <div className='flex gap-2 justify-start items-center mb-7 sm:mb-3 lg:mb-7'>
-                  <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center'>
-                    <BsTelephone className='text-white text-sm lg:text-lg' />
-                  </div>
-                  <div>
-                    <span className='block text-sm lg:text-base font-semibold leading-none lowercase mb-2'>
-                      Call to ask any question
-                    </span>
-                    <span className='block text-[#074DD9] text-base lg:text-lg font-bold leading-none lower tracking-wide'>
-                      +234884245245
-                    </span>
                   </div>
                 </div>
                 <div>
-                  <button className='px-4 lg:px-7 py-2 lg:py-3 text-white bg-[#074DD9] text-sm lg:text-base font-semibold'>
-                    Present an Idea
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className='hidden sm:block col-span-2'>
-              <Image
-                src='/imgs/board.jpg'
-                width={800}
-                height={800}
-                alt='Board'
-              />
-            </div>
-          </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                WHY CHOOSE US
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                We Are Here to Grow Your Business Exponentially
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-              </div>
-            </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 place-items-stretch gap-10'>
-              <div>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
-                  <AiFillCloud className='text-white text-sm lg:text-lg' />
+                  <h4 className='text-3xl font-extrabold leading-none text-black'>
+                    How to build a website
+                  </h4>
                 </div>
                 <div>
-                  <p className='text-lg font-semibold text-black mb-3'>
-                    Best in Industry
-                  </p>
-                  <p className='text-sm lg:text-base font-medium leading-tight'>
-                    Curabitur eget quam sapien. In non lobortis urna. Aenean
-                    ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
+                  <p className='text-base font-normal text-black'>
+                    Fusce quis venenatis mauris. Donec auctor laoreet diam, vel
+                    euismod arcu blandit viverra
                   </p>
                 </div>
+                <div className='flex justify-start items-center gap-3'>
+                  <p className='text-2xl font-medium text-[#074DD9]'>
+                    READ MORE
+                  </p>
+                  <BsArrowRightCircle className='text-[#074DD9] text-2xl' />
+                </div>
               </div>
-              <div className='order-first md:order-none'>
+            </div>
+            <div className='flex flex-col my-8'>
+              <div className='relative max-h-[400px] overflow-hidden'>
+                <div className='bg-[#074DD9] absolute left-0 top-[80%]'>
+                  <p className='text-3xl font-bold leading-none text-white py-1 px-3'>
+                    TECH MEETING
+                  </p>
+                </div>
                 <Image
-                  src='/imgs/meeting.jpg'
-                  width={900}
-                  height={900}
-                  alt='meeting'
+                  src='/imgs/two-meeting.jpg'
+                  width={1000}
+                  height={1000}
+                  alt='blog thumbnail'
+                  className=''
                 />
               </div>
-              <div>
-                <div className='w-9 h-9 lg:w-12 lg:h-12 bg-[#074DD9] flex justify-center items-center mb-1'>
-                  <AiFillStar className='text-white text-sm lg:text-lg' />
+              <div className='flex flex-grow flex-col gap-4 p-9 bg-[rgba(7,77,217,0.15)]'>
+                <div className='flex gap-6 flex-start items-center'>
+                  <div className='flex gap-2 flex-start items-center'>
+                    <AiOutlineBell className='text-[#074DD9] text-lg' />
+                    <p className='text-base font-normal text-black'>
+                      4 days ago
+                    </p>
+                  </div>
+                  <div className='flex gap-2 flex-start items-center'>
+                    <BsPersonCircle className='text-[#074DD9] text-lg' />
+                    <p className='text-base font-normal text-black'>
+                      Dennis Akpan
+                    </p>
+                  </div>
                 </div>
                 <div>
-                  <p className='text-lg font-semibold text-black mb-3'>
-                    Professional Staff
+                  <h4 className='text-3xl font-extrabold leading-none text-black'>
+                    How to build a server
+                  </h4>
+                </div>
+                <div>
+                  <p className='text-base font-normal text-black'>
+                    Euismod arcu blandit viverra. Donec auctor laoreet diam, vel
+                    fusce quis venenatis mauris.
                   </p>
-                  <p className='text-sm lg:text-base font-medium leading-tight'>
-                    Curabitur eget quam sapien. In non lobortis urna. Aenean
-                    ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
+                </div>
+                <div className='flex justify-start items-center gap-3'>
+                  <p className='text-2xl font-medium text-[#074DD9]'>
+                    READ MORE
                   </p>
+                  <BsArrowRightCircle className='text-[#074DD9] text-2xl' />
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col my-8'>
+              <div className='relative max-h-[400px] overflow-hidden'>
+                <div className='bg-[#074DD9] absolute left-0 top-[80%]'>
+                  <p className='text-3xl font-bold leading-none text-white py-1 px-3'>
+                    IT TRAINING
+                  </p>
+                </div>
+                <Image
+                  src='/imgs/mini-meeting.jpg'
+                  width={1000}
+                  height={1000}
+                  alt='blog thumbnail'
+                  className=''
+                />
+              </div>
+              <div className='flex flex-grow flex-col gap-4 p-9 bg-[rgba(7,77,217,0.15)]'>
+                <div className='flex gap-6 flex-start items-center'>
+                  <div className='flex gap-2 flex-start items-center'>
+                    <AiOutlineBell className='text-[#074DD9] text-lg' />
+                    <p className='text-base font-normal text-black'>
+                      7 days ago
+                    </p>
+                  </div>
+                  <div className='flex gap-2 flex-start items-center'>
+                    <BsPersonCircle className='text-[#074DD9] text-lg' />
+                    <p className='text-base font-normal text-black'>
+                      Peter Ade
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className='text-3xl font-extrabold leading-none text-black'>
+                    How to deploy a website
+                  </h4>
+                </div>
+                <div>
+                  <p className='text-base font-normal text-black'>
+                    Donec auctor laoreet diam. Fusce quis venenatis mauris vel
+                    euismod arcu blandit
+                  </p>
+                </div>
+                <div className='flex justify-start items-center gap-3'>
+                  <p className='text-2xl font-medium text-[#074DD9]'>
+                    READ MORE
+                  </p>
+                  <BsArrowRightCircle className='text-[#074DD9] text-2xl' />
                 </div>
               </div>
             </div>
           </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                OUR SERVICES
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                We Take Pride In Efficient Client Satisfaction
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+          <div className='bg-white w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
+            <div className='mb-8'>
+              <div className='flex justify-start items-center gap-3 w-fit'>
+                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
+                  <MdOutlineCategory className='text-white text-lg' />
+                </div>
+                <div>
+                  <h3 className='text-black text-3xl lg:text-4xl font-bold leading-none mb-1 capitalize'>
+                    Categories
+                  </h3>
+                  <div className='flex gap-3 justify-start items-center'>
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                    <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
+                  </div>
+                </div>
               </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-10'>
               <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <BsShieldCheck className='text-white text-lg' />
+                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-4 mx-auto rotate-45'>
+                  <AiOutlineBlock className='text-white text-lg' />
                 </div>
                 <div>
                   <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    Cyber Security
+                    Cyber Gist
                   </p>
                   <p className='text-sm font-medium text-black'>
                     Curabitur eget quam sapien. In non lobortis urna. Aenean
                     ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
+                    tortor eget pellentesqu
                   </p>
                 </div>
               </div>
               <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <AiOutlineDatabase className='text-white text-lg' />
+                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-4 mx-auto rotate-45'>
+                  <AiOutlineBlock className='text-white text-lg' />
                 </div>
                 <div>
                   <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    Data Analysis
+                    Tech Meeting
                   </p>
                   <p className='text-sm font-medium text-black'>
                     Pellentesque viverra erat vel posueren non lobortis urna.
                     Aenean ultrices eget quam sapien. Iviverra erat vel posuere.
-                    Donec congue viverra tortor eget pellentesque. Duis vel mi
-                    quis massa posuere rhoncus eget accumsan tellus
+                    Donec congue
                   </p>
                 </div>
               </div>
               <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <BsCodeSlash className='text-white text-lg' />
+                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-4 mx-auto rotate-45'>
+                  <AiOutlineBlock className='text-white text-lg' />
                 </div>
                 <div>
                   <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    Web Development
+                    IT Training
                   </p>
                   <p className='text-sm font-medium text-black'>
                     Rhoncus in non lobortis curabitur eget quam sapien urna.
                     Aenean ultrices viverra erat vel posuere. Donec congue
-                    viverra tortor eget pellentesque. Duis vel mi quis massa
-                    posuere eget accumsan tellus
+                    viverra tortor eget
                   </p>
                 </div>
               </div>
               <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <MdDeveloperMode className='text-white text-lg' />
+                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-4 mx-auto rotate-45'>
+                  <AiOutlineBlock className='text-white text-lg' />
                 </div>
                 <div>
                   <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    App Development
+                    Communities
                   </p>
                   <p className='text-sm font-medium text-black'>
                     Quam sapien in non lobortis urna. Aenean ultrices viverra
                     erat vel posuere. Donec congue viverra tortor Curabitur eget
-                    eget pellentesque. Duis vel mi quis massa posuere rhoncus
-                    eget accumsan tellus
+                    eget pellentesque.
                   </p>
-                </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.15)] p-5'>
-                <div className='w-12 h-12 bg-[#074DD9] flex justify-center items-center mb-1 mx-auto'>
-                  <AiOutlineFileSearch className='text-white text-lg' />
-                </div>
-                <div>
-                  <p className='text-lg font-semibold text-black mb-3 capitalize'>
-                    SEO Optimization
-                  </p>
-                  <p className='text-sm font-medium text-black'>
-                    Sapien non lobortis urna. Curabitur eget quam Aenean
-                    ultrices viverra erat vel posuere. Donec congue viverra
-                    tortor eget pellentesque. Duis vel mi quis massa posuere
-                    rhoncus eget accumsan tellus
-                  </p>
-                </div>
-              </div>
-              <div className='text-center bg-[rgba(7,77,217,0.85)] p-10'>
-                <div>
-                  <p className='text-lg font-semibold text-white mb-3 capitalize'>
-                    Call Us For Quote
-                  </p>
-                  <p className='text-sm font-light text-white mb-3'>
-                    Donec congue viverra, Curabitur eget quam sapien. In non
-                    lobortis urna. Aenean ultrices viverra erat vel posuere.
-                    tortor eget pellentesque
-                  </p>
-                  <p className='text-lg font-semibold text-white mb-3 capitalize'>
-                    <span className='flex justify-center gap-2 items-center'>
-                      <span>+234</span>
-                      <span>900</span>
-                      <span>834</span>
-                      <span>8343</span>
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                PROMO PLAN
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                We Are Offering Competitive Prices For Our Clients
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-              </div>
-            </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-16 lg:gap-0 place-items-center lg:place-items-stretch'>
-              <div className='p-10 bg-[rgba(7,77,217,0.15)] shadow-xl'>
-                <div className='mb-14'>
-                  <h4 className='text-[#074DD9] text-xl font-bold leading-none mb-1 capitalize'>
-                    Basic Plan
-                  </h4>
-                  <p className='text-black text-base font-medium leading-none mb-1'>
-                    Donec congue viverra vel
-                  </p>
-                </div>
-                <div>
-                  <div className='flex justify-start items-end gap-0 w-full mb-7'>
-                    <div className='flex justify-start items-start gap-0 h-full'>
-                      <span className='text-xl font-[900] leading-none text-black'>
-                        $
-                      </span>
-                      <span className='text-4xl font-[900] leading-[0.75] text-black'>
-                        49.00
-                      </span>
-                    </div>
-                    <span className='text-lg font-semibold leading-none text-black'>
-                      /month
-                    </span>
-                  </div>
-                  <div className='flex flex-col gap-6 mb-7'>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        eget quam sapien
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Donec congue viverra
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Aenean ultrices eget
-                      </p>
-                      <AiOutlineClose className='text-gray-800 text-lg' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Duis vel mi quis massa
-                      </p>
-                      <AiOutlineClose className='text-gray-800 text-lg' />
-                    </div>
-                  </div>
-                  <div>
-                    <button className='text-sm font-medium px-5 py-2 text-white bg-[#074DD9] hover:scale-105'>
-                      Start Plan
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='p-10 bg-white shadow-2xl scale-105'>
-                <div className='mb-14'>
-                  <h4 className='text-[#074DD9] text-xl font-bold leading-none mb-1 capitalize'>
-                    Standard Plan
-                  </h4>
-                  <p className='text-black text-base font-medium leading-none mb-1'>
-                    Lobortis congue viverra vel
-                  </p>
-                </div>
-                <div>
-                  <div className='flex justify-start items-end gap-0 w-full mb-7'>
-                    <div className='flex justify-start items-start gap-0 h-full'>
-                      <span className='text-xl font-[900] leading-none text-black'>
-                        $
-                      </span>
-                      <span className='text-4xl font-[900] leading-[0.75] text-black'>
-                        99.00
-                      </span>
-                    </div>
-                    <span className='text-lg font-semibold leading-none text-black'>
-                      /month
-                    </span>
-                  </div>
-                  <div className='flex flex-col gap-6 mb-7'>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        eget quam sapien
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Donec congue viverra
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Aenean ultrices eget
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Duis vel mi quis massa
-                      </p>
-                      <AiOutlineClose className='text-gray-800 text-lg' />
-                    </div>
-                  </div>
-                  <div>
-                    <button className='text-sm font-medium px-5 py-2 text-white bg-[#074DD9] hover:scale-105'>
-                      Start Plan
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='p-10 bg-[rgba(7,77,217,0.15)] shadow-xl'>
-                <div className='mb-14'>
-                  <h4 className='text-[#074DD9] text-xl font-bold leading-none mb-1 capitalize'>
-                    Advanced Plan
-                  </h4>
-                  <p className='text-black text-base font-medium leading-none mb-1'>
-                    Viverra congue viverra vel
-                  </p>
-                </div>
-                <div>
-                  <div className='flex justify-start items-end gap-0 w-full mb-7'>
-                    <div className='flex justify-start items-start gap-0 h-full'>
-                      <span className='text-xl font-[900] leading-none text-black'>
-                        $
-                      </span>
-                      <span className='text-4xl font-[900] leading-[0.75] text-black'>
-                        149.00
-                      </span>
-                    </div>
-                    <span className='text-lg font-semibold leading-none text-black'>
-                      /month
-                    </span>
-                  </div>
-                  <div className='flex flex-col gap-6 mb-7'>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        eget quam sapien
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Donec congue viverra
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Aenean ultrices eget
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                    <div className='flex justify-between w-full items-center gap-6'>
-                      <p className='text-base font-semibold leading-none text-black'>
-                        Duis vel mi quis massa
-                      </p>
-                      <BsCheckLg className='text-[#074DD9] text-base' />
-                    </div>
-                  </div>
-                  <div>
-                    <button className='text-sm font-medium px-5 py-2 text-white bg-[#074DD9] hover:scale-105'>
-                      Start Plan
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -797,20 +543,6 @@ export default function Home() {
           <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
             <div className='text-center mb-8'>
               <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                TESTIMONIALS
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                What Our Clients Say About Our Digital Services
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-              </div>
-            </div>
-          </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
                 TEAM MEMBERS
               </p>
               <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
@@ -874,166 +606,6 @@ export default function Home() {
                   <p className='text-base sm:text-xs lg:text-base font-medium leading-tight'>
                     Software Engineer
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto my-24 sm:my-32'>
-            <div className='text-center mb-8'>
-              <p className='text-[#074DD9] text-sm lg:text-base font-semibold leading-none mb-1 uppercase'>
-                LATEST BLOG
-              </p>
-              <h3 className='w-full sm:w-[70%] xl:w-[50%] mx-auto text-black text-3xl lg:text-4xl font-bold leading-none mb-2 capitalize'>
-                Read The Latest Articles from Our Blog Post
-              </h3>
-              <div className='flex gap-3 justify-center items-center'>
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-                <div className='w-10 h-0 border-t-2 border-t-[#074DD9]' />
-              </div>
-            </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-stretch'>
-              <div className='relative flex flex-col'>
-                <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
-                  <p className='text-base font-bold leading-none text-white py-1 px-3'>
-                    TECH MEETING
-                  </p>
-                </div>
-                <div>
-                  <Image
-                    src='/imgs/business-meeting.jpg'
-                    width={1000}
-                    height={1000}
-                    alt='blog thumbnail'
-                  />
-                </div>
-                <div className='flex flex-grow flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
-                  <div className='flex gap-6 flex-start items-center'>
-                    <div className='flex gap-2 flex-start items-center'>
-                      <AiOutlineBell className='text-[#074DD9] text-sm' />
-                      <p className='text-xs font-normal text-black'>
-                        2 days ago
-                      </p>
-                    </div>
-                    <div className='flex gap-2 flex-start items-center'>
-                      <BsPersonCircle className='text-[#074DD9] text-sm' />
-                      <p className='text-xs font-normal text-black'>
-                        Dennis Akpan
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className='text-xl font-extrabold leading-none text-black'>
-                      How to build a website
-                    </h4>
-                  </div>
-                  <div>
-                    <p className='text-xs font-normal text-black'>
-                      Fusce quis venenatis mauris. Donec auctor laoreet diam,
-                      vel euismod arcu blandit viverra
-                    </p>
-                  </div>
-                  <div className='flex justify-start items-center gap-3'>
-                    <p className='text-base font-medium text-[#074DD9]'>
-                      READ MORE
-                    </p>
-                    <BsArrowRightCircle className='text-[#074DD9] text-lg' />
-                  </div>
-                </div>
-              </div>
-              <div className='relative flex flex-col'>
-                <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
-                  <p className='text-base font-bold leading-none text-white py-1 px-3'>
-                    TECH MEETING
-                  </p>
-                </div>
-                <div>
-                  <Image
-                    src='/imgs/two-meeting.jpg'
-                    width={1000}
-                    height={1000}
-                    alt='blog thumbnail'
-                  />
-                </div>
-                <div className='flex flex-grow flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
-                  <div className='flex gap-6 flex-start items-center'>
-                    <div className='flex gap-2 flex-start items-center'>
-                      <AiOutlineBell className='text-[#074DD9] text-sm' />
-                      <p className='text-xs font-normal text-black'>
-                        4 days ago
-                      </p>
-                    </div>
-                    <div className='flex gap-2 flex-start items-center'>
-                      <BsPersonCircle className='text-[#074DD9] text-sm' />
-                      <p className='text-xs font-normal text-black'>
-                        Dennis Akpan
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className='text-xl font-extrabold leading-none text-black'>
-                      How to build a server
-                    </h4>
-                  </div>
-                  <div>
-                    <p className='text-xs font-normal text-black'>
-                      Euismod arcu blandit viverra. Donec auctor laoreet diam,
-                      vel fusce quis venenatis mauris.
-                    </p>
-                  </div>
-                  <div className='flex justify-start items-center gap-3'>
-                    <p className='text-base font-medium text-[#074DD9]'>
-                      READ MORE
-                    </p>
-                    <BsArrowRightCircle className='text-[#074DD9] text-lg' />
-                  </div>
-                </div>
-              </div>
-              <div className='relative flex flex-col'>
-                <div className='bg-[#074DD9] absolute left-0 top-[10%]'>
-                  <p className='text-base font-bold leading-none text-white py-1 px-3'>
-                    IT TRAINING
-                  </p>
-                </div>
-                <div>
-                  <Image
-                    src='/imgs/mini-meeting.jpg'
-                    width={1000}
-                    height={1000}
-                    alt='blog thumbnail'
-                  />
-                </div>
-                <div className='flex flex-grow flex-col gap-4 p-5 bg-[rgba(7,77,217,0.15)]'>
-                  <div className='flex gap-6 flex-start items-center'>
-                    <div className='flex gap-2 flex-start items-center'>
-                      <AiOutlineBell className='text-[#074DD9] text-sm' />
-                      <p className='text-xs font-normal text-black'>
-                        7 days ago
-                      </p>
-                    </div>
-                    <div className='flex gap-2 flex-start items-center'>
-                      <BsPersonCircle className='text-[#074DD9] text-sm' />
-                      <p className='text-xs font-normal text-black'>
-                        Peter Ade
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className='text-xl font-extrabold leading-none text-black'>
-                      How to deploy a website
-                    </h4>
-                  </div>
-                  <div>
-                    <p className='text-xs font-normal text-black'>
-                      Donec auctor laoreet diam. Fusce quis venenatis mauris vel
-                      euismod arcu blandit
-                    </p>
-                  </div>
-                  <div className='flex justify-start items-center gap-3'>
-                    <p className='text-base font-medium text-[#074DD9]'>
-                      READ MORE
-                    </p>
-                    <BsArrowRightCircle className='text-[#074DD9] text-lg' />
-                  </div>
                 </div>
               </div>
             </div>
