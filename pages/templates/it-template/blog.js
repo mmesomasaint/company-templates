@@ -3,14 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Styles from '../../../styles/it.module.css'
 import {
-  AiFillCloud,
   AiFillFire,
-  AiFillStar,
   AiOutlineBell,
   AiOutlineBlock,
   AiOutlineClose,
-  AiOutlineDatabase,
-  AiOutlineFileSearch,
   AiOutlineHome,
   AiOutlineMail,
   AiOutlineMenu,
@@ -22,19 +18,13 @@ import {
   BsLinkedin,
   BsInstagram,
   BsPersonCircle,
-  BsCheckLg,
-  BsAwardFill,
-  BsShieldCheck,
-  BsCodeSlash,
   BsArrowRightCircle,
 } from 'react-icons/bs'
 import {
-  MdDeveloperMode,
   MdOutlineAccessTime,
   MdOutlineCategory,
   MdOutlineLocationOn,
 } from 'react-icons/md'
-import { ImHappy2 } from 'react-icons/im'
 import Link from 'next/link'
 
 export default function Home() {

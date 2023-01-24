@@ -21,7 +21,6 @@ import {
   BsInstagram,
   BsPersonCircle,
   BsCheckLg,
-  BsAwardFill,
   BsShieldCheck,
   BsCodeSlash,
   BsArrowRightCircle,
@@ -31,7 +30,6 @@ import {
   MdOutlineAccessTime,
   MdOutlineLocationOn,
 } from 'react-icons/md'
-import { ImHappy2 } from 'react-icons/im'
 import Link from 'next/link'
 
 export default function Home() {
