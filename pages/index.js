@@ -40,25 +40,25 @@ export default function Home() {
               } md:static md:flex flex-col md:flex-row pb-5 md:pb-0 px-5 md:px-0 gap-x-1 gap-y-8 md:gap-x-8 items-start justify-evenly md:items-center w-full bg-white dark:bg-[#023047] md:bg-transparent`}
             >
               <a
-                href='#Home'
+                href='#home'
                 className='text-lg font-medium text-[#023047] dark:text-white capitalize'
               >
                 Home
               </a>
               <a
-                href='#Templates'
+                href='#templates'
                 className='text-lg font-medium text-[#023047] dark:text-white capitalize'
               >
                 Templates
               </a>
               <a
-                href='#About'
+                href='#about'
                 className='text-lg font-medium text-[#023047] dark:text-white capitalize'
               >
                 About
               </a>
               <a
-                href='#Contact'
+                href='#contact'
                 className='text-lg font-medium text-[#023047] dark:text-white capitalize'
               >
                 Contact
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className='bg-[#ffffff] dark:bg-[#023047]'>
+      <main id='home' className='bg-[#ffffff] dark:bg-[#023047]'>
         <div className=' max-w-[90rem] mx-auto'>
           <div className="h-[20rem] w-full bg-[url('/imgs/bg-home.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-gradient-to-t from-[#ffffff] dark:from-[#023047] via-[rgba(255,255,255,0.75)] dark:via-[rgba(2,48,71,0.75)] w-full h-full'>
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-16 px-4'>
+          <div id='templates' className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-16 px-4'>
             <div>
               <Image
                 src='/imgs/temp1.webp'
@@ -128,7 +128,7 @@ export default function Home() {
 
       <footer className='bg-gray-400 dark:bg-[#023047] w-full h-full'>
         <div className='bg-[rgba(0,0,0,0.75)] dark:bg-[rgba(0,0,0,0.45)] w-full h-full'>
-          <div className='mb-3 w-fit mx-auto h-fit py-4'>
+          <div id='contact' className='mb-3 w-fit mx-auto h-fit py-4'>
             <div className='flex gap-10'>
               <BsTwitter className='text-2xl text-slate-300' />
               <BsLinkedin className='text-2xl text-slate-300' />
@@ -136,7 +136,7 @@ export default function Home() {
               <BsGithub className='text-2xl text-slate-300' />
             </div>
           </div>
-          <div className='w-fit mx-auto border-t-2 border-t-slate-300 pb-3 pt-1 h-full'>
+          <div id='about' className='w-fit mx-auto border-t-2 border-t-slate-300 pb-3 pt-1 h-full'>
             <p className='block text-base leading-none font-normal text-gray-400'>
               created by
             </p>
