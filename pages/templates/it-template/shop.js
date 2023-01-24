@@ -138,7 +138,7 @@ export default function Shop() {
       </header>
       <main>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-[37rem] w-full bg-[url('/imgs/server-rack.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
+          <div className="h-[37rem] w-full bg-[url('/imgs/it-template/server-rack.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-[rgba(13,16,38,0.75)] w-full h-full'>
               <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
                 <div>
@@ -629,7 +629,7 @@ export default function Shop() {
               </div>
               <div className='order-first md:order-none'>
                 <Image
-                  src='/imgs/meeting.jpg'
+                  src='/imgs/it-template/meeting.jpg'
                   width={900}
                   height={900}
                   alt='meeting'
@@ -795,7 +795,7 @@ export default function Shop() {
               <div className=''>
                 <div className=''>
                   <Image
-                    src='/imgs/team-lead.jpg'
+                    src='/imgs/it-template/team-lead.jpg'
                     width={1000}
                     height={1000}
                     alt='team member'
@@ -813,7 +813,7 @@ export default function Shop() {
               <div className=''>
                 <div className=''>
                   <Image
-                    src='/imgs/project-manager.jpg'
+                    src='/imgs/it-template/project-manager.jpg'
                     width={1000}
                     height={1000}
                     alt='team member'
@@ -831,7 +831,7 @@ export default function Shop() {
               <div className=''>
                 <div className=''>
                   <Image
-                    src='/imgs/software-engr.jpg'
+                    src='/imgs/it-template/software-engr.jpg'
                     width={1000}
                     height={1000}
                     alt='team member'
@@ -870,7 +870,7 @@ export default function Shop() {
                 </div>
                 <div>
                   <Image
-                    src='/imgs/business-meeting.jpg'
+                    src='/imgs/it-template/business-meeting.jpg'
                     width={1000}
                     height={1000}
                     alt='blog thumbnail'
@@ -918,7 +918,7 @@ export default function Shop() {
                 </div>
                 <div>
                   <Image
-                    src='/imgs/two-meeting.jpg'
+                    src='/imgs/it-template/two-meeting.jpg'
                     width={1000}
                     height={1000}
                     alt='blog thumbnail'
@@ -966,7 +966,7 @@ export default function Shop() {
                 </div>
                 <div>
                   <Image
-                    src='/imgs/mini-meeting.jpg'
+                    src='/imgs/it-template/mini-meeting.jpg'
                     width={1000}
                     height={1000}
                     alt='blog thumbnail'

@@ -146,7 +146,7 @@ export default function ITSolutions() {
       </header>
       <main>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-[37rem] w-full bg-[url('/imgs/server-engineer.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
+          <div className="h-[37rem] w-full bg-[url('/imgs/it-template/server-engineer.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-[rgba(13,16,38,0.75)] w-full h-full'>
               <div className='w-[90%] sm:w-[80%] xl:w-[70%] mx-auto bg-transparent h-full pt-20 flex flex-col justify-center items-center md:items-start'>
                 <div>
@@ -196,7 +196,7 @@ export default function ITSolutions() {
               </div>
               <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/cyber-security.jpg'
+                  src='/imgs/it-template/cyber-security.jpg'
                   width={800}
                   height={800}
                   alt='Cyber Security'
@@ -246,7 +246,7 @@ export default function ITSolutions() {
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/cyber-security.jpg'
+                src='/imgs/it-template/cyber-security.jpg'
                 width={800}
                 height={800}
                 alt='Cyber Security'
@@ -273,7 +273,7 @@ export default function ITSolutions() {
               </div>
               <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/data-analysis.jpg'
+                  src='/imgs/it-template/data-analysis.jpg'
                   width={800}
                   height={800}
                   alt='Data Analysis'
@@ -323,7 +323,7 @@ export default function ITSolutions() {
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/data-analysis.jpg'
+                src='/imgs/it-template/data-analysis.jpg'
                 width={800}
                 height={800}
                 alt='Data Analysis'
@@ -350,7 +350,7 @@ export default function ITSolutions() {
               </div>
               <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/web-dev.jpg'
+                  src='/imgs/it-template/web-dev.jpg'
                   width={800}
                   height={800}
                   alt='Web Development'
@@ -400,7 +400,7 @@ export default function ITSolutions() {
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/web-dev.jpg'
+                src='/imgs/it-template/web-dev.jpg'
                 width={800}
                 height={800}
                 alt='Web Development'
@@ -427,7 +427,7 @@ export default function ITSolutions() {
               </div>
               <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/app-dev.jpg'
+                  src='/imgs/it-template/app-dev.jpg'
                   width={800}
                   height={800}
                   alt='App Development'
@@ -477,7 +477,7 @@ export default function ITSolutions() {
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/app-dev.jpg'
+                src='/imgs/it-template/app-dev.jpg'
                 width={800}
                 height={800}
                 alt='App Development'
@@ -504,7 +504,7 @@ export default function ITSolutions() {
               </div>
               <div className='block mt-5 mb-0 sm:hidden'>
                 <Image
-                  src='/imgs/seo.jpg'
+                  src='/imgs/it-template/seo.jpg'
                   width={800}
                   height={800}
                   alt='SEO Optimization'
@@ -554,7 +554,7 @@ export default function ITSolutions() {
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/seo.jpg'
+                src='/imgs/it-template/seo.jpg'
                 width={800}
                 height={800}
                 alt='SEO Optimization'
@@ -886,7 +886,7 @@ export default function ITSolutions() {
               </div>
               <div className='block my-10 sm:hidden'>
                 <Image
-                  src='/imgs/board.jpg'
+                  src='/imgs/it-template/board.jpg'
                   width={800}
                   height={800}
                   alt='Board'
@@ -951,7 +951,7 @@ export default function ITSolutions() {
             </div>
             <div className='hidden sm:block col-span-2'>
               <Image
-                src='/imgs/board.jpg'
+                src='/imgs/it-template/board.jpg'
                 width={800}
                 height={800}
                 alt='Board'
@@ -990,7 +990,7 @@ export default function ITSolutions() {
               </div>
               <div className='order-first md:order-none'>
                 <Image
-                  src='/imgs/meeting.jpg'
+                  src='/imgs/it-template/meeting.jpg'
                   width={900}
                   height={900}
                   alt='meeting'
@@ -1031,7 +1031,7 @@ export default function ITSolutions() {
               <div className=''>
                 <div className=''>
                   <Image
-                    src='/imgs/team-lead.jpg'
+                    src='/imgs/it-template/team-lead.jpg'
                     width={1000}
                     height={1000}
                     alt='team member'
@@ -1049,7 +1049,7 @@ export default function ITSolutions() {
               <div className=''>
                 <div className=''>
                   <Image
-                    src='/imgs/project-manager.jpg'
+                    src='/imgs/it-template/project-manager.jpg'
                     width={1000}
                     height={1000}
                     alt='team member'
@@ -1067,7 +1067,7 @@ export default function ITSolutions() {
               <div className=''>
                 <div className=''>
                   <Image
-                    src='/imgs/software-engr.jpg'
+                    src='/imgs/it-template/software-engr.jpg'
                     width={1000}
                     height={1000}
                     alt='team member'
@@ -1106,7 +1106,7 @@ export default function ITSolutions() {
                 </div>
                 <div>
                   <Image
-                    src='/imgs/business-meeting.jpg'
+                    src='/imgs/it-template/business-meeting.jpg'
                     width={1000}
                     height={1000}
                     alt='blog thumbnail'
@@ -1154,7 +1154,7 @@ export default function ITSolutions() {
                 </div>
                 <div>
                   <Image
-                    src='/imgs/two-meeting.jpg'
+                    src='/imgs/it-template/two-meeting.jpg'
                     width={1000}
                     height={1000}
                     alt='blog thumbnail'
@@ -1202,7 +1202,7 @@ export default function ITSolutions() {
                 </div>
                 <div>
                   <Image
-                    src='/imgs/mini-meeting.jpg'
+                    src='/imgs/it-template/mini-meeting.jpg'
                     width={1000}
                     height={1000}
                     alt='blog thumbnail'
