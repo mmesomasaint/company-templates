@@ -26,7 +26,7 @@ import {
 import { MdDeveloperMode, MdOutlineLocationOn } from 'react-icons/md'
 import Link from 'next/link'
 
-export default function Home() {
+export default function Company() {
   const [isOpen, setIsOpen] = useState(false)
   const toggleOpen = useCallback(() => setIsOpen((open) => !open), [])
 
