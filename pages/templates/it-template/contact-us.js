@@ -8,8 +8,6 @@ import {
   AiOutlineBell,
   AiOutlineBlock,
   AiOutlineClose,
-  AiOutlineDatabase,
-  AiOutlineFileSearch,
   AiOutlineHome,
   AiOutlineMail,
   AiOutlineMenu,
@@ -21,18 +19,12 @@ import {
   BsLinkedin,
   BsInstagram,
   BsPersonCircle,
-  BsCheckLg,
-  BsAwardFill,
-  BsShieldCheck,
-  BsCodeSlash,
   BsArrowRightCircle,
 } from 'react-icons/bs'
 import {
-  MdDeveloperMode,
   MdOutlineAccessTime,
   MdOutlineLocationOn,
 } from 'react-icons/md'
-import { ImHappy2 } from 'react-icons/im'
 import Link from 'next/link'
 
 export default function ContactUs() {
