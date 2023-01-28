@@ -495,7 +495,7 @@ export default function Home() {
                     type='email'
                     name='email'
                     placeholder='Email'
-                    className='flex-grow p-2 text-base font-medium text-gray-500 placeholder:text-gray-500 shadow-md focus:outline-none border-2 border-gray-300'
+                    className='w-full sm:w-auto flex-grow p-2 text-base font-medium text-gray-500 placeholder:text-gray-500 shadow-md focus:outline-none border-2 border-gray-300'
                   />
                   <button className='text-base font-medium leading-none text-white px-6 py-3 bg-[#D97941] shadow-md'>
                     Sign up
