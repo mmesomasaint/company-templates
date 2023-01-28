@@ -206,7 +206,7 @@ export default function Home() {
                     Laundry is Easier with dependable cleaners
                   </h2>
                 </div>
-                <div className='flex flex-col gap-8 justify-center items-start px-4 mb-7'>
+                <div className='flex flex-col gap-4 lg:gap-8 justify-center items-start px-4 mb-7'>
                   <div className='flex gap-3 justify-center items-start'>
                     <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
                     <p className='text-sm lg:text-lg font-medium text-black'>
