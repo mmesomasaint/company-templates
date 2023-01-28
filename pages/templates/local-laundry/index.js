@@ -11,8 +11,12 @@ import {
 } from 'react-icons/md'
 import { BsTelephone } from 'react-icons/bs'
 import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
+import { useCallback, useState } from 'react'
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+  const handleOpen = useCallback(() => setIsOpen(open => !open), [])
+
   return (
     <div>
       <Head>
@@ -33,9 +37,9 @@ export default function Home() {
           </div>
           <div className='flex justify-between gap-6 lg:gap-12 items-center'>
             <div className='lg:hidden'>
-              <GiHamburgerMenu className='text-2xl sm:text-3xl text-[#76A6A6]' />
+              <GiHamburgerMenu className='text-2xl sm:text-3xl text-[#76A6A6]' onClick={handleOpen} />
             </div>
-            <nav className='hidden lg:flex justify-evenly items-start gap-6'>
+            <nav className={`${isOpen ? 'flex' : 'hidden'} w-full lg:w-auto flex-col lg:flex-row lg:flex justify-evenly items-start gap-6 absolute top-[100%] left-0 lg:static px-8 lg:px-0 py-8 lg:py-0 bg-white lg:bg-transparent`}>
               <span className='text-base font-medium leading-none text-[#D97941] scale-105 hover:scale-105 hover:text-[#D97941] w-fit'>
                 <Link href='/templates/local-laundry/'>Home</Link>
                 <span className='block border-t border-t-[#D97941] w-full h-0 my-1' />
