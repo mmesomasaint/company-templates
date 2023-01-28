@@ -2,14 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { RiShirtLine } from 'react-icons/ri'
-import { GiDrippingStone, GiSewingMachine } from 'react-icons/gi'
+import { GiDrippingStone, GiHamburgerMenu, GiSewingMachine } from 'react-icons/gi'
 import {
   MdOutlineIron,
   MdOutlineDeliveryDining,
   MdOutlineLocalLaundryService,
   MdOutlineDryCleaning,
 } from 'react-icons/md'
-import { BsTelephone } from 'react-icons/bs'
+import { BsMenuButtonWideFill, BsTelephone } from 'react-icons/bs'
 import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <header className='w-full relative'>
         <div className='max-w-[90rem] absolute top-0 left-0 right-0 mx-auto flex justify-between items-center gap-0 px-8 xl:px-16 '>
-          <div>
+          <div className='my-5'>
             <Image
               src='/imgs/local-laundry/logo.png'
               width={150}
@@ -31,8 +31,11 @@ export default function Home() {
               className=''
             />
           </div>
-          <div className='flex justify-between gap-12 items-center'>
-            <nav className='flex justify-evenly items-start gap-6 my-8'>
+          <div className='flex justify-between gap-6 lg:gap-12 items-center'>
+            <div className='lg:hidden'>
+              <GiHamburgerMenu className='text-3xl text-[#76A6A6]' />
+            </div>
+            <nav className='hidden lg:flex justify-evenly items-start gap-6'>
               <span className='text-base font-medium leading-none text-[#D97941] scale-105 hover:scale-105 hover:text-[#D97941] w-fit'>
                 <Link href='/templates/local-laundry/'>Home</Link>
                 <span className='block border-t border-t-[#D97941] w-full h-0 my-1' />
@@ -58,7 +61,7 @@ export default function Home() {
             <button className='py-3 px-5 bg-[#76A6A6] rounded-md'>
               <span className='flex justify-start items-center gap-4'>
                 <BsTelephone className='text-base text-white' />
-                <span className='text-base font-medium leading-none text-white flex justify-center items-center gap-1'>
+                <span className='hidden text-base font-medium leading-none text-white lg:flex justify-center items-center gap-1'>
                   <p>+234</p>
                   <p>9134</p>
                   <p>293</p>
@@ -73,10 +76,10 @@ export default function Home() {
         <div className='max-w-[90rem] mx-auto'>
           <div className="h-[55rem] w-full bg-[url('/imgs/local-laundry/showcase.jpg')] bg-no-repeat bg-cover bg-top">
             <div className='w-full h-full'>
-              <div className='w-full mx-auto bg-transparent h-full pt-32 px-8 xl:px-16  grid grid-cols-2 place-items-stretch'>
+              <div className='w-full mx-auto bg-transparent h-full pt-32 px-8 xl:px-16  grid grid-cols-2 place-items-stretch gap-6 lg:gap-0'>
                 <div className='flex flex-col justify-start items-center'>
                   <div className='w-fit mx-auto'>
-                    <h1 className='w-[90%] xl:w-[70%] capitalize text-6xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
+                    <h1 className='w-full xl:w-[70%] capitalize text-5xl lg:text-6xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
                       New York&apos;s First Choice in Dry Cleaning
                     </h1>
                   </div>
@@ -101,13 +104,14 @@ export default function Home() {
                     width={350}
                     height={350}
                     alt='showcase image'
+                    className='w-[300px] lg:w-[350px]'
                   />
                 </div>
               </div>
             </div>
           </div>
           <div className='h-[15rem] relative'>
-            <div className='absolute h-fit -top-[12rem] left-0 right-0 mx-16 bg-white'>
+            <div className='absolute h-fit -top-[15rem] lg:-top-[12rem] left-0 right-0 mx-8 lg:mx-16 bg-white'>
               <div className='w-full h-full grid grid-cols-4 grid-rows-2 gap-6 place-items-stretch p-5'>
                 <div className='text-center p-5'>
                   <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
@@ -184,7 +188,7 @@ export default function Home() {
                     src='/imgs/local-laundry/man-iron-shirt.jpg'
                     width={300}
                     height={500}
-                    className='rounded-full h-[500px]'
+                    className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
                 <div className='mt-32'>
@@ -192,46 +196,46 @@ export default function Home() {
                     src='/imgs/local-laundry/pile-laundry.jpg'
                     width={300}
                     height={500}
-                    className='rounded-full h-[500px]'
+                    className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
               </div>
               <div>
-                <div className='mb-16 w-fit mx-auto'>
-                  <h2 className='text-black font-extrabold text-5xl leading-tight'>
+                <div className='mb-7 lg:mb-10 w-fit mx-auto'>
+                  <h2 className='text-black font-extrabold text-4xl lg:text-5xl leading-tight'>
                     Laundry is Easier with dependable cleaners
                   </h2>
                 </div>
                 <div className='flex flex-col gap-8 justify-center items-start px-4 mb-7'>
                   <div className='flex gap-3 justify-center items-start'>
-                    <AiOutlinePushpin className='text-3xl text-[#D97941] flex-shrink-0' />
-                    <p className='text-lg font-medium text-black'>
+                    <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
+                    <p className='text-sm lg:text-lg font-medium text-black'>
                       Lorem consectetur adipiscing elit fermentum fermentum leo
                     </p>
                   </div>
                   <div className='flex gap-3 justify-center items-start'>
-                    <AiOutlinePushpin className='text-3xl text-[#D97941] flex-shrink-0' />
-                    <p className='text-lg font-medium text-black'>
+                    <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
+                    <p className='text-sm lg:text-lg font-medium text-black'>
                       Lorem ipsum dolor adipiscing sit amet, consectetur
                     </p>
                   </div>
                   <div className='flex gap-3 justify-center items-start'>
-                    <AiOutlinePushpin className='text-3xl text-[#D97941] flex-shrink-0' />
-                    <p className='text-lg font-medium text-black'>
+                    <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
+                    <p className='text-sm lg:text-lg font-medium text-black'>
                       Nam bibendum tellus pulvinar fesit amet, consectetur
                       adipiscing elitLorem ipsum dolor{' '}
                     </p>
                   </div>
                   <div className='flex gap-3 justify-center items-start'>
-                    <AiOutlinePushpin className='text-3xl text-[#D97941] flex-shrink-0' />
-                    <p className='text-lg font-medium text-black'>
+                    <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
+                    <p className='text-sm lg:text-lg font-medium text-black'>
                       Aenean eleifend quam eget mi auctorectetur adiLorem ipsum
                       dolor sit amet, conspiscing elit
                     </p>
                   </div>
                   <div className='flex gap-3 justify-center items-start'>
-                    <AiOutlinePushpin className='text-3xl text-[#D97941] flex-shrink-0' />
-                    <p className='text-lg font-medium text-black'>
+                    <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
+                    <p className='text-sm lg:text-lg font-medium text-black'>
                       Nunc aliquet sapien quis libero ultricies portum dolor sit
                       amet, consLorem ipsectetur adipiscing elit
                     </p>
@@ -249,11 +253,11 @@ export default function Home() {
             <div className=''>
               <div className='z-[10] text-white bg-white absolute top-[20%] left-[18%] w-[75%] p-8 shadow-2xl'>
                 <div className='w-[80%] mb-7'>
-                  <h1 className='text-black font-extrabold text-5xl leading-tight mb-6 capitalize'>
+                  <h1 className='text-black font-extrabold text-4xl lg:text-5xl leading-tight mb-6 capitalize'>
                     tincidunt tempus sapien Laundry Experience
                   </h1>
-                  <p className='text-base font-medium text-black '>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <p className='text-xs lg:text-xl lg:text-base font-medium text-black '>
+                    Lorem iptext-sm lg:sum dolor sit amet, consectetur adipiscing elit.
                     Vivamus tempus dui nec euismod congue. Nulla id libero
                     dignissim, convallis odio id, scelerisque nisl. Curabitur
                     augue quam, fringilla quis dictum sed, sodales non eros.
@@ -266,34 +270,34 @@ export default function Home() {
                 </div>
                 <div className='grid grid-cols-3 gap-6 items-end'>
                   <div className='col-span-2'>
-                    <div className='grid grid-cols-2 gap-6 place-items-stretch'>
+                    <div className='grid grid-cols-2 gap-3 lg:gap-6 place-items-stretch'>
                       <div className='flex gap-3 justify-start items-start'>
-                        <AiOutlinePushpin className='text-3xl text-[#D97941]' />
-                        <p className='text-lg font-medium text-black'>
+                        <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941]' />
+                        <p className='text-sm lg:text-lg font-medium text-black'>
                           Lorem ipsum dolor
                         </p>
                       </div>
                       <div className='flex gap-3 justify-start items-start'>
-                        <AiOutlinePushpin className='text-3xl text-[#D97941]' />
-                        <p className='text-lg font-medium text-black'>
+                        <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941]' />
+                        <p className='text-sm lg:text-lg font-medium text-black'>
                           Nam bibendum tellus
                         </p>
                       </div>
                       <div className='flex gap-3 justify-start items-start'>
-                        <AiOutlinePushpin className='text-3xl text-[#D97941]' />
-                        <p className='text-lg font-medium text-black'>
+                        <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941]' />
+                        <p className='text-sm lg:text-lg font-medium text-black'>
                           Aenean eleifend quam
                         </p>
                       </div>
                       <div className='flex gap-3 justify-start items-start'>
-                        <AiOutlinePushpin className='text-3xl text-[#D97941]' />
-                        <p className='text-lg font-medium text-black'>
+                        <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941]' />
+                        <p className='text-sm lg:text-lg font-medium text-black'>
                           Nuis libero ultricies
                         </p>
                       </div>
                       <div className='flex gap-3 justify-start items-start'>
-                        <AiOutlinePushpin className='text-3xl text-[#D97941]' />
-                        <p className='text-lg font-medium text-black'>
+                        <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941]' />
+                        <p className='text-sm lg:text-lg font-medium text-black'>
                           Nunc aliquet sapien
                         </p>
                       </div>
@@ -325,13 +329,14 @@ export default function Home() {
                   width={350}
                   height={350}
                   alt='man sparkle'
+                  className='w-[300px] lg:w-[350px]'
                 />
               </div>
               <div className='mb-6'>
-                <h1 className='text-black font-extrabold text-5xl leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-4xl text-5xl leading-tight mb-6 capitalize'>
                   Get The VIP Treatment
                 </h1>
-                <p className='text-sm font-medium text-black leading-loose'>
+                <p className='text-xs lg:text-sm font-medium text-black leading-loose'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus tempus dui nec euismod congue. Nulla id libero
                   dignissim, convallis odio id, scelerisque nisl. Curabitur
@@ -355,17 +360,17 @@ export default function Home() {
           </div>
           <div className="relative w-full bg-[url('/imgs/local-laundry/delivery.jpg')] bg-no-repeat bg-cover bg-top">
             <div className='w-full py-16 px-8 xl:px-16  2x:px-0 bg-transparent flex justify-start items-center'>
-              <div className='bg-white p-10 w-[50%]'>
-                <h1 className='text-black font-extrabold text-5xl leading-tight mb-6 capitalize'>
+              <div className='bg-white p-10 w-[60%] lg:w-[50%]'>
+                <h1 className='text-black font-extrabold text-4xl text-5xl leading-tight mb-6 capitalize'>
                   Free Pickup & Delivery
                 </h1>
-                <p className='text-sm font-medium text-black leading-loose'>
+                <p className='text-xstext-sm font-medium text-black leading-loose'>
                   Curabitur augue quam, fringilla quis dictum sed, sodales non
                   eros. Nulla venenatis in odio non fringilla. Fusce facilisis
                   magna at odio ultricies, non porta quam scelerisque. Phasellus
                   feugiat odio eget quam mollis dapibus
                 </p>
-                <div className='w-[75%]'>
+                <div className='w-full lg:w-[75%]'>
                   <form className='flex flex-col gap-4 my-6'>
                     <input
                       type='text'
@@ -411,13 +416,14 @@ export default function Home() {
                   width={350}
                   height={350}
                   alt='hiring'
+                  className='w-[300px] lg:w-[350px]'
                 />
               </div>
               <div className='mb-6'>
-                <h1 className='text-black font-extrabold text-5xl leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-4xl text-5xl leading-tight mb-6 capitalize'>
                   We are Hiring
                 </h1>
-                <p className='text-sm font-medium text-black leading-loose'>
+                <p className='text-xs text-sm font-medium text-black leading-loose'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus tempus dui nec euismod congue. Nulla id libero
                   dignissim, convallis odio id, scelerisque nisl. Curabitur
@@ -440,7 +446,7 @@ export default function Home() {
         <div>
           <div className='w-full bg-[#CCF5F5]'>
             <div className='max-w-[90rem] mx-auto p-20 my-24'>
-              <div className='w-[50%] mx-auto'>
+              <div className='w-full lg:w-[50%] mx-auto'>
                 <h3 className='text-black font-bold text-4xl leading-tight mb-8 capitalize text-center'>
                   Get a 2 months free trial for new members
                 </h3>
