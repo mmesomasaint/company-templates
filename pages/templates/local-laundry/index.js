@@ -490,7 +490,7 @@ export default function Home() {
                 <h3 className='text-black font-bold text-4xl leading-tight mb-8 capitalize text-center'>
                   Get a 2 months free trial for new members
                 </h3>
-                <div className='flex flex-col justify-center items-center gap-4 sm:gap-10'>
+                <div className='flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10'>
                   <input
                     type='email'
                     name='email'
