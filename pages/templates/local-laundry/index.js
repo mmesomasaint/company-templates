@@ -83,7 +83,7 @@ export default function Home() {
               <div className='w-full mx-auto bg-transparent h-full pt-24 sm:pt-32 pb-40 md:pb-0 px-8 xl:px-16 grid grid-cols-1 md:grid-cols-2 place-items-stretch gap-6 lg:gap-0'>
                 <div className='flex flex-col justify-start items-center'>
                   <div className='w-fit mx-auto'>
-                    <h1 className='w-full xl:w-[70%] capitalize text-4xl sm:text-6xl md:text-5xl lg:text-6xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
+                    <h1 className='w-full xl:w-[70%] capitalize text-4xl sm:text-6xl md:text-5xl lg:text-7xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
                       New York&apos;s First Choice in Dry Cleaning
                     </h1>
                   </div>
