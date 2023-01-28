@@ -9,7 +9,7 @@ import {
   MdOutlineLocalLaundryService,
   MdOutlineDryCleaning,
 } from 'react-icons/md'
-import {BsTelephone} from 'react-icons/bs'
+import { BsTelephone } from 'react-icons/bs'
 import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
 
 export default function Home() {
@@ -57,13 +57,13 @@ export default function Home() {
             </nav>
             <button className='py-3 px-5 bg-[#76A6A6] rounded-md'>
               <span className='flex justify-start items-center gap-4'>
-              <BsTelephone className='text-base text-white' />
-              <span className='text-base font-medium leading-none text-white flex justify-center items-center gap-1'>
-                <p>+234</p>
-                <p>9134</p>
-                <p>293</p>
-                <p>293</p>
-              </span>
+                <BsTelephone className='text-base text-white' />
+                <span className='text-base font-medium leading-none text-white flex justify-center items-center gap-1'>
+                  <p>+234</p>
+                  <p>9134</p>
+                  <p>293</p>
+                  <p>293</p>
+                </span>
               </span>
             </button>
           </div>
@@ -439,7 +439,7 @@ export default function Home() {
       <footer>
         <div>
           <div className='w-full bg-[#CCF5F5]'>
-            <div className='max-w-[90rem] p-20 2xl:px-0 my-24'>
+            <div className='max-w-[90rem] mx-auto p-20 2xl:px-0 my-24'>
               <div className='w-[50%] mx-auto'>
                 <h3 className='text-black font-bold text-4xl leading-tight mb-8 capitalize text-center'>
                   Get a 2 months free trial for new members
@@ -459,7 +459,7 @@ export default function Home() {
             </div>
           </div>
           <div className='bg-white w-full'>
-            <div className='max-w-[90rem] px-16 2xl:px-0 mb-8'>
+            <div className='max-w-[90rem] mx-auto px-16 2xl:px-0 mb-8'>
               <div className='grid grid-cols-3 gap-24'>
                 <div>
                   <Image
@@ -517,7 +517,7 @@ export default function Home() {
             </div>
           </div>
           <div className='bg-[#76A6A6] w-full h-fit'>
-            <div className='py-4 px-16 2xl:px-0 max-w-[90rem]'>
+            <div className='py-4 px-16 2xl:px-0 max-w-[90rem] mx-auto'>
               <div className='w-full text-center'>
                 <p className='text-base font-semibold text-gray-100'>
                   &copy;2023 Easydry Services
