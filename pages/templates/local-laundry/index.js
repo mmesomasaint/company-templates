@@ -21,7 +21,7 @@ export default function Home() {
         <link rel='icon' href='/imgs/local-laundry/icon.ico' />
       </Head>
       <header className='w-full relative'>
-        <div className='max-w-[90rem] absolute top-0 left-0 right-0 mx-auto flex justify-between items-center gap-0 px-16 2xl:px-0'>
+        <div className='max-w-[90rem] absolute top-0 left-0 right-0 mx-auto flex justify-between items-center gap-0 px-16'>
           <div>
             <Image
               src='/imgs/local-laundry/logo.png'
@@ -73,7 +73,7 @@ export default function Home() {
         <div className='max-w-[90rem] mx-auto'>
           <div className="h-[55rem] w-full bg-[url('/imgs/local-laundry/showcase.jpg')] bg-no-repeat bg-cover bg-top">
             <div className='w-full h-full'>
-              <div className='w-full mx-auto bg-transparent h-full pt-32 px-16 2xl:px-0 grid grid-cols-2 place-items-stretch'>
+              <div className='w-full mx-auto bg-transparent h-full pt-32 px-16 grid grid-cols-2 place-items-stretch'>
                 <div className='flex flex-col justify-start items-center'>
                   <div className='w-fit mx-auto'>
                     <h1 className='w-[70%] capitalize text-6xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='my-16 px-16 2xl:px-0'>
+          <div className='my-16 px-16'>
             <div className='grid grid-cols-2 gap-14 place-items-stretch'>
               <div className='bg-white grid grid-cols-2 gap-7'>
                 <div>
@@ -317,7 +317,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-[15rem] w-full bg-[url('/imgs/local-laundry/pattern.jpg')] bg-no-repeat bg-cover bg-center" />
-          <div className='px-16 2xl:px-0 py-24'>
+          <div className='px-16 py-24'>
             <div className='grid grid-cols-2 gap-0 place-items-center items-center'>
               <div className='flex justify-start items-center'>
                 <Image
@@ -403,7 +403,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='px-16 2xl:px-0 py-24'>
+          <div className='px-16 py-24'>
             <div className='grid grid-cols-2 gap-0 place-items-center items-center'>
               <div className='flex justify-start items-center'>
                 <Image
@@ -439,7 +439,7 @@ export default function Home() {
       <footer>
         <div>
           <div className='w-full bg-[#CCF5F5]'>
-            <div className='max-w-[90rem] mx-auto p-20 2xl:px-0 my-24'>
+            <div className='max-w-[90rem] mx-auto p-20 my-24'>
               <div className='w-[50%] mx-auto'>
                 <h3 className='text-black font-bold text-4xl leading-tight mb-8 capitalize text-center'>
                   Get a 2 months free trial for new members
@@ -459,7 +459,7 @@ export default function Home() {
             </div>
           </div>
           <div className='bg-white w-full'>
-            <div className='max-w-[90rem] mx-auto px-16 2xl:px-0 mb-8'>
+            <div className='max-w-[90rem] mx-auto px-16 mb-8'>
               <div className='grid grid-cols-3 gap-24'>
                 <div>
                   <Image
@@ -517,7 +517,7 @@ export default function Home() {
             </div>
           </div>
           <div className='bg-[#76A6A6] w-full h-fit'>
-            <div className='py-4 px-16 2xl:px-0 max-w-[90rem] mx-auto'>
+            <div className='py-4 px-16 max-w-[90rem] mx-auto'>
               <div className='w-full text-center'>
                 <p className='text-base font-semibold text-gray-100'>
                   &copy;2023 Easydry Services
