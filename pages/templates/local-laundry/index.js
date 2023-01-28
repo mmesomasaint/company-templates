@@ -74,17 +74,17 @@ export default function Home() {
       </header>
       <main>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-[55rem] w-full bg-[url('/imgs/local-laundry/showcase.jpg')] bg-no-repeat bg-cover bg-top">
+          <div className="h-fit md:h-[55rem] w-full bg-[url('/imgs/local-laundry/showcase.jpg')] bg-no-repeat bg-cover bg-top">
             <div className='w-full h-full'>
-              <div className='w-full mx-auto bg-transparent h-full pt-32 px-8 xl:px-16  grid grid-cols-2 place-items-stretch gap-6 lg:gap-0'>
+              <div className='w-full mx-auto bg-transparent h-full pt-32 pb-40 md:pb-0 px-8 xl:px-16  grid grid-cols-1 md:grid-cols-2 place-items-stretch gap-6 lg:gap-0'>
                 <div className='flex flex-col justify-start items-center'>
                   <div className='w-fit mx-auto'>
-                    <h1 className='w-full xl:w-[70%] capitalize text-5xl lg:text-6xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
+                    <h1 className='w-full xl:w-[70%] capitalize text-6xl md:text-5xl lg:text-6xl font-[900] mb-7 mt-1 text-center md:text-left text-black leading-tight'>
                       New York&apos;s First Choice in Dry Cleaning
                     </h1>
                   </div>
-                  <div>
-                    <p className='w-[90%] text-center md:text-left text-black text-sm font-medium full'>
+                  <div className='w-full'>
+                    <p className='w-full md:w-[90%] text-center md:text-left text-black text-sm font-medium full'>
                       We have the tendency to believe that smart looking
                       websites is the best impression, Ut facilisis justo eu
                       ullamcorper efficitur. Aenean id quam ex. Aenean eleifend
@@ -92,7 +92,7 @@ export default function Home() {
                       world&apos;s
                     </p>
                   </div>
-                  <div className='my-7 w-full'>
+                  <div className='my-7 w-full text-center md:text-left'>
                     <button className='text-sm font-medium px-2 py-2 sm:px-12 sm:py-3 text-white bg-[#D97941] hover:scale-105'>
                       Discus your project
                     </button>
@@ -110,70 +110,70 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='h-[15rem] relative'>
-            <div className='absolute h-fit -top-[15rem] lg:-top-[12rem] left-0 right-0 mx-8 lg:mx-16 bg-white'>
-              <div className='w-full h-full grid grid-cols-4 grid-rows-2 gap-6 place-items-stretch p-5'>
+          <div className='h-[10rem] md:h-[15rem] relative'>
+            <div className='absolute h-fit -top-[7rem] md:-top-[15rem] lg:-top-[12rem] left-0 right-0 mx-8 lg:mx-16 bg-white'>
+              <div className='w-full h-full grid grid-cols-4 grid-rows-2 gap-0 md:gap-6 place-items-stretch p-0 md:p-5'>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <MdOutlineDryCleaning className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <MdOutlineDryCleaning className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Dry Cleaning
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <GiDrippingStone className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <GiDrippingStone className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Wet Cleaning
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <MdOutlineLocalLaundryService className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <MdOutlineLocalLaundryService className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Laundry
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <MdOutlineIron className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <MdOutlineIron className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Iron Clothes
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <RiShirtLine className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <RiShirtLine className='text-[#76A6A6]  text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Wash & Fold
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <GiSewingMachine className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <GiSewingMachine className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Cloth Sewing
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <AiOutlineEnvironment className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <AiOutlineEnvironment className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Free Pickup
                   </h2>
                 </div>
                 <div className='text-center p-5'>
-                  <div className='w-20 h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
-                    <MdOutlineDeliveryDining className='text-[#76A6A6] text-4xl leading-none' />
+                  <div className='w-12 h-12 md:w-20 md:h-20 mx-auto bg-[#CEF2EF] rounded-full flex justify-center items-center'>
+                    <MdOutlineDeliveryDining className='text-[#76A6A6] text-2xl md:text-4xl leading-none' />
                   </div>
-                  <h2 className='block text-xl font-bold leading-none text-black mt-5 capitalize'>
+                  <h2 className='block text-base md:text-xl font-bold leading-none text-black mt-5 capitalize'>
                     Free Delivery
                   </h2>
                 </div>
@@ -181,8 +181,8 @@ export default function Home() {
             </div>
           </div>
           <div className='my-16 px-8 xl:px-16 '>
-            <div className='grid grid-cols-2 gap-14 place-items-stretch'>
-              <div className='bg-white grid grid-cols-2 gap-7'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-14 place-items-stretch'>
+              <div className='bg-white hidden md:grid grid-cols-2 gap-7'>
                 <div>
                   <Image
                     src='/imgs/local-laundry/man-iron-shirt.jpg'
@@ -202,10 +202,28 @@ export default function Home() {
               </div>
               <div>
                 <div className='mb-7 lg:mb-10 w-fit mx-auto'>
-                  <h2 className='text-black font-extrabold text-4xl lg:text-5xl leading-tight'>
+                  <h2 className='text-black font-extrabold text-5xl md:text-4xl lg:text-5xl text-center md:text-center leading-tight'>
                     Laundry is Easier with dependable cleaners
                   </h2>
                 </div>
+              <div className='bg-white grid md:hidden grid-cols-2 gap-7 mb-7'>
+                <div>
+                  <Image
+                    src='/imgs/local-laundry/man-iron-shirt.jpg'
+                    width={300}
+                    height={500}
+                    className='rounded-full h-[500px] md:h-[400px] lg:h-[500px]'
+                  />
+                </div>
+                <div className='mt-32'>
+                  <Image
+                    src='/imgs/local-laundry/pile-laundry.jpg'
+                    width={300}
+                    height={500}
+                    className='rounded-full h-[500px] md:h-[400px] lg:h-[500px]'
+                  />
+                </div>
+              </div>
                 <div className='flex flex-col gap-4 lg:gap-8 justify-center items-start px-4 mb-7'>
                   <div className='flex gap-3 justify-center items-start'>
                     <AiOutlinePushpin className='text-xl lg:text-3xl text-[#D97941] flex-shrink-0' />
@@ -322,8 +340,8 @@ export default function Home() {
           </div>
           <div className="relative h-[15rem] w-full bg-[url('/imgs/local-laundry/pattern.jpg')] bg-no-repeat bg-cover bg-center" />
           <div className='px-8 xl:px-16  py-24'>
-            <div className='grid grid-cols-2 gap-0 place-items-center items-center'>
-              <div className='flex justify-start items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-0 place-items-center items-center'>
+              <div className='hidden md:flex justify-start items-center'>
                 <Image
                   src='/imgs/local-laundry/man-sparkle.png'
                   width={350}
@@ -333,9 +351,18 @@ export default function Home() {
                 />
               </div>
               <div className='mb-6'>
-                <h1 className='text-black font-extrabold text-4xl text-5xl leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-4xl text-5xl text-center md:text-left leading-tight mb-6 capitalize'>
                   Get The VIP Treatment
                 </h1>
+              <div className='flex md:hidden justify-center items-center my-7 w-full'>
+                <Image
+                  src='/imgs/local-laundry/man-sparkle.png'
+                  width={350}
+                  height={350}
+                  alt='man sparkle'
+                  className='w-[300px] lg:w-[350px]'
+                />
+              </div>
                 <p className='text-xs lg:text-sm font-medium text-black leading-loose'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus tempus dui nec euismod congue. Nulla id libero
@@ -408,9 +435,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='px-8 xl:px-16  py-24'>
-            <div className='grid grid-cols-2 gap-0 place-items-center items-center'>
-              <div className='flex justify-start items-center'>
+          <div className='px-8 xl:px-16 py-24'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-0 place-items-center items-center'>
+              <div className='hidden md:flex justify-start items-center'>
                 <Image
                   src='/imgs/local-laundry/hiring.jpg'
                   width={350}
@@ -420,9 +447,18 @@ export default function Home() {
                 />
               </div>
               <div className='mb-6'>
-                <h1 className='text-black font-extrabold text-4xl text-5xl leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-5xl md:text-4xl text-5xl text-center md:text-left leading-tight mb-6 capitalize'>
                   We are Hiring
                 </h1>
+              <div className='flex md:hidden justify-center items-center my-7'>
+                <Image
+                  src='/imgs/local-laundry/hiring.jpg'
+                  width={350}
+                  height={350}
+                  alt='hiring'
+                  className='w-[300px] lg:w-[350px]'
+                />
+              </div>
                 <p className='text-xs text-sm font-medium text-black leading-loose'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus tempus dui nec euismod congue. Nulla id libero
@@ -445,7 +481,7 @@ export default function Home() {
       <footer>
         <div>
           <div className='w-full bg-[#CCF5F5]'>
-            <div className='max-w-[90rem] mx-auto p-20 my-24'>
+            <div className='max-w-[90rem] mx-auto p-20 mt-12 mb-24'>
               <div className='w-full lg:w-[50%] mx-auto'>
                 <h3 className='text-black font-bold text-4xl leading-tight mb-8 capitalize text-center'>
                   Get a 2 months free trial for new members
@@ -466,7 +502,7 @@ export default function Home() {
           </div>
           <div className='bg-white w-full'>
             <div className='max-w-[90rem] mx-auto px-8 xl:px-16  mb-8'>
-              <div className='grid grid-cols-3 gap-24'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-24'>
                 <div>
                   <Image
                     src='/imgs/local-laundry/logo.png'
@@ -480,7 +516,7 @@ export default function Home() {
                     magna at odio ultricies, non porta quam scelerisque.
                   </p>
                 </div>
-                <div className='col-span-2 grid grid-cols-3'>
+                <div className='md:col-span-2 grid grid-cols-3 place-items-stretch'>
                   <div>
                     <h3 className='text-2xl font-semibold text-black leading-tight '>
                       Contact
@@ -525,7 +561,7 @@ export default function Home() {
           <div className='bg-[#76A6A6] w-full h-fit'>
             <div className='py-4 px-8 xl:px-16  max-w-[90rem] mx-auto'>
               <div className='w-full text-center'>
-                <p className='text-base font-semibold text-gray-100'>
+                <p className='text-sm md:text-base font-semibold text-gray-100'>
                   &copy;2023 Easydry Services
                   <span className='mx-4'> &middot; </span>All Rights Reserved
                   <span className='mx-4'> &middot; </span>Designed by mmesoma
