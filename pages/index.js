@@ -102,7 +102,7 @@ export default function Home() {
                 height={200}
                 alt='template 1'
               />
-              <Link href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Local Laundry Template</Link>
+              <Link href='/templates/local-laundry' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Local Laundry Template</Link>
             </div>
             <div>
               <Image
