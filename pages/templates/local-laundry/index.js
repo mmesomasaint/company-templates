@@ -9,7 +9,7 @@ import {
   MdOutlineLocalLaundryService,
   MdOutlineDryCleaning,
 } from 'react-icons/md'
-import { BsMenuButtonWideFill, BsTelephone } from 'react-icons/bs'
+import { BsTelephone } from 'react-icons/bs'
 import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
 
 export default function Home() {
