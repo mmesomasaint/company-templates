@@ -9,6 +9,7 @@ import {
   MdOutlineLocalLaundryService,
   MdOutlineDryCleaning,
 } from 'react-icons/md'
+import {BsTelephone} from 'react-icons/bs'
 import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
 
 export default function Home() {
@@ -55,11 +56,14 @@ export default function Home() {
               </span>
             </nav>
             <button className='py-3 px-5 bg-[#76A6A6] rounded-md'>
+              <span className='flex justify-start items-center gap-4'>
+              <BsTelephone className='text-base text-white' />
               <span className='text-base font-medium leading-none text-white flex justify-center items-center gap-1'>
                 <p>+234</p>
                 <p>9134</p>
                 <p>293</p>
                 <p>293</p>
+              </span>
               </span>
             </button>
           </div>
