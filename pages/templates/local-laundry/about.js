@@ -576,7 +576,7 @@ export default function Home() {
                     className='w-[300px] lg:w-[350px]'
                   />
                 </div>
-                <p className='text-xs text-sm font-medium text-black leading-loose'>
+                <p className='text-xs md:text-sm font-medium text-black leading-loose'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus tempus dui nec euismod congue. Nulla id libero
                   dignissim, convallis odio id, scelerisque nisl. Curabitur
