@@ -355,7 +355,7 @@ export default function Home() {
                 />
               </div>
               <div className='mb-6'>
-                <h1 className='text-black font-extrabold text-4xl text-5xl text-center md:text-left leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-4xl lg:text-5xl text-center md:text-left leading-tight mb-6 capitalize'>
                   Get The VIP Treatment
                 </h1>
               <div className='flex md:hidden justify-center items-center my-7 w-full'>
@@ -392,7 +392,7 @@ export default function Home() {
           <div className="relative w-full bg-[url('/imgs/local-laundry/delivery.jpg')] bg-no-repeat bg-cover bg-top">
             <div className='w-full py-16 px-4 sm:px-8 xl:px-16  2x:px-0 bg-transparent flex justify-start items-center'>
               <div className='bg-white p-10 w-full sm:w-[60%] lg:w-[50%]'>
-                <h1 className='text-black font-extrabold text-4xl text-5xl leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-4xl lg:text-5xl leading-tight mb-6 capitalize'>
                   Free Pickup & Delivery
                 </h1>
                 <p className='text-xs sm:text-sm font-medium text-black leading-loose'>
