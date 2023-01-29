@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import {
-  GiHamburgerMenu,
-} from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import {
   BsTelephone,
   BsInstagram,
@@ -106,7 +104,10 @@ export default function Home() {
                   </div>
                   <div className='my-7 w-full text-center md:text-left'>
                     <button className='text-sm font-medium px-2 py-2 sm:px-12 sm:py-3 text-white bg-[#D97941] hover:scale-105'>
-                      Discus your project
+                      <span className='flex justify-start items-center gap-4'>
+                        <BsTelephone className='text-base text-white' />
+                        <span>Discus your project</span>
+                      </span>
                     </button>
                   </div>
                 </div>
