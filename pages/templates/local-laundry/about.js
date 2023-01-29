@@ -564,7 +564,7 @@ export default function Home() {
                 />
               </div>
               <div className='mb-6'>
-                <h1 className='text-black font-extrabold text-5xl md:text-4xl text-5xl text-center md:text-left leading-tight mb-6 capitalize'>
+                <h1 className='text-black font-extrabold text-5xl md:text-4xl lg:text-5xl text-center md:text-left leading-tight mb-6 capitalize'>
                   We are Hiring
                 </h1>
                 <div className='flex md:hidden justify-center items-center my-7'>
