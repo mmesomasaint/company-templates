@@ -278,8 +278,8 @@ export default function Home() {
                   <h1 className='text-black font-extrabold text-4xl lg:text-5xl leading-tight mb-3 sm:mb-6 capitalize'>
                     tincidunt tempus sapien Laundry Experience
                   </h1>
-                  <p className='text-xs lg:text-xl lg:text-base font-medium text-black '>
-                    Lorem iptext-sm lg:sum dolor sit amet, consectetur adipiscing elit.
+                  <p className='text-xs sm:text-sm lg:text-base font-medium text-black '>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Vivamus tempus dui nec euismod congue. Nulla id libero
                     dignissim, convallis odio id, scelerisque nisl. Curabitur
                     augue quam, fringilla quis dictum sed, sodales non eros.
