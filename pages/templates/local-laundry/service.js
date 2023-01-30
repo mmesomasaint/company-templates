@@ -9,12 +9,11 @@ import {
 } from 'react-icons/gi'
 import {
   MdOutlineIron,
-  MdOutlineDeliveryDining,
   MdOutlineLocalLaundryService,
   MdOutlineDryCleaning,
 } from 'react-icons/md'
 import { BsTelephone } from 'react-icons/bs'
-import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
+import { AiOutlinePushpin } from 'react-icons/ai'
 import { useCallback, useState } from 'react'
 
 export default function Home() {
