@@ -1,16 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { RiShirtLine } from 'react-icons/ri'
-import { GiDrippingStone, GiHamburgerMenu, GiSewingMachine } from 'react-icons/gi'
-import {
-  MdOutlineIron,
-  MdOutlineDeliveryDining,
-  MdOutlineLocalLaundryService,
-  MdOutlineDryCleaning,
-} from 'react-icons/md'
 import { BsTelephone } from 'react-icons/bs'
-import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
 import { useCallback, useState } from 'react'
 
 export default function Home() {
