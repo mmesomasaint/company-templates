@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
                 <div className='flex justify-center items-start'>
                   <Image
-                    src='/imgs/local-laundry/show-laundry-man.png'
+                    src='/imgs/local-laundry/location-man.png'
                     width={350}
                     height={350}
                     alt='showcase image'
