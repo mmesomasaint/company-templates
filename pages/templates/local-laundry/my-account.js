@@ -59,7 +59,7 @@ export default function Home() {
                 </Link>
               </span>
               <span className='text-base font-medium leading-none text-[#D97941] scale-105 hover:scale-105 hover:text-[#D97941]'>
-                <Link href='/templates/local-laundry/my-amount'>My Amount</Link>
+                <Link href='/templates/local-laundry/my-account'>My Account</Link>
                 <span className='block border-t border-t-[#D97941] w-full h-0 my-1' />
               </span>
             </nav>
