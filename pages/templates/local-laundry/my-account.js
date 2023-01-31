@@ -41,9 +41,8 @@ export default function Home() {
                 isOpen ? 'flex' : 'hidden'
               } w-full lg:w-auto flex-col lg:flex-row lg:flex justify-evenly items-start gap-6 absolute top-[100%] left-0 lg:static px-8 lg:px-0 py-8 lg:py-0 bg-white lg:bg-transparent`}
             >
-              <span className='text-base font-medium leading-none text-[#D97941] scale-105 hover:scale-105 hover:text-[#D97941] w-fit'>
+              <span className='text-base font-medium leading-none text-[#76A6A6] hover:scale-105 hover:text-[#D97941] w-fit'>
                 <Link href='/templates/local-laundry/'>Home</Link>
-                <span className='block border-t border-t-[#D97941] w-full h-0 my-1' />
               </span>
               <span className='text-base font-medium leading-none text-[#76A6A6] hover:scale-105 hover:text-[#D97941]'>
                 <Link href='/templates/local-laundry/about'>About</Link>
@@ -59,8 +58,9 @@ export default function Home() {
                   Find Location
                 </Link>
               </span>
-              <span className='text-base font-medium leading-none text-[#76A6A6] hover:scale-105 hover:text-[#D97941]'>
+              <span className='text-base font-medium leading-none text-[#D97941] scale-105 hover:scale-105 hover:text-[#D97941]'>
                 <Link href='/templates/local-laundry/my-amount'>My Amount</Link>
+                <span className='block border-t border-t-[#D97941] w-full h-0 my-1' />
               </span>
             </nav>
             <button className='p-0 w-7 h-7 flex justify-center items-center sm:block sm:w-auto sm:h-auto sm:py-3 sm:px-5 bg-[#76A6A6] rounded-md'>
