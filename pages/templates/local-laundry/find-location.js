@@ -1,21 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { RiShirtLine } from 'react-icons/ri'
-import {
-  GiDrippingStone,
-  GiHamburgerMenu,
-  GiSewingMachine,
-} from 'react-icons/gi'
-import {
-  MdOutlineIron,
-  MdOutlineDeliveryDining,
-  MdOutlineLocalLaundryService,
-  MdOutlineDryCleaning,
-  MdLocationOn,
-} from 'react-icons/md'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { MdLocationOn } from 'react-icons/md'
 import { BsTelephone } from 'react-icons/bs'
-import { AiOutlineEnvironment, AiOutlinePushpin } from 'react-icons/ai'
 import { BiBuildings } from 'react-icons/bi'
 import { useCallback, useState } from 'react'
 
@@ -174,39 +162,39 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className='bg-white flex md:hidden justify-center items-center my-6'>
-                <div className='bg-[#CCF5F5] p-8'>
-                  <span className='block mb-3'>
-                    <h3 className='block text-2xl text-black font-semibold leading-none'>
-                      Easydry Services
-                    </h3>
-                    <p className='text-lg text-black font-normal leading-tight'>
-                      co
+                  <div className='bg-[#CCF5F5] p-8'>
+                    <span className='block mb-3'>
+                      <h3 className='block text-2xl text-black font-semibold leading-none'>
+                        Easydry Services
+                      </h3>
+                      <p className='text-lg text-black font-normal leading-tight'>
+                        co
+                      </p>
+                    </span>
+                    <p className='text-base font-medium text-black leading-none my-6'>
+                      we're currently located at
                     </p>
-                  </span>
-                  <p className='text-base font-medium text-black leading-none my-6'>
-                    we're currently located at
-                  </p>
-                  <div className='flex flex-col items-start gap-3'>
-                    <span className='flex justify-center items-center gap-3'>
-                      <MdLocationOn className='text-lg text-black flex-shrink-0' />
-                      <p className='text-lg font-semibold leading-tight text-black'>
-                        No 25 zimzele street, barracks junction, Nsukka
-                      </p>
-                    </span>
-                    <span className='flex justify-center items-center gap-3'>
-                      <BiBuildings className='text-lg text-black flex-shrink-0' />
-                      <p className='text-lg font-semibold leading-tight text-black'>
-                        white house odenigbo, Nsukka
-                      </p>
-                    </span>
-                    <span className='flex justify-center items-center gap-3'>
-                      <BsTelephone className='text-lg text-black flex-shrink-0' />
-                      <p className='text-lg font-semibold leading-tight text-black'>
-                        +2347193234499
-                      </p>
-                    </span>
+                    <div className='flex flex-col items-start gap-3'>
+                      <span className='flex justify-center items-center gap-3'>
+                        <MdLocationOn className='text-lg text-black flex-shrink-0' />
+                        <p className='text-lg font-semibold leading-tight text-black'>
+                          No 25 zimzele street, barracks junction, Nsukka
+                        </p>
+                      </span>
+                      <span className='flex justify-center items-center gap-3'>
+                        <BiBuildings className='text-lg text-black flex-shrink-0' />
+                        <p className='text-lg font-semibold leading-tight text-black'>
+                          white house odenigbo, Nsukka
+                        </p>
+                      </span>
+                      <span className='flex justify-center items-center gap-3'>
+                        <BsTelephone className='text-lg text-black flex-shrink-0' />
+                        <p className='text-lg font-semibold leading-tight text-black'>
+                          +2347193234499
+                        </p>
+                      </span>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <div className='px-4 mb-7'>
                   <div className=''>
@@ -214,14 +202,14 @@ export default function Home() {
                       Nunc aliquet sapien quis libero ultricies portum dolor sit
                       amet, consLorem ipsectetur adipiscing elit
                     </p>
-                  <div className='my-7 w-full text-center md:text-left'>
-                    <button className='text-sm font-medium px-2 py-2 sm:px-12 sm:py-3 text-white bg-[#76A6A6] hover:scale-105'>
-                      <span className='flex justify-start items-center gap-4'>
-                        <BsTelephone className='text-base text-white' />
-                        <span>Call For Directions</span>
-                      </span>
-                    </button>
-                  </div>
+                    <div className='my-7 w-full text-center md:text-left'>
+                      <button className='text-sm font-medium px-2 py-2 sm:px-12 sm:py-3 text-white bg-[#76A6A6] hover:scale-105'>
+                        <span className='flex justify-start items-center gap-4'>
+                          <BsTelephone className='text-base text-white' />
+                          <span>Call For Directions</span>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
