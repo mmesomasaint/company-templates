@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { BsFacebook, BsInstagram, BsTelephone, BsTwitter } from 'react-icons/bs'
 
@@ -13,7 +14,9 @@ export default function Home() {
       <header>
         <div className='bg-white'>
           <div className='w-[80%] mx-auto flex justify-between items-center gap-6'>
-            <div>LOGO</div>
+            <div>
+              <Image src='/imgs/foreign-laundry/logo.png' width={130} height={50} />
+            </div>
             <div className='flex justify-evenly items-center gap-10'>
               <div className='flex justify-evenly items-center gap-10'>
                 <span className='text-base font-medium text-[#E3221E] leading-none'>
