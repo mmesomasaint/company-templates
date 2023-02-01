@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Washing</title>
         <meta name='description' content='Wash every material to cleanest' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/imgs/foreign-laundry/favicon.ico' />
       </Head>
       <header>
         <div className='bg-white'>
