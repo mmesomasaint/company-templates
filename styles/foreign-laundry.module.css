@@ -1,0 +1,9 @@
+.quoteFont {
+  font-family: sans-serif;
+  line-height: 0;
+  font-size: 8rem;
+  color: rgb(156 163 175);
+  left: 0;
+  right: 0;
+  position: absolute;
+}

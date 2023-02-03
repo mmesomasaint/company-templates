@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
+  BsPinterest,
   BsFacebook,
   BsInstagram,
   BsTelephone,
@@ -9,6 +10,7 @@ import {
   BsHeart,
   BsClock,
   BsDot,
+  BsLinkedin,
 } from 'react-icons/bs'
 import { TbLetterW } from 'react-icons/tb'
 import { GiAbstract030 } from 'react-icons/gi'
@@ -21,6 +23,8 @@ import {
   RiNumber3,
   RiNumber4,
 } from 'react-icons/ri'
+import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md'
+import Styles from '../../../styles/foreign-laundry.module.css'
 
 export default function Home() {
   return (
@@ -491,8 +495,177 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="h-fit md:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/woman-pink-bed.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
+            <div className='bg-[rgba(0,0,0,0.75)] h-full'>
+              <div className='w-[80%] mx-auto py-14'>
+                <h2 className='text-4xl font-bold text-center text-white capitalize'>
+                  Customer Words
+                </h2>
+                <div className='flex justify-start items-start gap-10 mt-16'>
+                  <Image
+                    src='/imgs/foreign-laundry/isabella-face.jpg'
+                    width={160}
+                    height={160}
+                    alt='profile face'
+                    className='border-[3px] border-white rounded-full '
+                  />
+                  <div className='relative'>
+                    <span className={Styles.quoteFont}>"</span>
+                    <span className='text-sm leading-tight text-gray-400'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus tempus dui nec euismod congue. Nulla id libero
+                      dignissim, convallis odio id, scelerisque nisl. Curabitur
+                      augue quam, fringilla quis dictum sed, sodales non eros.
+                      Nulla venenatis in odio non fringilla. Fusce facilisis
+                      magna at odio ultricies, non porta quam scelerisque.
+                      Phasellus feugiat odio eget quam mollis dapibus. Nam risus
+                      urna, feugiat id augue et, efficitur finibus massa. Nullam
+                      nulla libero, sollicitudin et leo at
+                    </span>
+                    <span className='block mt-4'>
+                      <p className='block text-[#E3221E] text-sm leading-none mb-1'>
+                        Isabella Mira
+                      </p>
+                      <p className='block text-gray-400 leading-none text-xs font-light'>
+                        Personel Manager
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='bg-white py-16'>
+            <div className='w-[80%] mx-auto'>
+              <h2 className='text-4xl font-bold capitalize text-center'>
+                Newsletter Signup
+              </h2>
+              <p className='text-center text-black font-normal leading-none mt-3'>
+                If you want to receive our all weekly updates about new offers
+                and discount, signup below.
+              </p>
+              <div className='flex justify-center items-center w-[60%] mx-auto mt-14'>
+                <input
+                  type='email'
+                  placeholder='Email'
+                  name='email'
+                  autoComplete='email'
+                  className='focus:outline-none border border-gray-500 p-4 flex-grow'
+                />
+                <button className='text-base font-bold px-8 py-4 text-white bg-[#E3221E] border border-[#E3221E]'>
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
+      <footer>
+        <div className='max-w-[90rem] mx-auto'>
+          <div className="h-fit md:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/washing-machine-rack.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
+            <div className='bg-[rgba(0,0,0,0.75)] h-full'>
+              <div className='w-[80%] mx-auto pt-14'>
+                <div className='grid grid-cols-5 gap-20'>
+                  <div className='col-span-2'>
+                    <div className='w-fit'>
+                      <h3 className='text-lg font-semibold leading-none text-white uppercase'>
+                        ABOUT
+                      </h3>
+                      <div className='mt-3 border-b border-b-gray-400' />
+                    </div>
+                    <p className='mt-5 text-lg font-normal text-gray-300 leading-tight'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus tempus dui nec euismod congue. Nulla id libero
+                      dignissim, convallis odio id, scelerisque nisl. Curabitur
+                      augue quam, fringilla quis dictum sed, sodales non eros.
+                      Nulla venenatis in odio non fringilla. Fusce facilisis
+                      magna
+                    </p>
+                  </div>
+                  <div className='col-span-3 grid grid-cols-2 gap-5'>
+                    <div>
+                      <div className='w-fit'>
+                        <h3 className='text-lg font-semibold leading-none text-white uppercase'>
+                          QUICK LINKS
+                        </h3>
+                        <div className='mt-3 border-b border-b-gray-400' />
+                      </div>
+                      <div className='flex flex-col gap-5 mt-5'>
+                        <span className='text-lg font-normal text-gray-300 leading-tight hover:underline hover:text-white'>
+                          <Link href='/templates/foreign-laundry'>Home</Link>
+                        </span>
+                        <span className='text-lg font-normal text-gray-300 leading-tight hover:underline hover:text-white'>
+                          <Link href='/templates/foreign-laundry/about'>
+                            About
+                          </Link>
+                        </span>
+                        <span className='text-lg font-normal text-gray-300 leading-tight hover:underline hover:text-white'>
+                          <Link href='/templates/foreign-laundry'>
+                            Services
+                          </Link>
+                        </span>
+                        <span className='text-lg font-normal text-gray-300 leading-tight hover:underline hover:text-white'>
+                          <Link href='/templates/foreign-laundry'>Contact</Link>
+                        </span>
+                        <span className='text-lg font-normal text-gray-300 leading-tight hover:underline hover:text-white'>
+                          <Link href='/templates/foreign-laundry'>Career</Link>
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='w-fit'>
+                        <h3 className='text-lg font-semibold leading-none text-white uppercase'>
+                          CONTACT
+                        </h3>
+                        <div className='mt-3 border-b border-b-gray-400' />
+                      </div>
+                      <div className='mt-5 flex flex-col gap-5'>
+                        <div>
+                          <div className='flex justify-start items-start gap-3'>
+                            <MdOutlineEmail className='text-lg text-gray-300 flex-shrink-0' />
+                            <span className='text-lg font-normal leading-tight text-gray-300'>
+                              info@example.com
+                            </span>
+                          </div>
+                          <div className='mt-3 border-b border-b-gray-400' />
+                        </div>
+                        <div>
+                          <div className='flex justify-start items-start gap-3'>
+                            <BsTelephone className='text-lg text-gray-300 flex-shrink-0' />
+                            <span className='text-lg font-normal leading-tight text-gray-300'>
+                              +2349023343327
+                            </span>
+                          </div>
+                          <div className='mt-3 border-b border-b-gray-400' />
+                        </div>
+                        <div>
+                          <div className='flex justify-start items-start gap-3'>
+                            <MdOutlineLocationOn className='text-lg text-gray-300 flex-shrink-0' />
+                            <span className='text-lg font-normal leading-tight text-gray-300'>
+                              No 57 New Olearns Catholic Cathedral, First Floor
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className=' mt-10 mb-4 flex justify-between items-center'>
+                  <div className='flex justify-evenly gap-3'>
+                    <BsFacebook className='text-lg text-gray-300' />
+                    <BsLinkedin className='text-lg text-gray-300' />
+                    <BsTwitter className='text-lg text-gray-300' />
+                    <BsPinterest className='text-lg text-gray-300' />
+                  </div>
+                  <div className=''>
+                    <span className='text-lg text-gray-300'>&copy;2023 Washing, All Rights Reserved <span className='mx-2'>&middot;</span> Designed by mmesoma saint</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
