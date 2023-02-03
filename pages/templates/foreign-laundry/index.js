@@ -35,7 +35,7 @@ export default function Home() {
         <link rel='icon' href='/imgs/foreign-laundry/favicon.ico' />
       </Head>
       <header>
-        <div className='bg-white'>
+        <div className='bg-white max-w-[90rem] mx-auto'>
           <div className='w-[80%] mx-auto flex justify-between items-center gap-6'>
             <div>
               <Image
@@ -658,7 +658,11 @@ export default function Home() {
                     <BsPinterest className='text-lg text-gray-300' />
                   </div>
                   <div className=''>
-                    <span className='text-lg text-gray-300'>&copy;2023 Washing, All Rights Reserved <span className='mx-2'>&middot;</span> Designed by mmesoma saint</span>
+                    <span className='text-lg text-gray-300'>
+                      &copy;2023 Washing, All Rights Reserved{' '}
+                      <span className='mx-2'>&middot;</span> Designed by mmesoma
+                      saint
+                    </span>
                   </div>
                 </div>
               </div>
