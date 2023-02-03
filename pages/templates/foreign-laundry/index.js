@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <div className='flex justify-center items-center gap-2 bg-[#E3221E] px-3 py-6'>
                 <BsTelephone className='text-lg text-white' />
-                <span className='text-base font-medium text-white leading-none'>
+                <span className='hidden xl:inline text-base font-medium text-white leading-none'>
                   +234-9034-323-339
                 </span>
               </div>
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </div>
           <div className='w-[80%] mx-auto my-16'>
-            <div className='grid grid-cols-4 place-items-stretch gap-3'>
+            <div className='grid grid-cols-2 xl:grid-cols-4 place-items-stretch gap-3'>
               <div className='p-5 group hover:bg-[#E3221E] border flex flex-col gap-5'>
                 <TbLetterW className='text-5xl text-[#E3221E] group-hover:text-white' />
                 <h2 className='text-3xl font-medium leading-tight text-black group-hover:text-white'>
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
           <div className='w-[80%] mx-auto my-16'>
             <h2 className='text-4xl font-bold uppercase'>WHY CHOOSE US</h2>
-            <div className='grid grid-cols-2 gap-16 place-items-stretch mt-8'>
+            <div className='grid grid-cols-1 xl:grid-cols-2 gap-16 place-items-stretch mt-8'>
               <div>
                 <iframe
                   width='533'
@@ -308,188 +308,194 @@ export default function Home() {
               <h2 className='text-4xl font-bold uppercase text-center'>
                 Laundry Service Package
               </h2>
-              <div className='grid grid-cols-3 place-items-stretch gap-10 mt-14'>
-                <div className='p-8 bg-white shadow-xl'>
-                  <div>
-                    <div className='flex items-end'>
-                      <div className='text-black flex justify-start items-start'>
-                        <span className='text-base font-normal leading-none'>
-                          $
-                        </span>
-                        <span className='text-4xl font-bold leading-none'>
-                          12
-                        </span>
+              <div className='grid grid-cols-1 xl:grid-cols-3 place-items-stretch gap-10 mt-14'>
+                <div className='flex xl:block justify-center items-center'>
+                  <div className='p-8 bg-white shadow-xl'>
+                    <div>
+                      <div className='flex items-end'>
+                        <div className='text-black flex justify-start items-start'>
+                          <span className='text-base font-normal leading-none'>
+                            $
+                          </span>
+                          <span className='text-4xl font-bold leading-none'>
+                            12
+                          </span>
+                        </div>
+                        <span className='text-base'>/month</span>
                       </div>
-                      <span className='text-base'>/month</span>
+                      <div className='mt-6 text-[#E3221E] text-2xl font-bold leading-none'>
+                        Basic Plan
+                      </div>
                     </div>
-                    <div className='mt-6 text-[#E3221E] text-2xl font-bold leading-none'>
-                      Basic Plan
+                    <div className='flex flex-col gap-3 py-3'>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulo fermentum Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nu placerat pretiumlorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr List ringilla quisdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr List venenatis do siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr Listdo accumsan siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>scelerisque Listdolorr siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>tincidunt lorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>consectetur siet</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className='flex flex-col gap-3 py-3'>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulo fermentum Listdo siet</p>
+                    <div className='my-4'>
+                      <button className='text-base font-bold px-4 py-2 text-[#E3221E] border border-[#E3221E]'>
+                        CHOOSE PLAN
+                      </button>
                     </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nu placerat pretiumlorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr List ringilla quisdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr List venenatis do siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr Listdo accumsan siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>scelerisque Listdolorr siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>tincidunt lorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>consectetur siet</p>
-                    </div>
-                  </div>
-                  <div className='my-4'>
-                    <button className='text-base font-bold px-4 py-2 text-[#E3221E] border border-[#E3221E]'>
-                      CHOOSE PLAN
-                    </button>
                   </div>
                 </div>
-                <div className='p-8 bg-white shadow-2xl border-t-[3px] border-t-[#E3221E] scale-105'>
-                  <div>
-                    <div className='flex items-end'>
-                      <div className='text-black flex justify-start items-start'>
-                        <span className='text-base font-normal leading-none'>
-                          $
-                        </span>
-                        <span className='text-4xl font-bold leading-none'>
-                          29
-                        </span>
+                <div className='flex xl:block justify-center items-center'>
+                  <div className='p-8 bg-white shadow-2xl border-t-[3px] border-t-[#E3221E] scale-105'>
+                    <div>
+                      <div className='flex items-end'>
+                        <div className='text-black flex justify-start items-start'>
+                          <span className='text-base font-normal leading-none'>
+                            $
+                          </span>
+                          <span className='text-4xl font-bold leading-none'>
+                            29
+                          </span>
+                        </div>
+                        <span className='text-base'>/month</span>
                       </div>
-                      <span className='text-base'>/month</span>
+                      <div className='mt-6 text-[#E3221E] text-2xl font-bold leading-none'>
+                        Regular Plan
+                      </div>
                     </div>
-                    <div className='mt-6 text-[#E3221E] text-2xl font-bold leading-none'>
-                      Regular Plan
+                    <div className='flex flex-col gap-3 py-3'>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulo fermentum Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nu placerat pretiumlorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr List ringilla quisdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr List venenatis do siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr Listdo accumsan siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>scelerisque Listdolorr siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>tincidunt lorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>consectetur siet</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className='flex flex-col gap-3 py-3'>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulo fermentum Listdo siet</p>
+                    <div className='my-4'>
+                      <button className='text-base font-bold px-4 py-2 text-white bg-[#E3221E]'>
+                        CHOOSE PLAN
+                      </button>
                     </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nu placerat pretiumlorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr List ringilla quisdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr List venenatis do siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr Listdo accumsan siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>scelerisque Listdolorr siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>tincidunt lorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>consectetur siet</p>
-                    </div>
-                  </div>
-                  <div className='my-4'>
-                    <button className='text-base font-bold px-4 py-2 text-white bg-[#E3221E]'>
-                      CHOOSE PLAN
-                    </button>
                   </div>
                 </div>
-                <div className='p-8 bg-white shadow-xl'>
-                  <div>
-                    <div className='flex items-end'>
-                      <div className='text-black flex justify-start items-start'>
-                        <span className='text-base font-normal leading-none'>
-                          $
-                        </span>
-                        <span className='text-4xl font-bold leading-none'>
-                          39
-                        </span>
+                <div className='flex xl:block justify-center items-center'>
+                  <div className='p-8 bg-white shadow-xl'>
+                    <div>
+                      <div className='flex items-end'>
+                        <div className='text-black flex justify-start items-start'>
+                          <span className='text-base font-normal leading-none'>
+                            $
+                          </span>
+                          <span className='text-4xl font-bold leading-none'>
+                            39
+                          </span>
+                        </div>
+                        <span className='text-base'>/month</span>
                       </div>
-                      <span className='text-base'>/month</span>
+                      <div className='mt-6 text-[#E3221E] text-2xl font-bold leading-none'>
+                        Premium Plan
+                      </div>
                     </div>
-                    <div className='mt-6 text-[#E3221E] text-2xl font-bold leading-none'>
-                      Premium Plan
+                    <div className='flex flex-col gap-3 py-3'>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulo fermentum Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nu placerat pretiumlorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr List ringilla quisdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr List venenatis do siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>Nulorr Listdo accumsan siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>scelerisque Listdolorr siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>tincidunt lorr Listdo siet</p>
+                      </div>
+                      <div className='flex justify-start items-center'>
+                        <BsDot className='text-xl text-black' />
+                        <p>consectetur siet</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className='flex flex-col gap-3 py-3'>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulo fermentum Listdo siet</p>
+                    <div className='my-4'>
+                      <button className='text-base font-bold px-4 py-2 text-[#E3221E] border border-[#E3221E]'>
+                        CHOOSE PLAN
+                      </button>
                     </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nu placerat pretiumlorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr List ringilla quisdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr List venenatis do siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>Nulorr Listdo accumsan siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>scelerisque Listdolorr siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>tincidunt lorr Listdo siet</p>
-                    </div>
-                    <div className='flex justify-start items-center'>
-                      <BsDot className='text-xl text-black' />
-                      <p>consectetur siet</p>
-                    </div>
-                  </div>
-                  <div className='my-4'>
-                    <button className='text-base font-bold px-4 py-2 text-[#E3221E] border border-[#E3221E]'>
-                      CHOOSE PLAN
-                    </button>
                   </div>
                 </div>
               </div>
@@ -544,7 +550,7 @@ export default function Home() {
                 If you want to receive our all weekly updates about new offers
                 and discount, signup below.
               </p>
-              <div className='flex justify-center items-center w-[60%] mx-auto mt-14'>
+              <div className='flex justify-center items-center w-[80%] xl:w-[60%] mx-auto mt-14'>
                 <input
                   type='email'
                   placeholder='Email'
