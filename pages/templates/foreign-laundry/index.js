@@ -13,7 +13,7 @@ import {
   BsLinkedin,
 } from 'react-icons/bs'
 import { TbLetterW } from 'react-icons/tb'
-import { GiAbstract030 } from 'react-icons/gi'
+import { GiAbstract030, GiHamburgerMenu } from 'react-icons/gi'
 import { RxCube } from 'react-icons/rx'
 import { FaBath } from 'react-icons/fa'
 import {
@@ -44,7 +44,14 @@ export default function Home() {
                 height={50}
               />
             </div>
-            <div className='flex justify-evenly items-center gap-10'>
+            <div className='flex lg:hidden justify-evenly items-center gap-8'>
+              <GiHamburgerMenu className='text-2xl text-gray-500' />
+              <div className='w-16 h-16 flex justify-center items-center bg-[#E3221E]'>
+                
+                <BsTelephone className='text-2xl text-white' />
+              </div>
+            </div>
+            <div className='hidden lg:flex justify-evenly items-center gap-10'>
               <div className='flex justify-evenly items-center gap-10'>
                 <span className='text-base font-medium text-[#E3221E] leading-none'>
                   <Link href='/templates/foreign-laundry'>HOME</Link>
@@ -204,13 +211,13 @@ export default function Home() {
             </div>
           </div>
           <div className='my-16'>
-            <div className="h-fit md:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/clothes-hanging.jpg')] bg-no-repeat bg-cover bg-center">
+            <div className="h-fit lg:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/clothes-hanging.jpg')] bg-no-repeat bg-cover bg-center">
               <div className='bg-[rgba(0,0,0,0.75)] h-full'>
                 <div className='w-[80%] mx-auto py-8 text-center '>
                   <h2 className='text-4xl font-bold leading-tight text-white capitalize w-full text-center mb-8'>
                     How it works
                   </h2>
-                  <div className='grid grid-cols-4 place-items-stretch gap-5'>
+                  <div className='grid grid-cols-2 lg:grid-cols-4 place-items-stretch gap-16 lg:gap-5'>
                     <div>
                       <span className='flex justify-center items-center w-12 h-12 rounded-full bg-[#E3221E] mx-auto mb-4'>
                         <RiNumber1 className='text-white text-2xl' />
@@ -501,7 +508,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="h-fit md:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/woman-pink-bed.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
+          <div className="h-fit lg:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/woman-pink-bed.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
             <div className='bg-[rgba(0,0,0,0.75)] h-full'>
               <div className='w-[80%] mx-auto py-14'>
                 <h2 className='text-4xl font-bold text-center text-white capitalize'>
@@ -550,7 +557,7 @@ export default function Home() {
                 If you want to receive our all weekly updates about new offers
                 and discount, signup below.
               </p>
-              <div className='flex justify-center items-center w-[80%] xl:w-[60%] mx-auto mt-14'>
+              <div className='flex justify-center items-center w-full lg:w-[80%] xl:w-[60%] mx-auto mt-14'>
                 <input
                   type='email'
                   placeholder='Email'
@@ -568,7 +575,7 @@ export default function Home() {
       </main>
       <footer>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-fit md:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/washing-machine-rack.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
+          <div className="h-fit lg:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/washing-machine-rack.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
             <div className='bg-[rgba(0,0,0,0.75)] h-full'>
               <div className='w-[80%] mx-auto pt-14'>
                 <div className='grid grid-cols-5 gap-20'>
@@ -656,7 +663,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className=' mt-10 mb-4 flex justify-between items-center'>
+                <div className=' mt-10 pb-4 flex flex-col lg:flex-row justify-between items-center gap-4'>
                   <div className='flex justify-evenly gap-3'>
                     <BsFacebook className='text-lg text-gray-300' />
                     <BsLinkedin className='text-lg text-gray-300' />
