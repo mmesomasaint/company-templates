@@ -172,7 +172,7 @@ export default function Home() {
             </div>
           </div>
           <div className='w-[80%] mx-auto my-16'>
-            <div className='grid grid-cols-2 xl:grid-cols-4 place-items-stretch gap-3'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 place-items-stretch gap-3'>
               <div className='p-5 group hover:bg-[#E3221E] border flex flex-col gap-5'>
                 <TbLetterW className='text-5xl text-[#E3221E] group-hover:text-white' />
                 <h2 className='text-3xl font-medium leading-tight text-black group-hover:text-white'>
@@ -225,7 +225,7 @@ export default function Home() {
                   <h2 className='text-4xl font-bold leading-tight text-white capitalize w-full text-center mb-8'>
                     How it works
                   </h2>
-                  <div className='grid grid-cols-2 lg:grid-cols-4 place-items-stretch gap-16 lg:gap-5'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-stretch gap-16 lg:gap-5'>
                     <div>
                       <span className='flex justify-center items-center w-12 h-12 rounded-full bg-[#E3221E] mx-auto mb-4'>
                         <RiNumber1 className='text-white text-2xl' />
@@ -274,6 +274,7 @@ export default function Home() {
                   allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                   allowFullScreen
                   title='Embedded youtube'
+                  className='w-full sm:w-[533px] h-[200px] sm:h-[350px]'
                 />
               </div>
               <div className='flex flex-col gap-6 items-center'>
@@ -325,7 +326,7 @@ export default function Home() {
               </h2>
               <div className='grid grid-cols-1 xl:grid-cols-3 place-items-stretch gap-10 mt-14'>
                 <div className='flex xl:block justify-center items-center'>
-                  <div className='p-8 bg-white shadow-xl'>
+                  <div className='p-4 sm:p-8 bg-white shadow-xl'>
                     <div>
                       <div className='flex items-end'>
                         <div className='text-black flex justify-start items-start'>
@@ -343,40 +344,40 @@ export default function Home() {
                       </div>
                     </div>
                     <div className='flex flex-col gap-3 py-3'>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulo fermentum Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nu placerat pretiumlorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr List ringilla quisdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr List venenatis do siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr Listdo accumsan siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>scelerisque Listdolorr siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>tincidunt lorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>consectetur siet</p>
                       </div>
                     </div>
@@ -388,7 +389,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='flex xl:block justify-center items-center'>
-                  <div className='p-8 bg-white shadow-2xl border-t-[3px] border-t-[#E3221E] scale-105'>
+                  <div className='p-4 sm:p-8 bg-white shadow-2xl border-t-[3px] border-t-[#E3221E] scale-105'>
                     <div>
                       <div className='flex items-end'>
                         <div className='text-black flex justify-start items-start'>
@@ -406,40 +407,40 @@ export default function Home() {
                       </div>
                     </div>
                     <div className='flex flex-col gap-3 py-3'>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulo fermentum Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nu placerat pretiumlorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr List ringilla quisdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr List venenatis do siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr Listdo accumsan siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>scelerisque Listdolorr siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>tincidunt lorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>consectetur siet</p>
                       </div>
                     </div>
@@ -451,7 +452,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='flex xl:block justify-center items-center'>
-                  <div className='p-8 bg-white shadow-xl'>
+                  <div className='p-4 sm:p-8 bg-white shadow-xl'>
                     <div>
                       <div className='flex items-end'>
                         <div className='text-black flex justify-start items-start'>
@@ -469,40 +470,40 @@ export default function Home() {
                       </div>
                     </div>
                     <div className='flex flex-col gap-3 py-3'>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulo fermentum Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nu placerat pretiumlorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr List ringilla quisdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr List venenatis do siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>Nulorr Listdo accumsan siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>scelerisque Listdolorr siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>tincidunt lorr Listdo siet</p>
                       </div>
-                      <div className='flex justify-start items-center'>
-                        <BsDot className='text-xl text-black' />
+                      <div className='flex justify-start items-start'>
+                        <BsDot className='text-xl text-black flex-shrink-0' />
                         <p>consectetur siet</p>
                       </div>
                     </div>
@@ -522,13 +523,13 @@ export default function Home() {
                 <h2 className='text-4xl font-bold text-center text-white capitalize'>
                   Customer Words
                 </h2>
-                <div className='flex justify-start items-start gap-10 mt-16'>
+                <div className='flex flex-col sm:flex-row justify-start items-start gap-10 mt-24 text-center sm:text-left'>
                   <Image
                     src='/imgs/foreign-laundry/isabella-face.jpg'
                     width={160}
                     height={160}
                     alt='profile face'
-                    className='border-[3px] border-white rounded-full '
+                    className='border-[3px] border-white rounded-full w-[80px] sm:w-[160px] mx-auto'
                   />
                   <div className='relative'>
                     <span className={Styles.quoteFont}>"</span>
@@ -571,9 +572,9 @@ export default function Home() {
                   placeholder='Email'
                   name='email'
                   autoComplete='email'
-                  className='focus:outline-none border border-gray-500 p-4 flex-grow'
+                  className='focus:outline-none border border-gray-500 p-2 sm:p-4 flex-grow'
                 />
-                <button className='text-base font-bold px-8 py-4 text-white bg-[#E3221E] border border-[#E3221E]'>
+                <button className='text-base font-bold px-4 py-2 sm:px-8 sm:py-4 text-white bg-[#E3221E] border border-[#E3221E]'>
                   SUBSCRIBE
                 </button>
               </div>
@@ -586,7 +587,7 @@ export default function Home() {
           <div className="h-fit lg:h-[24rem] w-full bg-[url('/imgs/foreign-laundry/washing-machine-rack.jpg')] bg-no-repeat bg-cover bg-top bg-fixed">
             <div className='bg-[rgba(0,0,0,0.75)] h-full'>
               <div className='w-[80%] mx-auto pt-14'>
-                <div className='grid grid-cols-5 gap-20'>
+                <div className='grid grid-cols-1 sm:grid-cols-5 gap-20'>
                   <div className='col-span-2'>
                     <div className='w-fit'>
                       <h3 className='text-lg font-semibold leading-none text-white uppercase'>
@@ -603,7 +604,7 @@ export default function Home() {
                       magna
                     </p>
                   </div>
-                  <div className='col-span-3 grid grid-cols-2 gap-5'>
+                  <div className='col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-16 sm:gap-5'>
                     <div>
                       <div className='w-fit'>
                         <h3 className='text-lg font-semibold leading-none text-white uppercase'>
@@ -671,14 +672,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className=' mt-10 pb-4 flex flex-col lg:flex-row justify-between items-center gap-4'>
+                <div className='mt-20 sm:mt-10 pb-4 flex flex-col lg:flex-row justify-between items-center gap-4'>
                   <div className='flex justify-evenly gap-3'>
                     <BsFacebook className='text-lg text-gray-300' />
                     <BsLinkedin className='text-lg text-gray-300' />
                     <BsTwitter className='text-lg text-gray-300' />
                     <BsPinterest className='text-lg text-gray-300' />
                   </div>
-                  <div className=''>
+                  <div className='text-center'>
                     <span className='text-lg text-gray-300'>
                       &copy;2023 Washing, All Rights Reserved{' '}
                       <span className='mx-2'>&middot;</span> Designed by mmesoma
