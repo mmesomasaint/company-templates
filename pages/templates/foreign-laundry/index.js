@@ -24,9 +24,14 @@ import {
   RiNumber4,
 } from 'react-icons/ri'
 import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md'
+import { CgClose } from 'react-icons/cg'
 import Styles from '../../../styles/foreign-laundry.module.css'
+import { useCallback, useState } from 'react'
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+  const handleOpen = useCallback(() => setIsOpen((open) => !open), [])
+
   return (
     <div>
       <Head>
@@ -35,7 +40,7 @@ export default function Home() {
         <link rel='icon' href='/imgs/foreign-laundry/favicon.ico' />
       </Head>
       <header>
-        <div className='bg-white max-w-[90rem] mx-auto'>
+        <div className='relative bg-white max-w-[90rem] mx-auto'>
           <div className='w-[80%] mx-auto flex justify-between items-center gap-6'>
             <div>
               <Image
@@ -45,14 +50,15 @@ export default function Home() {
               />
             </div>
             <div className='flex lg:hidden justify-evenly items-center gap-8'>
-              <GiHamburgerMenu className='text-2xl text-gray-500' />
+              {isOpen ?
+              <CgClose className='text-2xl text-[#E3221E]' onClick={handleOpen} /> :
+              <GiHamburgerMenu className='text-2xl text-gray-500' onClick={handleOpen} />}
               <div className='w-16 h-16 flex justify-center items-center bg-[#E3221E]'>
-                
                 <BsTelephone className='text-2xl text-white' />
               </div>
             </div>
-            <div className='hidden lg:flex justify-evenly items-center gap-10'>
-              <div className='flex justify-evenly items-center gap-10'>
+            <div className={`${isOpen ? 'flex' : 'hidden'} absolute z-30 top-[100%] left-0 right-0 lg:static bg-white lg:flex flex-col lg:flex-row justify-evenly items-start lg:items-center gap-10 pl-[20%] lg:pl-0 py-10 lg:py-0`}>
+              <div className='flex flex-col lg:flex-row justify-evenly items-start lg:items-center gap-10'>
                 <span className='text-base font-medium text-[#E3221E] leading-none'>
                   <Link href='/templates/foreign-laundry'>HOME</Link>
                 </span>
@@ -76,7 +82,7 @@ export default function Home() {
                 <BsTwitter className='text-lg text-black' />
                 <BsInstagram className='text-lg text-black' />
               </div>
-              <div className='flex justify-center items-center gap-2 bg-[#E3221E] px-3 py-6'>
+              <div className='hidden lg:flex justify-center items-center gap-2 bg-[#E3221E] px-3 py-6'>
                 <BsTelephone className='text-lg text-white' />
                 <span className='hidden xl:inline text-base font-medium text-white leading-none'>
                   +234-9034-323-339
@@ -126,14 +132,14 @@ export default function Home() {
                   <h2 className='text-4xl font-bold leading-tight mb-6 text-black'>
                     We are Passionate about Laundry
                   </h2>
-              <div className='block md:hidden my-6'>
-                <Image
-                  src='/imgs/foreign-laundry/wash-girl.jpg'
-                  width={400}
-                  height={400}
-                  alt='wash girl'
-                />
-              </div>
+                  <div className='block md:hidden my-6'>
+                    <Image
+                      src='/imgs/foreign-laundry/wash-girl.jpg'
+                      width={400}
+                      height={400}
+                      alt='wash girl'
+                    />
+                  </div>
                   <span className='text-sm font-normal leading-normal text-black'>
                     <p className='block my-5'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
