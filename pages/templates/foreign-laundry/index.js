@@ -89,7 +89,7 @@ export default function Home() {
       <main>
         <div className='max-w-[90rem] mx-auto'>
           <div className="h-fit md:h-[37rem] w-full bg-[url('/imgs/foreign-laundry/showcase.jpg')] bg-no-repeat bg-cover bg-center">
-            <div className='bg-[rgba(0,0,0,0.55)] h-full'>
+            <div className='bg-[rgba(0,0,0,0.55)] h-full py-16 md:py-0'>
               <div className='flex flex-col gap-8 items-center justify-center h-full w-[60%] mx-auto'>
                 <span className='text-xl font-light leading-none text-white'>
                   WASHING
@@ -112,8 +112,8 @@ export default function Home() {
             </div>
           </div>
           <div className='w-[80%] mx-auto my-16'>
-            <div className='grid grid-cols-3 gap-10 place-items-stretch'>
-              <div>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 place-items-stretch'>
+              <div className='hidden md:block'>
                 <Image
                   src='/imgs/foreign-laundry/wash-girl.jpg'
                   width={400}
@@ -121,12 +121,20 @@ export default function Home() {
                   alt='wash girl'
                 />
               </div>
-              <div className='col-span-2'>
+              <div className='md:col-span-2'>
                 <div className='w-full h-full'>
                   <h2 className='text-4xl font-bold leading-tight mb-6 text-black'>
                     We are Passionate about Laundry
                   </h2>
-                  <span className=' text-sm font-normal leading-normal text-black'>
+              <div className='block md:hidden my-6'>
+                <Image
+                  src='/imgs/foreign-laundry/wash-girl.jpg'
+                  width={400}
+                  height={400}
+                  alt='wash girl'
+                />
+              </div>
+                  <span className='text-sm font-normal leading-normal text-black'>
                     <p className='block my-5'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Vivamus tempus dui nec euismod congue. Nulla id libero
