@@ -154,7 +154,7 @@ export default function Home() {
                     </button>
                   </div>
                 </div>
-                <div className='xl:col-span-3 grid grid-cols-2 gap-2'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 xl:col-span-3 gap-2'>
                   <div className='p-2'>
                     <div className='flex justify-start items-start gap-2 mb-4 cursor-pointer'>
                       <RxCube className='text-2xl text-[#E3221E]' />
@@ -281,7 +281,7 @@ export default function Home() {
               <h2 className='text-4xl font-bold leading-tight text-black capitalize w-full text-center mb-8'>
                 Featured Services
               </h2>
-              <div className='grid grid-cols-2 xl:grid-cols-4 gap-5'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5'>
                 <div className='flex flex-col gap-8'>
                   <div className='flex justify-start items-start gap-3'>
                     <div className='w-fit h-fit rounded-full border-2 border-[#E3221E] flex-shrink-0'>
@@ -341,7 +341,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='order-first xl:order-none col-span-2'>
+                <div className='order-first xl:order-none sm:col-span-2'>
                   <Image
                     src='/imgs/foreign-laundry/iron-basket.jpg'
                     width={1000}
@@ -415,7 +415,7 @@ export default function Home() {
               <h2 className='text-4xl font-bold leading-tight text-black capitalize w-full text-center mb-8'>
                 Dry Cleaning & Laundry Services
               </h2>
-              <div className='grid grid-cols-3 gap-10'>
+              <div className='grid grid-cols-1 sm:grid-cols-3 gap-10'>
                 <div className='flex flex-col items-start justify-center'>
                   <Image
                     src='/imgs/foreign-laundry/dirty-clothes.jpg'
