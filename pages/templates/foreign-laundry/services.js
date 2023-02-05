@@ -110,7 +110,7 @@ export default function Home() {
       </header>
       <main>
         <div className='max-w-[90rem] mx-auto'>
-          <div className="h-fit md:h-[37rem] w-full bg-[url('/imgs/foreign-laundry/iron-basket.jpg')] bg-no-repeat bg-cover bg-center">
+          <div className="h-fit md:h-[37rem] w-full bg-[url('/imgs/foreign-laundry/lady-iron.jpg')] bg-no-repeat bg-cover bg-center">
             <div className='bg-[rgba(0,0,0,0.55)] h-full py-16 md:py-0'>
               <div className='flex flex-col gap-8 items-center justify-center h-full w-[60%] mx-auto'>
                 <span className='text-xl font-light leading-none text-white'>
