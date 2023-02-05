@@ -234,7 +234,7 @@ export default function Home() {
                 Fun Facts
               </h2>
             </div>
-            <div className='grid grid-cols-4 gap-5 place-items-stretch'>
+            <div className='grid grid-cols-2 sm:grid-cols-4 gap-5 place-items-stretch'>
               <div className='p-5 group flex flex-col justify-center items-center'>
                 <BsHeart className='text-4xl text-gray-500 group-hover:scale-125 mb-3' />
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
