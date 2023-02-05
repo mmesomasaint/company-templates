@@ -129,7 +129,7 @@ export default function Home() {
                 We Specialize In
               </h2>
             </div>
-            <div className='grid grid-cols-3 gap-5 place-items-stretch'>
+            <div className='grid grid-cols-2 xl:grid-cols-3 gap-5 place-items-stretch'>
               <div className='border border-gray-400 p-5 flex justify-start items-start gap-5 group'>
                 <RiNumber1 className='text-4xl text-[#E3221E] flex-shrink-0' />
                 <div className=''>
@@ -240,7 +240,7 @@ export default function Home() {
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
                   800
                 </span>
-                <span className='text-xl font-medium text-gray-500 block'>
+                <span className='text-xl font-medium text-gray-500 text-center block'>
                   Happy Clients
                 </span>
               </div>
@@ -249,7 +249,7 @@ export default function Home() {
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
                   800
                 </span>
-                <span className='text-xl font-medium text-gray-500 block'>
+                <span className='text-xl font-medium text-gray-500 text-center block'>
                   People Like Us
                 </span>
               </div>
@@ -258,7 +258,7 @@ export default function Home() {
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
                   15
                 </span>
-                <span className='text-xl font-medium text-gray-500 block'>
+                <span className='text-xl font-medium text-gray-500 text-center block'>
                   Year of Experience
                 </span>
               </div>
@@ -267,7 +267,7 @@ export default function Home() {
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
                   800
                 </span>
-                <span className='text-xl font-medium text-gray-500 block'>
+                <span className='text-xl font-medium text-gray-500 text-center block'>
                   Awesome Service
                 </span>
               </div>
