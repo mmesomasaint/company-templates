@@ -274,8 +274,8 @@ export default function Home() {
             </div>
           </div>
           <div className='w-[80%] mx-auto my-16'>
-            <div className='grid grid-cols-2 gap-10 place-items-stretch'>
-              <div>
+            <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 place-items-stretch'>
+              <div className='hidden xl:block'>
                 <Image
                   src='/imgs/foreign-laundry/old-lady-wash.jpg'
                   width={500}
@@ -287,6 +287,14 @@ export default function Home() {
                 <div className=''>
                   <h2 className='text-4xl font-bold leading-tiht text-black capitalize w-full text-left mb-8'>We are true to ourselves and commit to always perform at our best</h2>
                 </div>
+              <div className='flex xl:hidden justify-center items-center my-5'>
+                <Image
+                  src='/imgs/foreign-laundry/old-lady-wash.jpg'
+                  width={500}
+                  height={500}
+                  alt='committed lady'
+                />
+              </div>
                 <div>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
