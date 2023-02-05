@@ -434,7 +434,7 @@ export default function Home() {
                 </div>
                 <div className='flex flex-col items-start justify-center'>
                   <Image
-                    src='/imgs/foreign-laundry/dirty-clothes.jpg'
+                    src='/imgs/foreign-laundry/man-machine.jpg'
                     width={1000}
                     height={1000}
                     className='mb-4'
@@ -450,7 +450,7 @@ export default function Home() {
                 </div>
                 <div className='flex flex-col items-start justify-center'>
                   <Image
-                    src='/imgs/foreign-laundry/dirty-clothes.jpg'
+                    src='/imgs/foreign-laundry/lady-girl-machine.jpg'
                     width={1000}
                     height={1000}
                     className='mb-4'
