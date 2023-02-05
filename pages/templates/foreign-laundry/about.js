@@ -10,12 +10,14 @@ import {
   BsHeart,
   BsClock,
   BsLinkedin,
+  BsEmojiSmile
 } from 'react-icons/bs'
 import { GiAbstract030, GiHamburgerMenu } from 'react-icons/gi'
 import { RxCube } from 'react-icons/rx'
 import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from 'react-icons/ri'
 import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { CgClose } from 'react-icons/cg'
+import {BiLike} from 'react-icons/bi'
 import { useCallback, useState } from 'react'
 
 export default function Home() {
@@ -226,25 +228,25 @@ export default function Home() {
             </div>
             <div className='grid grid-cols-2 sm:grid-cols-4 gap-5 place-items-stretch'>
               <div className='p-5 group flex flex-col justify-center items-center'>
-                <BsHeart className='text-4xl text-gray-500 group-hover:scale-125 mb-3' />
+                <BsEmojiSmile className='text-4xl text-gray-500 group-hover:scale-125 mb-3 flex-shrink-0' />
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
-                  800
+                  1500
                 </span>
                 <span className='text-xl font-medium text-gray-500 text-center block'>
                   Happy Clients
                 </span>
               </div>
               <div className='p-5 group flex flex-col justify-center items-center'>
-                <BsHeart className='text-4xl text-gray-500 group-hover:scale-125 mb-3' />
+                <BiLike className='text-4xl text-gray-500 group-hover:scale-125 mb-3 flex-shrink-0' />
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
-                  800
+                  2000
                 </span>
                 <span className='text-xl font-medium text-gray-500 text-center block'>
                   People Like Us
                 </span>
               </div>
               <div className='p-5 group flex flex-col justify-center items-center'>
-                <BsClock className='text-4xl text-gray-500 group-hover:scale-125 mb-3' />
+                <BsClock className='text-4xl text-gray-500 group-hover:scale-125 mb-3 flex-shrink-0' />
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
                   15
                 </span>
@@ -253,7 +255,7 @@ export default function Home() {
                 </span>
               </div>
               <div className='p-5 group flex flex-col justify-center items-center'>
-                <BsHeart className='text-4xl text-gray-500 group-hover:scale-125 mb-3' />
+                <BsHeart className='text-4xl text-gray-500 group-hover:scale-125 mb-3 flex-shrink-0' />
                 <span className='text-5xl font-bold text-[#E3221E] block mb-2'>
                   800
                 </span>
