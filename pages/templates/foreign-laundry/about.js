@@ -9,23 +9,13 @@ import {
   BsTwitter,
   BsHeart,
   BsClock,
-  BsDot,
   BsLinkedin,
 } from 'react-icons/bs'
-import { TbLetterW } from 'react-icons/tb'
 import { GiAbstract030, GiHamburgerMenu } from 'react-icons/gi'
 import { RxCube } from 'react-icons/rx'
-import { FaBath } from 'react-icons/fa'
-import {
-  RiLeafFill,
-  RiNumber1,
-  RiNumber2,
-  RiNumber3,
-  RiNumber4,
-} from 'react-icons/ri'
+import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from 'react-icons/ri'
 import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { CgClose } from 'react-icons/cg'
-import Styles from '../../../styles/foreign-laundry.module.css'
 import { useCallback, useState } from 'react'
 
 export default function Home() {
@@ -285,23 +275,26 @@ export default function Home() {
               </div>
               <div className='p-3'>
                 <div className=''>
-                  <h2 className='text-4xl font-bold leading-tiht text-black capitalize w-full text-left mb-8'>We are true to ourselves and commit to always perform at our best</h2>
+                  <h2 className='text-4xl font-bold leading-tiht text-black capitalize w-full text-left mb-8'>
+                    We are true to ourselves and commit to always perform at our
+                    best
+                  </h2>
                 </div>
-              <div className='flex xl:hidden justify-center items-center my-5'>
-                <Image
-                  src='/imgs/foreign-laundry/old-lady-wash.jpg'
-                  width={500}
-                  height={500}
-                  alt='committed lady'
-                />
-              </div>
+                <div className='flex xl:hidden justify-center items-center my-5'>
+                  <Image
+                    src='/imgs/foreign-laundry/old-lady-wash.jpg'
+                    width={500}
+                    height={500}
+                    alt='committed lady'
+                  />
+                </div>
                 <div>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Vivamus tempus dui nec euismod congue. Nulla id libero
                     dignissim, convallis odio id, scelerisque nisl. Curabitur
                     augue quam, fringilla quis dictum sed, sodales non eros.
-                    Nulla venenatis 
+                    Nulla venenatis
                   </p>
                 </div>
                 <div className='flex flex-col py-5 justify-center items-center gap-5'>
@@ -347,31 +340,67 @@ export default function Home() {
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-5 place-items-stretch'>
               <div>
-                <Image src='/imgs/foreign-laundry/ellie.jpg' width={250} height={250} alt='ellie' />
+                <Image
+                  src='/imgs/foreign-laundry/ellie.jpg'
+                  width={250}
+                  height={250}
+                  alt='ellie'
+                />
                 <div className='p-5 text-center'>
-                  <span className='block text-3xl font-medium text-[#E3221E] mb-1 leading-tight'>Ellie Brown</span>
-                  <span className='block text-lg font-medium text-gray-500'>Operations Manager</span>
+                  <span className='block text-3xl font-medium text-[#E3221E] mb-1 leading-tight'>
+                    Ellie Brown
+                  </span>
+                  <span className='block text-lg font-medium text-gray-500'>
+                    Operations Manager
+                  </span>
                 </div>
               </div>
               <div>
-                <Image src='/imgs/foreign-laundry/smith.jpg' width={250} height={250} alt='smith' />
+                <Image
+                  src='/imgs/foreign-laundry/smith.jpg'
+                  width={250}
+                  height={250}
+                  alt='smith'
+                />
                 <div className='p-5 text-center'>
-                  <span className='block text-3xl font-medium text-[#E3221E] mb-1 leading-tight'>Smith Ade</span>
-                  <span className='block text-lg font-medium text-gray-500'>Service Manager</span>
+                  <span className='block text-3xl font-medium text-[#E3221E] mb-1 leading-tight'>
+                    Smith Ade
+                  </span>
+                  <span className='block text-lg font-medium text-gray-500'>
+                    Service Manager
+                  </span>
                 </div>
               </div>
               <div>
-                <Image src='/imgs/foreign-laundry/aisha.jpg' width={250} height={250} alt='aisha' />
+                <Image
+                  src='/imgs/foreign-laundry/aisha.jpg'
+                  width={250}
+                  height={250}
+                  alt='aisha'
+                />
                 <div className='p-5 text-center'>
-                  <span className='block text-3xl font-medium text-[#E3221E] mb-1 leading-tight'>Abubakar Aisha</span>
-                  <span className='block text-lg font-medium text-gray-500'>Wash Expert</span>
+                  <span className='block text-3xl font-medium text-[#E3221E] mb-1 leading-tight'>
+                    Abubakar Aisha
+                  </span>
+                  <span className='block text-lg font-medium text-gray-500'>
+                    Wash Expert
+                  </span>
                 </div>
               </div>
               <div>
-                <Image src='/imgs/foreign-laundry/dread-jon.jpg' width={250} height={250} alt='dread-jon' />
+                <Image
+                  src='/imgs/foreign-laundry/dread-jon.jpg'
+                  width={250}
+                  height={250}
+                  alt='dread-jon'
+                />
                 <div className='p-5 text-center'>
-                  <span className='block text-3xl font-medium text-[#E3221E] mb-2 leading-tight'>Jonny King</span>
-                  <span className='block text-lg font-medium text-gray-500'>Team Lead</span>
+                  <span className='block text-3xl font-medium text-[#E3221E] mb-2 leading-tight'>
+                    Jonny King
+                  </span>
+                  <span className='block text-lg font-medium text-gray-500'>
+                    Team Lead
+                  </span>
                 </div>
               </div>
             </div>
