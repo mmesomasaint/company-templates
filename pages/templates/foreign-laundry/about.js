@@ -129,7 +129,7 @@ export default function Home() {
                 We Specialize In
               </h2>
             </div>
-            <div className='grid grid-cols-2 xl:grid-cols-3 gap-5 place-items-stretch'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 place-items-stretch'>
               <div className='border border-gray-400 p-5 flex justify-start items-start gap-5 group'>
                 <RiNumber1 className='text-4xl text-[#E3221E] flex-shrink-0' />
                 <div className=''>
