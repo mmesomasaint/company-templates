@@ -536,7 +536,7 @@ export default function Home() {
                     className='border-[3px] border-white rounded-full w-[80px] sm:w-[160px] mx-auto'
                   />
                   <div className='relative'>
-                    <span className={Styles.quoteFont}>"</span>
+                    <span className={Styles.quoteFont}>&quot;</span>
                     <span className='text-sm leading-tight text-gray-400'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Vivamus tempus dui nec euismod congue. Nulla id libero
