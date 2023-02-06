@@ -119,8 +119,8 @@ export default function Home() {
               <h2 className='text-4xl font-bold uppercase text-center'>
                 Contact Us
               </h2>
-              <div className='grid grid-cols-5 place-items-stretch gap-10 mt-14'>
-                <div className='col-span-2'>
+              <div className='grid grid-cols-1 md:grid-cols-5 place-items-stretch gap-10 mt-14'>
+                <div className='md:col-span-2'>
                   <div className='mt-5 flex flex-col gap-10'>
                     <div>
                       <div className='flex justify-start items-start gap-3'>
@@ -169,7 +169,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-span-3'>
+                <div className='md:col-span-3'>
                   <form>
                     <div className='flex justify-items-stretch gap-8 items-center mb-5'>
                       <input
