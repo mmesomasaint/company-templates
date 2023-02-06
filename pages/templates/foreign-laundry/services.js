@@ -7,21 +7,15 @@ import {
   BsInstagram,
   BsTelephone,
   BsTwitter,
-  BsHeart,
-  BsClock,
-  BsDot,
   BsLinkedin,
   BsHourglassSplit,
   BsCurrencyDollar,
   BsHandbagFill,
 } from 'react-icons/bs'
 import { CiDeliveryTruck } from 'react-icons/ci'
-import { TbLetterW } from 'react-icons/tb'
-import { GiAbstract030, GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCube } from 'react-icons/rx'
-import { FaBath } from 'react-icons/fa'
 import {
-  RiLeafFill,
   RiNumber1,
   RiNumber2,
   RiNumber3,
@@ -29,7 +23,6 @@ import {
 } from 'react-icons/ri'
 import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { CgClose } from 'react-icons/cg'
-import Styles from '../../../styles/foreign-laundry.module.css'
 import { useCallback, useState } from 'react'
 
 export default function Home() {
