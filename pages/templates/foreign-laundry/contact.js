@@ -8,14 +8,8 @@ import {
   BsTelephone,
   BsTwitter,
   BsLinkedin,
-  BsHourglassSplit,
-  BsCurrencyDollar,
-  BsHandbagFill,
 } from 'react-icons/bs'
-import { CiDeliveryTruck } from 'react-icons/ci'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { RxCube } from 'react-icons/rx'
-import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from 'react-icons/ri'
 import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { CgClose } from 'react-icons/cg'
 import { useCallback, useState } from 'react'
@@ -178,16 +172,38 @@ export default function Home() {
                 <div className='col-span-3'>
                   <form>
                     <div className='flex justify-items-stretch gap-8 items-center mb-5'>
-                      <input type='text' name='name' placeholder='Name' autoComplete='name' className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500' />
-                      <input type='email' name='email' placeholder='Email' autoComplete='email' className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500' />
+                      <input
+                        type='text'
+                        name='name'
+                        placeholder='Name'
+                        autoComplete='name'
+                        className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500'
+                      />
+                      <input
+                        type='email'
+                        name='email'
+                        placeholder='Email'
+                        autoComplete='email'
+                        className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500'
+                      />
                     </div>
-                      <input type='text' name='subject' placeholder='Subject' autoComplete='subject' className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500 mb-5' />
-                      <textarea rows={4} placeholder='Message' className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500 mb-5' />
-                      <div className='w-full text-right'>
-                  <button className='text-white bg-[#E3221E] py-4 px-8 text-sm font-medium uppercase'>
-                    SEND MESSAGE
-                  </button>
-                      </div>
+                    <input
+                      type='text'
+                      name='subject'
+                      placeholder='Subject'
+                      autoComplete='subject'
+                      className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500 mb-5'
+                    />
+                    <textarea
+                      rows={4}
+                      placeholder='Message'
+                      className='w-full p-3 text-xl font-normal focus:outline-none border border-gray-500 mb-5'
+                    />
+                    <div className='w-full text-right'>
+                      <button className='text-white bg-[#E3221E] py-4 px-8 text-sm font-medium uppercase'>
+                        SEND MESSAGE
+                      </button>
+                    </div>
                   </form>
                 </div>
               </div>
