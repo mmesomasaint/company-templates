@@ -125,7 +125,7 @@ export default function Home() {
                     <div>
                       <div className='flex justify-start items-start gap-3'>
                         <div className='flex justify-start itmes-start gap-4'>
-                          <MdOutlineLocationOn className='text-lg text-gray-300 flex-shrink-0' />
+                          <MdOutlineLocationOn className='text-lg text-[#E3221E] flex-shrink-0' />
                           <div>
                             <span className='block text-xl font-medium leading-tight text-gray-900'>
                               Address:
@@ -140,7 +140,7 @@ export default function Home() {
                     <div>
                       <div className='flex justify-start items-start gap-3'>
                         <div className='flex justify-start itmes-start gap-4'>
-                          <BsTelephone className='text-lg text-gray-300 flex-shrink-0' />
+                          <BsTelephone className='text-lg text-[#E3221E] flex-shrink-0' />
                           <div>
                             <span className='block text-xl font-medium leading-tight text-gray-900'>
                               Call us:
@@ -155,7 +155,7 @@ export default function Home() {
                     <div>
                       <div className='flex justify-start items-start gap-3'>
                         <div className='flex justify-start itmes-start gap-4'>
-                          <MdOutlineEmail className='text-lg text-gray-300 flex-shrink-0' />
+                          <MdOutlineEmail className='text-lg text-[#E3221E] flex-shrink-0' />
                           <div>
                             <span className='block text-xl font-medium leading-tight text-gray-900'>
                               Have any questions?
