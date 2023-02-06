@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
                 <div className='md:col-span-3'>
                   <form>
-                    <div className='flex justify-items-stretch gap-8 items-center mb-5'>
+                    <div className='flex flex-col sm:flex-row justify-items-stretch gap-5 sm:gap-8 items-center mb-5'>
                       <input
                         type='text'
                         name='name'
