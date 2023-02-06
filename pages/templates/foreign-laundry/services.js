@@ -44,6 +44,7 @@ export default function Home() {
                 src='/imgs/foreign-laundry/logo.png'
                 width={130}
                 height={50}
+                alt='logo'
               />
             </div>
             <div className='flex lg:hidden justify-evenly items-center gap-8'>
@@ -279,6 +280,7 @@ export default function Home() {
                         src='/imgs/foreign-laundry/wash-girl.jpg'
                         width={50}
                         height={50}
+                        alt='wash girl'
                         className='rounded-full w-[70px] h-[70px]'
                       />
                     </div>
@@ -298,6 +300,7 @@ export default function Home() {
                         src='/imgs/foreign-laundry/showcase.jpg'
                         width={50}
                         height={50}
+                        alt='showcase'
                         className='rounded-full w-[70px] h-[70px]'
                       />
                     </div>
@@ -317,6 +320,7 @@ export default function Home() {
                         src='/imgs/foreign-laundry/woman-pink-bed.jpg'
                         width={50}
                         height={50}
+                        alt='woman-pink-bed'
                         className='rounded-full w-[70px] h-[70px]'
                       />
                     </div>
@@ -336,6 +340,7 @@ export default function Home() {
                     src='/imgs/foreign-laundry/iron-basket.jpg'
                     width={1000}
                     height={1000}
+                    alt='iron basket'
                   />
                 </div>
                 <div className='flex flex-col gap-8'>
@@ -345,6 +350,7 @@ export default function Home() {
                         src='/imgs/foreign-laundry/wash-girl.jpg'
                         width={50}
                         height={50}
+                        alt='wash girl'
                         className='rounded-full w-[70px] h-[70px]'
                       />
                     </div>
@@ -364,6 +370,7 @@ export default function Home() {
                         src='/imgs/foreign-laundry/woman-pink-bed.jpg'
                         width={50}
                         height={50}
+                        alt='woman pink bed'
                         className='rounded-full w-[70px] h-[70px]'
                       />
                     </div>
@@ -383,6 +390,7 @@ export default function Home() {
                         src='/imgs/foreign-laundry/showcase.jpg'
                         width={50}
                         height={50}
+                        alt='showcase'
                         className='rounded-full w-[70px] h-[70px]'
                       />
                     </div>
@@ -411,6 +419,7 @@ export default function Home() {
                     src='/imgs/foreign-laundry/dirty-clothes.jpg'
                     width={1000}
                     height={1000}
+                    alt='dirty clothes'
                     className='mb-4'
                   />
                   <p className='text-lg font-light leading-tight mb-2 text-[#E3221E]'>
@@ -427,6 +436,7 @@ export default function Home() {
                     src='/imgs/foreign-laundry/man-machine.jpg'
                     width={1000}
                     height={1000}
+                    alt='man machine'
                     className='mb-4'
                   />
                   <p className='text-lg font-light leading-tight mb-2 text-[#E3221E]'>
@@ -443,6 +453,7 @@ export default function Home() {
                     src='/imgs/foreign-laundry/lady-girl-machine.jpg'
                     width={1000}
                     height={1000}
+                    alt='lady girl machine'
                     className='mb-4'
                   />
                   <p className='text-lg font-light leading-tight mb-2 text-[#E3221E]'>
