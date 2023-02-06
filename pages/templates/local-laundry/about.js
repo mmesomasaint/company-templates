@@ -169,6 +169,7 @@ export default function Home() {
                     src='/imgs/local-laundry/man-iron-shirt.jpg'
                     width={300}
                     height={500}
+                    alt='man iron shirt'
                     className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
@@ -177,6 +178,7 @@ export default function Home() {
                     src='/imgs/local-laundry/pile-laundry.jpg'
                     width={300}
                     height={500}
+                    alt='pile laundry'
                     className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
@@ -193,6 +195,7 @@ export default function Home() {
                       src='/imgs/local-laundry/man-iron-shirt.jpg'
                       width={300}
                       height={500}
+                      alt='man iron shirt'
                       className='rounded-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[500px]'
                     />
                   </div>
@@ -201,6 +204,7 @@ export default function Home() {
                       src='/imgs/local-laundry/pile-laundry.jpg'
                       width={300}
                       height={500}
+                      alt='pile laundry'
                       className='rounded-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[500px]'
                     />
                   </div>
@@ -262,6 +266,7 @@ export default function Home() {
                       src='/imgs/local-laundry/woman-two-tops.jpg'
                       width={300}
                       height={500}
+                      alt='woman two tops'
                       className='rounded-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[500px]'
                     />
                   </div>
@@ -270,6 +275,7 @@ export default function Home() {
                       src='/imgs/local-laundry/pouring-water.jpg'
                       width={300}
                       height={500}
+                      alt='pouring water'
                       className='rounded-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[500px]'
                     />
                   </div>
@@ -321,6 +327,7 @@ export default function Home() {
                     src='/imgs/local-laundry/woman-two-tops.jpg'
                     width={300}
                     height={500}
+                    alt='woman two tops'
                     className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
@@ -329,6 +336,7 @@ export default function Home() {
                     src='/imgs/local-laundry/pouring-water.jpg'
                     width={300}
                     height={500}
+                    alt='pouring water'
                     className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
@@ -343,6 +351,7 @@ export default function Home() {
                     src='/imgs/local-laundry/select-suit.jpg'
                     width={300}
                     height={500}
+                    alt='select suit'
                     className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
@@ -351,6 +360,7 @@ export default function Home() {
                     src='/imgs/local-laundry/hanging-suits.jpg'
                     width={300}
                     height={500}
+                    alt='hanging suits'
                     className='rounded-full h-[400px] lg:h-[500px]'
                   />
                 </div>
@@ -367,6 +377,7 @@ export default function Home() {
                       src='/imgs/local-laundry/select-suit.jpg'
                       width={300}
                       height={500}
+                      alt='select suit'
                       className='rounded-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[500px]'
                     />
                   </div>
@@ -375,6 +386,7 @@ export default function Home() {
                       src='/imgs/local-laundry/hanging-suits.jpg'
                       width={300}
                       height={500}
+                      alt='hanging suits'
                       className='rounded-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[500px]'
                     />
                   </div>
@@ -486,7 +498,7 @@ export default function Home() {
                       src='/imgs/local-laundry/bath-towel.png'
                       width={300}
                       height={300}
-                      alt='washing machine'
+                      alt='bath towel'
                     />
                   </div>
                 </div>
@@ -617,6 +629,7 @@ export default function Home() {
                     src='/imgs/local-laundry/logo.png'
                     width={100}
                     height={100}
+                    alt='logo'
                     className='mb-2'
                   />
                   <p className='text-xs font-normal leading-tight my-3'>
