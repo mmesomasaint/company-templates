@@ -80,9 +80,6 @@ export default function Home() {
                   </Link>
                 </span>
                 <span className='text-base font-medium text-gray-500 leading-none'>
-                  <Link href='/templates/foreign-laundry/pages'>PAGES</Link>
-                </span>
-                <span className='text-base font-medium text-gray-500 leading-none'>
                   <Link href='/templates/foreign-laundry/contact'>CONTACT</Link>
                 </span>
               </div>
