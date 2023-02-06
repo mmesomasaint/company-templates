@@ -157,6 +157,7 @@ export default function Home() {
                     src='/imgs/local-laundry/logo.png'
                     width={100}
                     height={100}
+                    alt='logo'
                     className='mb-2'
                   />
                   <p className='text-xs font-normal leading-tight my-3'>
