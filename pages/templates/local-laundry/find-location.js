@@ -131,7 +131,7 @@ export default function Home() {
                     </p>
                   </span>
                   <p className='text-base font-medium text-black leading-none my-6'>
-                    we're currently located at
+                    we are currently located at
                   </p>
                   <div className='flex flex-col items-start gap-3'>
                     <span className='flex justify-center items-center gap-3'>
@@ -172,7 +172,7 @@ export default function Home() {
                       </p>
                     </span>
                     <p className='text-base font-medium text-black leading-none my-6'>
-                      we're currently located at
+                      we are currently located at
                     </p>
                     <div className='flex flex-col items-start gap-3'>
                       <span className='flex justify-center items-center gap-3'>
