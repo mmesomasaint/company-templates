@@ -120,7 +120,7 @@ export default function Home() {
                 height={200}
                 alt='template 3'
               />
-              <Link href='/' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Foreign Laundry Template</Link>
+              <Link href='/templates/foreign-laundry' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Foreign Laundry Template</Link>
             </div>
           </div>
         </div>
