@@ -47,6 +47,7 @@ export default function Home() {
                 src='/imgs/foreign-laundry/logo.png'
                 width={130}
                 height={50}
+                alt='logo'
               />
             </div>
             <div className='flex lg:hidden justify-evenly items-center gap-8'>

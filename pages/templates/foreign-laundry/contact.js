@@ -33,6 +33,7 @@ export default function Home() {
                 src='/imgs/foreign-laundry/logo.png'
                 width={130}
                 height={50}
+                alt='logo'
               />
             </div>
             <div className='flex lg:hidden justify-evenly items-center gap-8'>
@@ -60,6 +61,7 @@ export default function Home() {
                 <span className='text-base font-medium text-gray-500 leading-none'>
                   <Link href='/templates/foreign-laundry'>HOME</Link>
                 </span>
+
                 <span className='text-base font-medium text-gray-500 leading-none'>
                   <Link href='/templates/foreign-laundry/about'>ABOUT</Link>
                 </span>
