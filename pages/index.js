@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useCallback, useState } from 'react'
 import { BsTwitter, BsLinkedin, BsWhatsapp, BsGithub } from 'react-icons/bs'
-import {BiLinkExternal} from 'react-icons/bi'
+import { BiLinkExternal } from 'react-icons/bi'
 import { MdDarkMode } from 'react-icons/md'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import Styles from '../styles/Home.module.css'
@@ -14,10 +14,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const handleIsOpen = useCallback(() => setIsOpen((open) => !open), [])
-  const handleDarkMode = useCallback(
-    () => setDarkMode((dark) => !dark),
-    []
-  )
+  const handleDarkMode = useCallback(() => setDarkMode((dark) => !dark), [])
 
   return (
     <div className={darkMode && 'dark'}>
@@ -83,7 +80,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main id='home' className='bg-[#ffffff] dark:bg-[#023047]'>
+      <div className='flex flex-col min-h-screen justify-start w-full'>
+      <main id='home' className='flex-grow bg-[#ffffff] dark:bg-[#023047]'>
         <div className=' max-w-[90rem] mx-auto'>
           <div className="h-[20rem] w-full bg-[url('/imgs/bg-home.jpg')] bg-no-repeat bg-cover bg-center md:bg-right">
             <div className='bg-gradient-to-t from-[#ffffff] dark:from-[#023047] via-[rgba(255,255,255,0.75)] dark:via-[rgba(2,48,71,0.75)] w-full h-full'>
@@ -97,8 +95,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div id='templates' className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-16 px-4'>
-            <div className='relative' onClick={() => router.push('/templates/local-laundry')}>
+          <div
+            id='templates'
+            className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-16 px-4'
+          >
+            <div
+              className='relative'
+              onClick={() => router.push('/templates/local-laundry')}
+            >
               <div className='w-full absolute z-10 flex top-0 left-0 right-0 justify-end items-center p-3'>
                 <BiLinkExternal className='text-3xl text-[#023047]' />
               </div>
@@ -108,9 +112,17 @@ export default function Home() {
                 height={200}
                 alt='template 1'
               />
-              <Link href='/templates/local-laundry' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Local Laundry Template</Link>
+              <Link
+                href='/templates/local-laundry'
+                className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'
+              >
+                Local Laundry Template
+              </Link>
             </div>
-            <div className='relative' onClick={() => router.push('/templates/it-template')}>
+            <div
+              className='relative'
+              onClick={() => router.push('/templates/it-template')}
+            >
               <div className='w-full absolute z-10 flex top-0 left-0 right-0 justify-end items-center p-3'>
                 <BiLinkExternal className='text-3xl text-[#023047]' />
               </div>
@@ -120,9 +132,17 @@ export default function Home() {
                 height={200}
                 alt='template 2'
               />
-              <Link href='/templates/it-template' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>IT Template</Link>
+              <Link
+                href='/templates/it-template'
+                className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'
+              >
+                IT Template
+              </Link>
             </div>
-            <div className='relative' onClick={() => router.push('/templates/foreign-laundry')}>
+            <div
+              className='relative'
+              onClick={() => router.push('/templates/foreign-laundry')}
+            >
               <div className='w-full absolute z-10 flex top-0 left-0 right-0 justify-end items-center p-3'>
                 <BiLinkExternal className='text-3xl text-[#023047]' />
               </div>
@@ -132,15 +152,20 @@ export default function Home() {
                 height={200}
                 alt='template 3'
               />
-              <Link href='/templates/foreign-laundry' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Foreign Laundry Template</Link>
+              <Link
+                href='/templates/foreign-laundry'
+                className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'
+              >
+                Foreign Laundry Template
+              </Link>
             </div>
           </div>
         </div>
       </main>
 
-      <footer className='bg-gray-400 dark:bg-[#023047] w-full h-full'>
-        <div className='bg-[rgba(0,0,0,0.75)] dark:bg-[rgba(0,0,0,0.45)] w-full h-full'>
-          <div id='contact' className='mb-3 w-fit mx-auto h-fit py-4'>
+      <footer className='bg-gray-400 dark:bg-[#023047] w-full'>
+        <div className='bg-[rgba(0,0,0,0.75)] dark:bg-[rgba(0,0,0,0.45)] w-full pb-5'>
+          <div id='contact' className='mb-3 w-fit mx-auto py-4'>
             <div className='flex gap-10'>
               <BsTwitter className='text-2xl text-slate-300' />
               <BsLinkedin className='text-2xl text-slate-300' />
@@ -148,7 +173,10 @@ export default function Home() {
               <BsGithub className='text-2xl text-slate-300' />
             </div>
           </div>
-          <div id='about' className='w-fit mx-auto border-t-2 border-t-slate-300 pb-3 pt-1 h-full'>
+          <div
+            id='about'
+            className='w-fit mx-auto border-t-2 border-t-slate-300 h-full'
+          >
             <p className='block text-base leading-none font-normal text-gray-400'>
               created by
             </p>
@@ -160,6 +188,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      </div>
     </div>
   )
 }
