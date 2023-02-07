@@ -1,13 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { useCallback, useState } from 'react'
 import { BsTwitter, BsLinkedin, BsWhatsapp, BsGithub } from 'react-icons/bs'
+import {BiLinkExternal} from 'react-icons/bi'
 import { MdDarkMode } from 'react-icons/md'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import Styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home() {
+  const router = useRouter()
   const [darkMode, setDarkMode] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const handleIsOpen = useCallback(() => setIsOpen((open) => !open), [])
@@ -95,7 +98,10 @@ export default function Home() {
           </div>
 
           <div id='templates' className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-16 px-4'>
-            <div>
+            <div className='relative' onClick={() => router.push('/templates/local-laundry')}>
+              <div className='w-full absolute z-10 flex top-0 left-0 right-0 justify-end items-center p-3'>
+                <BiLinkExternal className='text-3xl text-[#023047]' />
+              </div>
               <Image
                 src='/imgs/temp1.webp'
                 width={300}
@@ -104,7 +110,10 @@ export default function Home() {
               />
               <Link href='/templates/local-laundry' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>Local Laundry Template</Link>
             </div>
-            <div>
+            <div className='relative' onClick={() => router.push('/templates/it-template')}>
+              <div className='w-full absolute z-10 flex top-0 left-0 right-0 justify-end items-center p-3'>
+                <BiLinkExternal className='text-3xl text-[#023047]' />
+              </div>
               <Image
                 src='/imgs/temp2.webp'
                 width={300}
@@ -113,7 +122,10 @@ export default function Home() {
               />
               <Link href='/templates/it-template' className='w-full text-xl font-medium text-center text-[#023047] dark:text-white capitalize mt-1 hover:underline'>IT Template</Link>
             </div>
-            <div>
+            <div className='relative' onClick={() => router.push('/templates/foreign-laundry')}>
+              <div className='w-full absolute z-10 flex top-0 left-0 right-0 justify-end items-center p-3'>
+                <BiLinkExternal className='text-3xl text-[#023047]' />
+              </div>
               <Image
                 src='/imgs/temp3.jpg'
                 width={300}
